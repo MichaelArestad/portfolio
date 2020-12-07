@@ -3,12 +3,12 @@ import cn from 'classnames'
 import styles from './list.module.scss'
 
 export default function List({
-  style,
+  minimal,
   children
   }) {
 
   const styleType = () => {
-    if ( style === 'minimal' ) {
+    if ( minimal === true ) {
       return styles.minimal;
     }
   };
