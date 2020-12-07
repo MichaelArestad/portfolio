@@ -6,7 +6,7 @@ export default function FirstPost() {
 	return (
 		<Layout>
 			<Head>
-				<title>Create Next App</title>
+				<title>Gutenberg</title>
 			</Head>
 
 			<main>

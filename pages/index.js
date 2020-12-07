@@ -7,7 +7,7 @@ export default function Home() {
 	return (
 		<Layout>
 			<Head>
-				<title>Create Next App</title>
+				<title>Michael's lil folio</title>
 			</Head>
 			<main>
 				<p className="description">I'm a designer who futzes with code.</p>

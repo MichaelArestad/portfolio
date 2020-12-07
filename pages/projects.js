@@ -7,7 +7,7 @@ export default function Home() {
 	return (
 		<Layout>
 			<Head>
-				<title>Create Next App</title>
+				<title>Projects</title>
 			</Head>
 
 			<main>
