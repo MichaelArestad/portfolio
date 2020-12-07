@@ -16,9 +16,9 @@ export default function Home() {
           <li><Link href="/code">Code</Link></li>
         </ul> */}
         <List style="minimal">
-          <li><a href="">Blog</a></li>
-          <li><a href="">GitHub</a></li>
-          <li><a href="">Twitter</a></li>
+          <li><a href="https://michael.blog/">Blog</a></li>
+          <li><a href="https://github.com/MichaelArestad">GitHub</a></li>
+          <li><a href="https://twitter.com/michaelarestad">Twitter</a></li>
         </List>
       </main>
     </Layout>
