@@ -7,7 +7,6 @@ export default function FirstPost() {
     <Layout>
       <Head>
         <title>Create Next App</title>
-        <link rel="icon" href="/favicon.ico" />
       </Head>
 
       <main>
