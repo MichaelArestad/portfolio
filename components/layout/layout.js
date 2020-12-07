@@ -1,5 +1,4 @@
 import Header from '../header/header'
-import cn from 'classnames'
 import PageMeta from '../page-meta'
 import styles from './layout.module.scss'
 

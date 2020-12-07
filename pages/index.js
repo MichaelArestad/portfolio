@@ -1,6 +1,7 @@
 import Head from 'next/head'
-import Link from 'next/link'
+// import Link from 'next/link'
 import Layout from '../components/layout/layout'
+import List from '../components/list/list'
 
 export default function Home() {
   return (
@@ -9,11 +10,16 @@ export default function Home() {
         <title>Create Next App</title>
       </Head>
       <main>
-        <p>I'm a designer who futzes with code.</p>
-        <ul>
+        <p className="description">I'm a designer who futzes with code.</p>
+        {/* <ul>
           <li><Link href="/projects">Projects</Link></li>
           <li><Link href="/code">Code</Link></li>
-        </ul>
+        </ul> */}
+        <List style="minimal">
+          <li><a href="">Blog</a></li>
+          <li><a href="">GitHub</a></li>
+          <li><a href="">Twitter</a></li>
+        </List>
       </main>
     </Layout>
   )
