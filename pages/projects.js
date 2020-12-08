@@ -1,16 +1,16 @@
-import Head from "next/head";
 import Link from "next/link";
+import SEO from "../components/seo";
 import Layout from "../components/layout/layout";
 import List from "../components/list/list";
+import styles from "../styles/projects.module.scss";
 
 export default function Home() {
 	return (
-		<Layout>
-			<Head>
-				<title>Projects</title>
-			</Head>
+		<Layout addedStyle={styles.container}>
+			<SEO title="Projects" />
 
-			<main>
+			<main className={styles.main}>
+				<h2 className={styles.heading}>PROjEcTs</h2>
 				<List minimal>
 					<li>
 						<Link href="/projects/gutenberg">Gutenberg</Link>

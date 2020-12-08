@@ -1,14 +1,12 @@
-import Head from "next/head";
 import Link from "next/link";
+import SEO from "../components/seo";
 import Layout from "../components/layout/layout";
 import List from "../components/list/list";
 
 export default function Home() {
 	return (
 		<Layout>
-			<Head>
-				<title>Michael's lil folio</title>
-			</Head>
+			<SEO title="Michael's lil folio" />
 			<main>
 				<p className="description">I'm a designer who futzes with code.</p>
 				<List minimal>
