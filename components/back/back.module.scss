@@ -1,0 +1,9 @@
+.back {
+	display: inline-block;
+	position: absolute;
+		top: 30px;
+		left: 48px;
+		font-size: 12px;
+		line-height: 32px; // for bigger tap target
+	text-transform: uppercase;
+}

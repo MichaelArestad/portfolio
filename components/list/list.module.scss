@@ -1,9 +1,18 @@
 .list {
-	// background: red;
+	+ .list {
+		margin-top: 80px;
+	}
+}
+
+.title {
+	margin-top: 0;
+	margin-bottom: 24px;
+	font-size: 24px;
+	font-weight: 400;
+	text-transform: uppercase;
 }
 
 .minimal {
-	text-align: center;
 	list-style: none;
 	margin: 0;
 	padding: 0;
@@ -11,4 +20,25 @@
 	li {
 		margin-bottom: 1rem;
 	}
+}
+
+.condensed {
+	font-size: 12px;
+	line-height: 2;
+
+	li {
+		margin-bottom: 0;
+	}
+
+	a {
+		text-decoration: underline;
+	}
+}
+
+.center {
+	text-align: center;
+}
+
+.right {
+	text-align: right;
 }

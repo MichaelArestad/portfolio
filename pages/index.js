@@ -5,30 +5,21 @@ import List from "../components/list/list";
 
 export default function Home() {
 	return (
-		<Layout>
+		<Layout home>
 			<SEO title="Michael's lil folio" />
 			<main>
-				<p className="description">I'm a designer who futzes with code.</p>
-				<List minimal>
+				<List minimal align="center">
 					<li>
-						<Link href="/projects">Projects</Link>
+						<Link href="/who">who?</Link>
 					</li>
 					<li>
-						<Link href="/code">Code</Link>
+						<Link href="/projects/eye-candy">eye candy</Link>
+					</li>
+					<li>
+						<Link href="/hire-me">hire me</Link>
 					</li>
 				</List>
 				<br title="yup" />
-				<List minimal>
-					<li>
-						<a href="https://michael.blog/">Blog</a>
-					</li>
-					<li>
-						<a href="https://github.com/MichaelArestad">GitHub</a>
-					</li>
-					<li>
-						<a href="https://twitter.com/michaelarestad">Twitter</a>
-					</li>
-				</List>
 			</main>
 		</Layout>
 	);
