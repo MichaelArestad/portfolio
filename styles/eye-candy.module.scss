@@ -16,6 +16,18 @@
 
 .darknet {
 	background: #121317;
+
+	&:hover {
+		.beacon__a,
+		.beacon__r,
+		.beacon__k,
+		.beacon__n,
+		.beacon__e,
+		.beacon__t{
+			opacity: 1;
+			transform: none;
+		}
+	}
 }
 
 .darknetBeacon {	
@@ -33,17 +45,6 @@
 		opacity: 0;
 		transform: translateY(-4px);
 		transition-duration: .12s;
-	}
-	&:hover {
-		.beacon__a,
-		.beacon__r,
-		.beacon__k,
-		.beacon__n,
-		.beacon__e,
-		.beacon__t{
-			opacity: 1;
-			transform: none;
-		}
 	}
 }
 
@@ -99,19 +100,23 @@ $beacon-count: 0;
 }
 
 
-// @keyframes vaultpress {
-// 	100% {
-// 		stroke-dasharray: 1600;
-// 		stroke-dashoffset: 0;
-// 		stroke-width: 2px;
-// 	}
-// }
+@keyframes vaultpress {
+	100% {
+		stroke-dasharray: 1600;
+		stroke-dashoffset: 0;
+		stroke-width: 2px;
+	}
+}
 
 .vaultPress {
 	background: #e23a39;
 	overflow: hidden;
 	text-align: center;
-	animation: 5s vaultpress ease-in-out alternate infinite;
+	// animation-name: vaultpress;
+	// animation-duration: 5s;
+	// animation-direction: alternate;
+	// animation-iteration-count: infinite;
+	// animation: 5s vaultpress ease-in-out alternate infinite;
 
 	svg {
 		margin: 48px;
@@ -119,6 +124,11 @@ $beacon-count: 0;
 	}
 
 	path {
+		animation-name: vaultpress;
+		animation-duration: 5s;
+		animation-direction: alternate;
+		animation-timing-function: ease-in-out;
+		animation-iteration-count: infinite;
 		// animation: 5s vaultpress ease-in-out alternate infinite; // not working?
 		fill: transparent;
 		stroke-dasharray: 475;
@@ -127,10 +137,10 @@ $beacon-count: 0;
 		stroke: #fff;
 	}
 
-	&:hover path {
-		transition: all 3s ease-in-out;
-		stroke-dasharray: 1600;
-		stroke-dashoffset: 0;
-		stroke-width: 2px;
-	}
+	// &:hover path {
+	// 	transition: all 3s ease-in-out;
+	// 	stroke-dasharray: 1600;
+	// 	stroke-dashoffset: 0;
+	// 	stroke-width: 2px;
+	// }
 }
