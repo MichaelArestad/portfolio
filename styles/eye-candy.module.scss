@@ -1,0 +1,136 @@
+.eyeCandy {
+	display: flex;
+	flex-wrap: wrap;
+
+	div {
+		@media ( min-width: 640px ) {
+			max-width: 33%;
+		}
+	}
+}
+
+.container {
+	background: #373737;
+	color: #fff;
+}
+
+.darknet {
+	background: #121317;
+}
+
+.darknetBeacon {	
+	@media (max-width: 480px) {
+		width: 16px;
+		height: auto;
+	}
+
+	.beacon__a,
+	.beacon__r,
+	.beacon__k,
+	.beacon__n,
+	.beacon__e,
+	.beacon__t	{
+		opacity: 0;
+		transform: translateY(-4px);
+		transition-duration: .12s;
+	}
+	&:hover {
+		.beacon__a,
+		.beacon__r,
+		.beacon__k,
+		.beacon__n,
+		.beacon__e,
+		.beacon__t{
+			opacity: 1;
+			transform: none;
+		}
+	}
+}
+
+$beacon: a, r, k, n, e, t;
+$beacon-count: 0;
+@each $letter in $beacon {
+	$beacon-count: $beacon-count + 1;
+	.beacon__#{$letter} {
+		transition-delay: .1s * $beacon-count;
+	}
+}
+
+
+
+
+@mixin thevoid( $stripe-width: 8px, $stripes: 180, $stripe-color: #fff ) {
+	$gradient: ();
+
+
+	@for $i from 1 through $stripes {
+		$color: transparent;
+
+		@if ( $i / 2 ) == floor( $i / 2 ) {
+			$color: $stripe-color;
+		}
+
+		$stripe-data: $color $stripe-width * ($i - 1), $color $stripe-width * $i;
+
+		$gradient: join($gradient, $stripe-data, comma );
+	}
+	background-image: radial-gradient(
+		circle,
+		$gradient
+	);
+}
+
+.theVoid {
+	width: 100%;
+	background-color: #fff;
+	@include thevoid( $stripe-color: black );
+	background-size: 500px 500px;
+	transition: all 20s ease-in-out;
+	background-position: center center;
+
+	&:hover {
+		// @include thevoid( 4px, $stripe-color: black );
+		background-size: 50px 50px;
+	}
+}
+
+.discoBars {
+	background: #2c3341;
+}
+
+
+// @keyframes vaultpress {
+// 	100% {
+// 		stroke-dasharray: 1600;
+// 		stroke-dashoffset: 0;
+// 		stroke-width: 2px;
+// 	}
+// }
+
+.vaultPress {
+	background: #e23a39;
+	overflow: hidden;
+	text-align: center;
+	animation: 5s vaultpress ease-in-out alternate infinite;
+
+	svg {
+		margin: 48px;
+		width: 250px;
+	}
+
+	path {
+		// animation: 5s vaultpress ease-in-out alternate infinite; // not working?
+		fill: transparent;
+		stroke-dasharray: 475;
+		stroke-dashoffset: -950;
+		stroke-width: 0;
+		stroke: #fff;
+	}
+
+	&:hover path {
+		transition: all 3s ease-in-out;
+		stroke-dasharray: 1600;
+		stroke-dashoffset: 0;
+		stroke-width: 2px;
+	}
+}

@@ -1,0 +1,98 @@
+
+$color: #e00;
+
+
+// :before, :after {
+//   content: '';
+//   display: block;
+//   position: absolute;
+//   box-sizing: border-box;
+// }
+
+// html, body {
+//   height: 100%;
+//   background: url('https://codepen.io/images/classy_fabric.png') #333;
+//   overflow: hidden;
+// }
+
+.sixty {
+	background: #333;
+
+	div {
+		$size: 200px;
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		height: $size;
+		margin-top: -($size);
+		transform-origin: bottom;
+
+		&:before, &:after {
+			content: '';
+			display: block;
+			position: absolute;
+			box-sizing: border-box;
+		}
+	}
+
+	div:before {
+		top: 0;
+		width: 6px;
+		height: 6px;
+		border-radius: 50%;
+		background: #222;
+		// animation: 60s s linear infinite;
+	}
+	
+
+	@for $i from 1 through 60 {
+		div:nth-child(#{$i}) {
+			transform: rotate(6deg * $i);
+		}
+		div:nth-child(#{$i}):before {
+			animation-delay: (1 * $i) + s;
+		}
+		div:nth-child(#{$i*5}):before {
+			width: 10px;
+			height: 10px;
+			margin-top: -3px;
+			margin-left: -3px;
+			background: #fff;
+		}
+	}
+}
+
+// .s {
+//   $size: 200px;
+//   position: absolute;
+//   top: 50%;
+//   left: 50%;
+//   height: $size;
+//   margin-top: -($size);
+//   transform-origin: bottom;
+// }
+
+// .s:before {
+//   top: 0;
+//   width: 6px;
+//   height: 6px;
+//   border-radius: 50%;
+//   background: #222;
+//   animation: 60s s linear infinite;
+// }
+
+
+@keyframes s {
+	0.7% {
+		background: #222;
+		transform: scale(1);
+	}
+	1% {
+		background: #fff;
+		transform: scale(2);
+	}
+	2% {
+		transform: scale(1);
+	}
+}
+

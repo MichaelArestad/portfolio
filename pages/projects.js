@@ -6,11 +6,11 @@ import styles from "../styles/projects.module.scss";
 
 export default function Home() {
 	return (
-		<Layout addedStyle={styles.container}>
+		<Layout addedStyle={ styles.container }>
 			<SEO title="Projects" />
 
-			<main className={styles.main}>
-				<h2 className={styles.heading}>PROjEcTs</h2>
+			<main className={ styles.main }>
+				<h2 className={ styles.heading }>PROjEcTs</h2>
 				<List minimal>
 					<li>
 						<Link href="/projects/gutenberg">Gutenberg</Link>

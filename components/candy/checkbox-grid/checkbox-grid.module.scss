@@ -1,0 +1,103 @@
+$focus-color: #78dcfa;
+$focus-size: 3px;
+
+@mixin heart($start, $end) {
+	@for $i from $start through $end {
+		input:nth-child(#{$i}) {
+			&:checked {
+				background: transparentize(#EF3A4E, .8);
+				border-color: #EF3A4E;
+			}
+
+			&:before {
+				background: #EF3A4E;
+			}
+		}
+	}
+}
+
+.checkboxGrid {
+	background: #f9f9f9;
+	box-sizing: border-box;
+	width: 396px;
+	font-size: 0;
+
+	
+	input[type=checkbox] {
+		display: inline-block;
+		margin:  2px;
+		padding: 0;
+		width: 16px;
+		height: 16px;
+		color: #555;
+		line-height: 0;
+		text-align: center;
+		border: 1px solid #bbb;
+		background: #fff;
+		outline: 0;
+		cursor: pointer;
+		vertical-align: middle;
+		-webkit-appearance: none;
+		border-radius: 50%;
+		transform: translateZ(0);
+		transition: opacity .2s ease-in-out;
+		
+		&:before {
+			float: left;
+			display: inline-block;
+			content: '\2022';
+			margin: 3px;
+			width: 8px;
+			height: 8px;
+			text-indent: -9999px;
+			background: #6f7476;
+			vertical-align: middle;
+			border-radius: 50%;
+			opacity: 0;
+			transition: opacity .15s ease-in-out;
+		}
+
+		&:checked {  
+			&:before {
+				opacity: 1;
+				transition: opacity 0 ease-in-out;
+				animation: grow .2s ease-in-out;
+			}
+		}
+		&:focus {
+			box-shadow: 0 0 0 $focus-size $focus-color;
+			animation: focus .2s ease-in-out;
+		}
+	}
+
+	@include heart(50, 52);
+	@include heart(54, 56);
+	@include heart(64, 72);
+	@include heart(79, 87);
+	@include heart(94, 102);
+	@include heart(110, 116);
+	@include heart(126, 130);
+	@include heart(142, 144);
+	@include heart(158, 158);
+}
+
+@keyframes grow {
+		0% {
+				transform: scale(.3);
+		}
+		60% {
+				transform: scale(1.15);
+		}
+		100% {
+				transform: scale(1);
+		}
+};
+
+@keyframes focus {
+	0% {
+		box-shadow: 0 0 0 15px transparentize($focus-color, 1);
+	}
+	100% {
+		box-shadow: 0 0 0 $focus-size $focus-color;
+	}
+}

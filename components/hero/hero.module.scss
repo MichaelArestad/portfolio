@@ -31,4 +31,86 @@
 
 .heroContent {
 	margin: 0 auto;
+	z-index: 1;
+}
+
+.zag,
+.bigZag {
+	position: absolute;
+	height: 100%;
+	width: 100%;
+	--color-zag: #000;
+
+
+	&:before {
+		position: absolute;
+		content: "";
+		top: 0;
+		right: 0;
+		bottom: 0;
+		left: 0;
+	}
+}
+
+.zag,
+.zag:before {
+	$color-1: var( --color-zag );
+	$color-2: transparent;
+	$a: 21%;
+	$b: 29%;
+	$size: 100px; // width and height
+	background:
+		linear-gradient(-45deg, $color-1 4%, $color-2 4%) ($size / 3 * 2) ($size / 2),
+		linear-gradient(-135deg, $color-1 4%, $color-2 4%) ($size / 3 * 2) ($size / 2),
+		linear-gradient(45deg, $color-2 $a, $color-1 $a, $color-1 $b, $color-2 $b) ($size / 3 * 2) 0,
+		linear-gradient(135deg, $color-2 $a, $color-1 $a, $color-1 $b, $color-2 $b) ($size / 3 * 2) 0,
+		linear-gradient(-45deg, $color-1 4%, $color-2 4%) ($size / 3) ($size / 2),
+		linear-gradient(-135deg, $color-1 4%, $color-2 4%) ($size / 3) ($size / 2),
+		linear-gradient(45deg, $color-2 $a, $color-1 $a, $color-1 $b, $color-2 $b) ($size / 3) 0,
+		linear-gradient(135deg, $color-2 $a, $color-1 $a, $color-1 $b, $color-2 $b) ($size / 3) 0,
+		linear-gradient(-45deg, $color-1 4%, $color-2 4%) 0 ($size / 2),
+		linear-gradient(-135deg, $color-1 4%, $color-2 4%) 0 ($size / 2),
+		linear-gradient(45deg, $color-2 $a, $color-1 $a, $color-1 $b, $color-2 $b) 0 0,
+		linear-gradient(135deg, $color-2 $a, $color-1 $a, $color-1 $b, $color-2 $b) 0 0
+	;	
+	background-size: $size $size;
+}
+
+.zag:before {
+  background-attachment: fixed;
+}
+
+.bigZag,
+.bigZag:before {
+	$color-1: var( --color-zag );
+	$color-2: transparent;
+  $a: 19%;
+  $b: 29%;
+  $size: 600px; // width and height
+  background:
+    linear-gradient(-45deg, $color-1 6%, $color-2 6%) ($size / 2) $size,
+    linear-gradient(45deg, $color-1 6%, $color-2 6%) ($size / 2) $size,
+    linear-gradient(135deg, $color-2 $a, $color-1 $a, $color-1 $b, $color-2 $b) $size $size,
+    linear-gradient(-135deg, $color-2 $a, $color-1 $a, $color-1 $b, $color-2 $b) $size $size,
+    
+    linear-gradient(-45deg, $color-1 6%, $color-2 6%) ($size / 2) ($size / 1.5),
+    linear-gradient(45deg, $color-1 6%, $color-2 6%) ($size / 2) ($size / 1.5),
+    linear-gradient(135deg, $color-2 $a, $color-1 $a, $color-1 $b, $color-2 $b) $size ($size / 1.5),
+    linear-gradient(-135deg, $color-2 $a, $color-1 $a, $color-1 $b, $color-2 $b) $size ($size / 1.5),
+
+    linear-gradient(-45deg, $color-1 6%, $color-2 6%) ($size / 2) ($size / 3),
+    linear-gradient(45deg, $color-1 6%, $color-2 6%) ($size / 2) ($size / 3),
+    linear-gradient(135deg, $color-2 $a, $color-1 $a, $color-1 $b, $color-2 $b) $size ($size / 3),
+    linear-gradient(-135deg, $color-2 $a, $color-1 $a, $color-1 $b, $color-2 $b) $size ($size / 3)
+  ;	
+  background-size: $size $size;
+}
+.bigZag:before {
+  $size: 600px; // width and height
+  background-attachment: fixed;
+  background-position-y:
+    ($size + $size / 2), ($size + $size / 2), ($size + $size / 2), ($size + $size / 2),
+    ($size / 1.5 + $size / 2), ($size / 1.5 + $size / 2), ($size / 1.5 + $size / 2), ($size / 1.5 + $size / 2),
+    ($size / 3 + $size / 2), ($size / 3 + $size / 2), ($size / 3 + $size / 2), ($size / 3 + $size / 2)
+    ;
 }

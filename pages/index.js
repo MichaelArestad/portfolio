@@ -5,7 +5,7 @@ import List from "../components/list/list";
 
 export default function Home() {
 	return (
-		<Layout home>
+		<Layout header>
 			<SEO title="Michael's lil folio" />
 			<main>
 				<List minimal align="center">
