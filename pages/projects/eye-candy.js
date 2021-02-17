@@ -48,7 +48,7 @@ export default function Home() {
 						<img src="/images/discobars.gif" width="498" height="400" />
 					</Card> */}
 
-<Card className={ styles.darknet }>
+					<Card className={ styles.darknet }>
 						<svg
 							className={ styles.darknetBeacon }
 							width={26}
