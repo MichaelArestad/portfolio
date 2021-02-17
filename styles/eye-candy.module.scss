@@ -14,48 +14,7 @@
 	color: #fff;
 }
 
-.darknet {
-	background: #121317;
 
-	&:hover {
-		.beacon__a,
-		.beacon__r,
-		.beacon__k,
-		.beacon__n,
-		.beacon__e,
-		.beacon__t{
-			opacity: 1;
-			transform: none;
-		}
-	}
-}
-
-.darknetBeacon {	
-	@media (max-width: 480px) {
-		width: 16px;
-		height: auto;
-	}
-
-	.beacon__a,
-	.beacon__r,
-	.beacon__k,
-	.beacon__n,
-	.beacon__e,
-	.beacon__t	{
-		opacity: 0;
-		transform: translateY(-4px);
-		transition-duration: .12s;
-	}
-}
-
-$beacon: a, r, k, n, e, t;
-$beacon-count: 0;
-@each $letter in $beacon {
-	$beacon-count: $beacon-count + 1;
-	.beacon__#{$letter} {
-		transition-delay: .1s * $beacon-count;
-	}
-}
 
 
 
@@ -85,7 +44,7 @@ $beacon-count: 0;
 	width: 100%;
 	background-color: #fff;
 	@include thevoid( $stripe-color: black );
-	background-size: 500px 500px;
+	background-size: 400px 400px;
 	transition: all 20s ease-in-out;
 	background-position: center center;
 
@@ -97,50 +56,4 @@ $beacon-count: 0;
 
 .discoBars {
 	background: #2c3341;
-}
-
-
-@keyframes vaultpress {
-	100% {
-		stroke-dasharray: 1600;
-		stroke-dashoffset: 0;
-		stroke-width: 2px;
-	}
-}
-
-.vaultPress {
-	background: #e23a39;
-	overflow: hidden;
-	text-align: center;
-	// animation-name: vaultpress;
-	// animation-duration: 5s;
-	// animation-direction: alternate;
-	// animation-iteration-count: infinite;
-	// animation: 5s vaultpress ease-in-out alternate infinite;
-
-	svg {
-		margin: 48px;
-		width: 250px;
-	}
-
-	path {
-		animation-name: vaultpress;
-		animation-duration: 5s;
-		animation-direction: alternate;
-		animation-timing-function: ease-in-out;
-		animation-iteration-count: infinite;
-		// animation: 5s vaultpress ease-in-out alternate infinite; // not working?
-		fill: transparent;
-		stroke-dasharray: 475;
-		stroke-dashoffset: -950;
-		stroke-width: 0;
-		stroke: #fff;
-	}
-
-	// &:hover path {
-	// 	transition: all 3s ease-in-out;
-	// 	stroke-dasharray: 1600;
-	// 	stroke-dashoffset: 0;
-	// 	stroke-width: 2px;
-	// }
 }

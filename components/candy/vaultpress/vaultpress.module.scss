@@ -1,0 +1,45 @@
+
+@keyframes vaultpress {
+	100% {
+		stroke-dasharray: 1600;
+		stroke-dashoffset: 0;
+		stroke-width: 2px;
+	}
+}
+
+.vaultPress {
+	background: #e23a39;
+	overflow: hidden;
+	text-align: center;
+
+	svg {
+		margin: 48px;
+		width: 250px;
+	}
+
+	path {
+		animation-name: vaultpress;
+		animation-duration: 5s;
+		animation-direction: alternate;
+		animation-timing-function: ease-in-out;
+		animation-iteration-count: infinite;
+		fill: transparent;
+		stroke-dasharray: 475;
+		stroke-dashoffset: -950;
+		stroke-width: 0;
+		stroke: #fff;
+	}
+
+	// &:hover path {
+	// 	transition: all 3s ease-in-out;
+	// 	stroke-dasharray: 1600;
+	// 	stroke-dashoffset: 0;
+	// 	stroke-width: 2px;
+	// }
+}
+
+.pause {
+	path {
+		animation-play-state: paused;
+	}
+}

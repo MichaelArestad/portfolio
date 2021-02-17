@@ -10,26 +10,34 @@ export default function Hero({ title, description, bg, textColor, className, zag
 		}
 	};
 
-	if ( zag ) {
-		return (
-			<header className={ cn( styles.hero, className ) } style={{ background: bg, color: textColor }}>
-				<div  className={ isBigZag() } style={{ "--color-zag": zagColor }}></div>
-				<div className={ styles.heroInfo }>
-					<h1 className={ styles.title }>{ title }</h1>
-					<h2 className={ styles.description }>{ description }</h2>
-				</div>
-				{ children }
-			</header>
-		);
-	} else {
-		return (
-			<header className={ cn( styles.hero, className ) } style={{ background: bg, color: textColor }}>
-				<div className={ styles.heroInfo }>
-					<h1 className={ styles.title }>{ title }</h1>
-					<h2 className={ styles.description }>{ description }</h2>
-				</div>
-				{ children }
-			</header>
-		);
-	}
+	const zagDiv = (
+		<div  className={ isBigZag() } style={{ "--color-zag": zagColor }}></div>
+	);
+
+	const hasZag = () => {
+		if ( zag ) {
+			return zagDiv;
+		}
+	};
+
+	const heroInfo = (
+		<div className={ styles.heroInfo }>
+			<h1 className={ styles.title }>{ title }</h1>
+			<h2 className={ styles.description }>{ description }</h2>
+		</div>
+	);
+
+	const hasHeroInfo = () => {
+		if ( title || description ) {
+			return heroInfo;
+		}
+	};
+
+	return (
+		<header className={ cn( styles.hero, className ) } style={{ background: bg, color: textColor }}>
+			{ hasZag() }
+			{ hasHeroInfo() }
+			{ children }
+		</header>
+	);
 }

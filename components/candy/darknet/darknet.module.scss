@@ -1,0 +1,42 @@
+.darknet {
+	background: #121317;
+
+	&:hover {
+		.beacon__a,
+		.beacon__r,
+		.beacon__k,
+		.beacon__n,
+		.beacon__e,
+		.beacon__t{
+			opacity: 1;
+			transform: none;
+		}
+	}
+}
+
+.darknetBeacon {	
+	@media (max-width: 480px) {
+		width: 16px;
+		height: auto;
+	}
+
+	.beacon__a,
+	.beacon__r,
+	.beacon__k,
+	.beacon__n,
+	.beacon__e,
+	.beacon__t	{
+		opacity: 0;
+		transform: translateY(-4px);
+		transition-duration: .12s;
+	}
+}
+
+$beacon: a, r, k, n, e, t;
+$beacon-count: 0;
+@each $letter in $beacon {
+	$beacon-count: $beacon-count + 1;
+	.beacon__#{$letter} {
+		transition-delay: .1s * $beacon-count;
+	}
+}
