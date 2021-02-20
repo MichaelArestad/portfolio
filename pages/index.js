@@ -13,6 +13,9 @@ export default function Home() {
 						<Link href="/who">who?</Link>
 					</li>
 					<li>
+						<Link href="/projects/">projects</Link>
+					</li>
+					<li>
 						<Link href="/projects/eye-candy">eye candy</Link>
 					</li>
 					<li>

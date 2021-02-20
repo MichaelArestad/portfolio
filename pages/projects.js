@@ -10,7 +10,7 @@ import styles from "../styles/projects.module.scss";
 
 export default function Home() {
 	return (
-		<Layout addedStyle={ styles.container }>
+		<Layout addedStyle={ styles.container } backgroundColor="#FFE600">
 			<SEO title="Projects" />
 
 			<main className={ styles.main }>
@@ -22,13 +22,13 @@ export default function Home() {
 				<Card>
 					<List minimal align="center">
 						<li>
+							<Link href="/projects/jetpack">Jetpack</Link>
+						</li>
+						<li>
 							<Link href="/projects/gutenberg">Gutenberg</Link>
 						</li>
 						<li>
 							<Link href="/projects/gutenberg">Gutenpack</Link>
-						</li>
-						<li>
-							<Link href="/projects/gutenberg">Jetpack</Link>
 						</li>
 						<li>
 							<Link href="/projects/gutenberg">Activity Log</Link>

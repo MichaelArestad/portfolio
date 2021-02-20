@@ -1,7 +1,7 @@
 import styles from "./hero.module.scss";
 import cn from "classnames";
 
-export default function Hero({ title, description, bg, textColor, className, zag, zagColor, children }) {
+export default function Hero({ title, description, backgroundColor, textColor, className, zag, zagColor, children }) {
 	const isBigZag = () => {
 		if ( zag === "big" ) {
 			return styles.bigZag;
@@ -34,7 +34,7 @@ export default function Hero({ title, description, bg, textColor, className, zag
 	};
 
 	return (
-		<header className={ cn( styles.hero, className ) } style={{ background: bg, color: textColor }}>
+		<header className={ cn( styles.hero, className ) } style={{ background: backgroundColor, color: textColor }}>
 			{ hasZag() }
 			{ hasHeroInfo() }
 			{ children }

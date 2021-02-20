@@ -9,15 +9,6 @@
 	}
 }
 
-.container {
-	background: #373737;
-	color: #fff;
-}
-
-
-
-
-
 
 @mixin thevoid( $stripe-width: 8px, $stripes: 180, $stripe-color: #fff ) {
 	$gradient: ();

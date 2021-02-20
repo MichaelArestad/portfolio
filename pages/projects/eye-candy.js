@@ -14,7 +14,7 @@ import Sixty from "../../components/candy/sixty/sixty";
 
 export default function Home() {
 	return (
-		<Layout addedStyle={ styles.container }>
+		<Layout addedStyle={ styles.container } backgroundColor="#373737" textColor="#ffffff">
 			<SEO title="Projects" />
 
 			<main>
@@ -22,7 +22,7 @@ export default function Home() {
 					title="Eye candy"
 					description="for the discerning individual"
 					zag="big"
-					bg="#ff0054"
+					backgroundColor="#ff0054"
 					textColor="#fff">
 					<Back href="/">Home</Back>
 				</Hero>

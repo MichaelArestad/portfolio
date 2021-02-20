@@ -3,7 +3,7 @@ import PageMeta from "../page-meta";
 import cn from "classnames";
 import styles from "./layout.module.scss";
 
-export default function Layout({ addedStyle, header, children }) {
+export default function Layout({ addedStyle, backgroundColor, textColor, header, children }) {
 	const hasHeader = () => {
 		if (header === true) {
 			return <Header />;
@@ -11,7 +11,7 @@ export default function Layout({ addedStyle, header, children }) {
 	};
 
 	return (
-		<div className={cn(styles.container, addedStyle)}>
+		<div className={cn(styles.container, addedStyle)} style={{ background: backgroundColor, color: textColor }}>
 			<PageMeta />
 			{ hasHeader() }
 			{children}
