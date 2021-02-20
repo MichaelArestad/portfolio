@@ -6,6 +6,7 @@ import HeroContent from "../../components/hero/hero-content";
 import Back from "../../components/back/back";
 import Card from "../../components/card/card";
 import Text from "../../components/text/text";
+import Heading from "../../components/heading/heading";
 
 export default function Home() {
 	return (
@@ -47,7 +48,7 @@ export default function Home() {
 					<Text>By the time I left Automattic in 2020, Jetpack was a profitable business. The plugin’s interface was entirely rebuilt using a design system shared with WordPress.com. It had a focused business model centered around backups and security. Jetpack’s website was redesigned into a sophisticated and flexible platform tying nicely into the plugin.</Text>
 				</Card>
 				<Card>
-					<Text isBig>The plugin</Text>
+					<Heading>The plugin</Heading>
 
 					<Text><strong>I redesigned and maintained the Jetpack plugin.</strong> The most recent time, we rebuilt the entire plugin interface in React using shared components and design patterns with WordPress.com. This made going back and forth between Jetpack and WordPress.com much smoother for users as it now was a cohesive system.</Text>
 
