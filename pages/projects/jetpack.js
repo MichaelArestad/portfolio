@@ -1,10 +1,11 @@
 import Link from "next/link";
 import SEO from "../../components/seo";
-import Card from "../../components/card/card";
 import Layout from "../../components/layout/layout";
-import Back from "../../components/back/back";
 import Hero from "../../components/hero/hero";
 import HeroContent from "../../components/hero/hero-content";
+import Back from "../../components/back/back";
+import Card from "../../components/card/card";
+import Text from "../../components/text/text";
 
 export default function Home() {
 	return (
@@ -39,12 +40,20 @@ export default function Home() {
 				</Hero>
 
 				<Card backgroundColor="#ffffff">
-					<p>Jetpack is a WordPress plugin with over 5 million active installs. It is a collection of security, performance, and marketing tools designed to expand the capabilities of WordPress.</p>
+					<Text isBig>Jetpack is a WordPress plugin with over 5 million active installs. It is a collection of security, performance, and marketing tools designed to expand the capabilities of WordPress.</Text>
 
-					<p>I started work at Automattic in 2013 and spent a significant amount of my time working on Jetpack. When I joined the Jetpack team, the plugin was laden with broken flows and had no concrete plans for monetization.</p>
+					<Text>I started work at Automattic in 2013 and spent a significant amount of my time working on Jetpack. When I joined the Jetpack team, the plugin was laden with broken flows and had no concrete plans for monetization.</Text>
 
-					<p>By the time I left Automattic in 2020, Jetpack was a profitable business. The plugin’s interface was entirely rebuilt using a design system shared with WordPress.com. It had a focused business model centered around backups and security. Jetpack’s website was redesigned into a sophisticated and flexible platform tying nicely into the plugin.</p>
-					Test
+					<Text>By the time I left Automattic in 2020, Jetpack was a profitable business. The plugin’s interface was entirely rebuilt using a design system shared with WordPress.com. It had a focused business model centered around backups and security. Jetpack’s website was redesigned into a sophisticated and flexible platform tying nicely into the plugin.</Text>
+				</Card>
+				<Card>
+					<Text isBig>The plugin</Text>
+
+					<Text><strong>I redesigned and maintained the Jetpack plugin.</strong> The most recent time, we rebuilt the entire plugin interface in React using shared components and design patterns with WordPress.com. This made going back and forth between Jetpack and WordPress.com much smoother for users as it now was a cohesive system.</Text>
+
+					<Text><strong>I worked with a team to design and build Jetpack features.</strong> This included backup and security features, tiled galleries, the contact form, related posts, WordAds, several widgets, and several blocks. I’ll go into a few of these in detail.</Text>
+
+					<Text><strong>I helped transition the product from a free product to a profitable product with paid plans.</strong> This included quite a range of flows between the Jetpack dashboard, jetpack.com, and WordPress.com depending on the situation.</Text>
 				</Card>
 			</main>
 		</Layout>

@@ -10,7 +10,7 @@ export default class Card extends React.Component {
 			);
 		} else {
 			return	(
-				<div onClick={ this.props.onClick } className={ cn( styles.card, this.props.className ) } style={{ background: this.props.backgroundColor, color: this.props.textColor }}>{ this.props.children }</div>
+				<div className={ cn( styles.card, this.props.className ) } style={{ background: this.props.backgroundColor, color: this.props.textColor }}>{ this.props.children }</div>
 			);
 		}
 	}
