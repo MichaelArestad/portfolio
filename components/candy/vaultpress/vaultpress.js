@@ -1,29 +1,11 @@
 import React from "react";
 import Card from "../../card/card";
 import styles from "./vaultpress.module.scss";
-import cn from "classnames";
 
 export default class VaultPress extends React.Component {
-	constructor( props ) {
-		super( props );
-		this.state = { animate: "pause" };
-		this.handleHover = this.handleHover.bind( this );
-	}
-
-	handleHover() {
-		const willAnimate = this.state.animate === "pause" ? "play" : "pause";
-		this.setState({ animate: willAnimate });
-	}
-
-	playAnimation() {
-		if ( this.state.animate === "pause" ) {
-			return styles.pause;
-		}
-	}
-
 	render() {
 		return (
-			<Card onMouseEnter={ this.handleHover } onMouseLeave={ this.handleHover } href="https://codepen.io/MichaelArestad/pen/pGalK" className={ cn( styles.vaultPress, this.playAnimation() ) }>
+			<Card href="https://codepen.io/MichaelArestad/pen/pGalK" className={ styles.vaultPress }>
 				<svg
 					xmlns="http://www.w3.org/2000/svg"
 					width={250}
