@@ -1,8 +1,12 @@
 .back {
 	display: inline-block;
-	margin: 30px 48px 0;
+	margin: 16px 24px 0;
 	font-size: 12px;
 	line-height: 32px; // for bigger tap target
 	text-transform: uppercase;
 	position: relative;
+
+	@media ( min-width: 480px ) {
+		margin: 30px 48px 0;
+	}
 }
