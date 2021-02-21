@@ -13,10 +13,10 @@ export default function Home() {
 
 			<main>
 				<Hero
-					title="Michael Arestad"
+					title="Hire me"
 					description="I'm currently accepting new clients. If you are interested in working together, please reach out."
-					bg="#fff"
-					textColor="#000">
+					backgroundColor="#000"
+					textColor="#fff">
 					<Back href="/">Home</Back>
 				</Hero>
 				<Card>
