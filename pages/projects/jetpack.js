@@ -17,7 +17,7 @@ export default function Home() {
 				<Hero
 					title="Jetpack"
 					description="Safer. Faster. More traffic. Security, performance, and marketing tools made for WordPress sites by the WordPress experts"
-					backgroundColor="#000"
+					backgroundColor="#000000"
 					textColor="#fff">
 					<Back href="/projects/">Projects</Back>
 					<HeroContent>

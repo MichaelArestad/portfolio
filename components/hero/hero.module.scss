@@ -1,18 +1,25 @@
 .hero {
 	position: relative;
 	overflow: auto;
-	min-height: 66vh;
 	display: flex;
   flex-direction: column;
-  justify-content: center;
+	justify-content: space-between;
+	min-height: 60vh;
+	
+	@media ( min-width: 40px ) {
+		min-height: 90vh;
+	}
 }
 
 .heroInfo {
-	position: absolute;
-		bottom: 40px;
-		left: 48px;
+	box-sizing: border-box;
+	padding: 24px;
 	max-width: 360px;
-	width: calc(100% - 96px);
+	position: relative;
+}
+
+.hero .back {
+	background-color: red;;
 }
 
 .title {
@@ -31,8 +38,8 @@
 }
 
 .heroContent {
-	margin: 0 auto;
-	z-index: 1;
+	margin: 16px auto 0;
+	position: relative;
 }
 
 .zag,
