@@ -15,7 +15,7 @@ export default function Home() {
 				<Hero
 					title="Hire me"
 					description="I'm currently accepting new clients. If you are interested in working together, please reach out."
-					backgroundColor="#000"
+					backgroundColor="#1f4bce"
 					textColor="#fff">
 					<Back href="/">Home</Back>
 				</Hero>

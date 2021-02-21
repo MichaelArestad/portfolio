@@ -5,16 +5,16 @@ import styles from "./layout.module.scss";
 
 export default function Layout({ addedStyle, backgroundColor, textColor, header, children }) {
 	const hasHeader = () => {
-		if (header === true) {
+		if ( header === true ) {
 			return <Header />;
 		}
 	};
 
 	return (
-		<div className={cn(styles.container, addedStyle)} style={{ background: backgroundColor, color: textColor }}>
+		<div className={ cn( styles.container, addedStyle ) } style={{ background: backgroundColor, color: textColor }}>
 			<PageMeta />
 			{ hasHeader() }
-			{children}
+			{ children }
 		</div>
 	);
 }
