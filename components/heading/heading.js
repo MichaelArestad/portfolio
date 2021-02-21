@@ -1,16 +1,28 @@
+import React from "react";
 import styles from "./heading.module.scss";
 import cn from "classnames";
 
-export default function Heading({ size = 3, className, children }) {
-	// const isTextBig = () => {
-	// 	if ( isBig ) {
-	// 		return styles.isBig;
-	// 	}
-	// };
+export default class Heading extends React.PureComponent {
+	render() {
+		const {
+			children,
+			className,
+			level,
+			...props
+		} = this.props;
 
-	if ( size === 3 ){
-		return	(
-			<h3 className={ cn( styles.heading, className ) }>{ children }</h3>
+		let TagName;
+
+		if ( this.props.level ) {
+			TagName = 'h' + this.props.level;
+		} else {
+			TagName = 'h3';
+		}
+
+		return (
+			<div>
+			<TagName className={ cn( styles.heading, className ) }>{ children }</TagName>
+			</div>
 		);
 	}
 }

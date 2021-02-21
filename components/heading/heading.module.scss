@@ -1,5 +1,32 @@
+.heading {
+	font-weight: 400;
+}
+
+h1.heading {
+	text-transform: uppercase;
+	font-size: 32px;
+	font-weight: 400;
+}
+
+h2.heading {
+	text-transform: uppercase;
+	font-size: 24px;
+	font-weight: 400;
+}
+
 h3.heading {
 	text-transform: uppercase;
 	font-size: 18px;
 	font-weight: 400;
+}
+
+h4.heading {
+	font-size: 14px;
+	font-weight: 500;
+}
+
+h5.heading {
+	text-transform: uppercase;
+	font-size: 12px;
+	font-weight: 600;
 }
