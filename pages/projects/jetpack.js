@@ -56,20 +56,39 @@ export default function Home() {
 						<Text>By the time I left Automattic in 2020, Jetpack was a profitable business. The plugin’s interface was entirely rebuilt using a design system shared with WordPress.com. It had a focused business model centered around backups and security. Jetpack’s website was redesigned into a sophisticated and flexible platform tying nicely into the plugin.</Text>
 					</Item>
 				</Card>
-				<Card>
-					<Heading>The plugin</Heading>
+					<Card>
+					<Flex alignItems="center" justifyContent="space-between">
+						<FlexItem width="small">
+							<Heading>The plugin</Heading>
+							<Text><strong>I redesigned and maintained the Jetpack plugin.</strong> The most recent time, we rebuilt the entire plugin interface in React using shared components and design patterns with WordPress.com. This made going back and forth between Jetpack and WordPress.com much smoother for users as it now was a cohesive system.</Text>
+
+							<Text><strong>I worked with a team to design and build Jetpack features.</strong> This included backup and security features, tiled galleries, the contact form, related posts, WordAds, several widgets, and several blocks. I’ll go into a few of these in detail.</Text>
+
+							<Text><strong>I helped transition the product from a free product to a profitable product with paid plans.</strong> This included quite a range of flows between the Jetpack dashboard, jetpack.com, and WordPress.com depending on the situation.</Text>
+						</FlexItem>
+						<FlexItem>
+							<img src="/images/jetpack/jetpack-dashboard@2x.jpg" width="800" height="448" />
+						</FlexItem>
+					</Flex>
 
 					<Flex>
 						<FlexItem width="small">
-							<Text><strong>I redesigned and maintained the Jetpack plugin.</strong> The most recent time, we rebuilt the entire plugin interface in React using shared components and design patterns with WordPress.com. This made going back and forth between Jetpack and WordPress.com much smoother for users as it now was a cohesive system.</Text>
+							<Heading>The website</Heading>
+							<Text><strong>I redesigned the Jetpack website.</strong> Early on, I designed and coded this primarily myself and, as the team grew, it became a group effort. This included research, hypotheses, design, implementation, testing, and iteration.</Text>
 						</FlexItem>
+					</Flex>
 
-						<FlexItem>
-							<Text><strong>I worked with a team to design and build Jetpack features.</strong> This included backup and security features, tiled galleries, the contact form, related posts, WordAds, several widgets, and several blocks. I’ll go into a few of these in detail.</Text>
+					<Flex>
+						<FlexItem width="small">
+							<Heading>WordPress.com integration</Heading>
+							<Text><strong>I integrated Jetpack into WordPress.com’s React-based dashboard</strong> and even designed/coded some of the most used components on WordPress.com’s interface.</Text>
 						</FlexItem>
+					</Flex>
 
-						<FlexItem>
-							<Text><strong>I helped transition the product from a free product to a profitable product with paid plans.</strong> This included quite a range of flows between the Jetpack dashboard, jetpack.com, and WordPress.com depending on the situation.</Text>
+					<Flex>
+						<FlexItem width="small">
+							<Heading>Events</Heading>
+							<Text><strong>I designed collateral for events</strong> including booths, swag, and the conference branding. I also attended several events representing Automattic and Jetpack.</Text>
 						</FlexItem>
 					</Flex>
 				</Card>
