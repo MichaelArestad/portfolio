@@ -1,19 +1,35 @@
 import cn from "classnames";
+import styles from "./item.module.scss";
+
 
 export default function Item({
 	backgroundColor,
-	maxWidth,
+	width,
 	textColor,
 	className,
 	children,
 	style
 }) {
 
-	const styles = {
+	const howWide = () => {
+		if ( width ) {
+			switch ( width ) {
+				case "small":
+					return styles.isSmall;
+				case "medium":
+					return styles.isMedium;
+				case "large":
+					return styles.isLarge;
+				default:
+					break;
+			}
+		}
+	};
+
+	const styling = {
 		backgroundColor: backgroundColor,
-		maxWidth: maxWidth,
 		color: textColor
 	};
 
-	return <div style={{ ...style, ...styles }} className={ className }>{ children }</div>
+	return <div style={{ ...style, ...styling }} className={ cn( className, howWide() ) }>{ children }</div>
 }

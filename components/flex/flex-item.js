@@ -1,7 +1,8 @@
 import styles from "./flex.module.scss";
+import Item from "../item/item";
 
-export default function FlexItem({ maxWidth, children }) {
+export default function FlexItem({ children, ...props }) {
 	return (
-		<div className={ styles.flexItem } style={{ maxWidth: maxWidth }}>{ children }</div>
+		<Item className={ styles.flexItem } { ...props }>{ children }</Item>
 	);
 }
