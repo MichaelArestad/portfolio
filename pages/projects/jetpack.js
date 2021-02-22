@@ -42,9 +42,11 @@ export default function Home() {
 					</HeroContent>
 				</Hero>
 
-				<Card backgroundColor="#ffffff">
-					<Text isBig>Jetpack is a WordPress plugin with over 5 million active installs. It is a collection of security, performance, and marketing tools designed to expand the capabilities of WordPress.</Text>
-
+				<Card circles backgroundColor="#000">
+					<img src="/images/jetpack/jetpack-dashboard@2x.jpg" width="800" height="448" />
+					<Card compact backgroundColor="#ffffff"><Text caption>Jetpack is a WordPress plugin with over 5 million active installs. It is a collection of security, performance, and marketing tools designed to expand the capabilities of WordPress.</Text></Card>
+				</Card>
+				<Card backgroundColor="#000" textColor="#fff">
 					<Text>I started work at Automattic in 2013 and spent a significant amount of my time working on Jetpack. When I joined the Jetpack team, the plugin was laden with broken flows and had no concrete plans for monetization.</Text>
 
 					<Text>By the time I left Automattic in 2020, Jetpack was a profitable business. The plugin’s interface was entirely rebuilt using a design system shared with WordPress.com. It had a focused business model centered around backups and security. Jetpack’s website was redesigned into a sophisticated and flexible platform tying nicely into the plugin.</Text>

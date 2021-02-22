@@ -1,7 +1,7 @@
 import Link from "next/link";
 import styles from "./header.module.scss";
 
-export default function Header({ home, children }) {
+export default function Header({ home }) {
 	if ( home ) {
 		return (
 			<header className={styles.header}>

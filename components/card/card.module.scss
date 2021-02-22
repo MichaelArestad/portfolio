@@ -1,5 +1,14 @@
-.card,
-.cardLink {
+.card {
 	padding: 48px;
 	display: block;
+}
+
+.circles {
+	background-image: url("/images/circles.svg");
+	background-size: 2568px 2568px;
+	background-position: center center;
+}
+
+.compact {
+	padding: 18px 24px;
 }

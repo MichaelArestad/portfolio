@@ -1,8 +1,14 @@
 .text {
-	font-family: 'IBM Plex Sans', sans-serif;
+	font-family: var( --font-family_sans );
 	font-size: 14px;
 }
 
 .isBig {
 	font-size: 24px;
+}
+
+.caption {
+	font-family: var( --font-family_mono );
+	font-size: 12px;
+	margin: 0;
 }
