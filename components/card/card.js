@@ -1,5 +1,6 @@
 import React from "react";
 import styles from "./card.module.scss";
+import Item from "../item/item";
 import cn from "classnames";
 
 export default class Card extends React.Component {
@@ -15,16 +16,28 @@ export default class Card extends React.Component {
 		}
 	}
 
+	classnames = cn(
+		styles.card,
+		this.hasCircles(),
+		this.isCompact(),
+		this.props.className
+	);
+
 	renderCard() {
 		if ( this.props.href ) {
 			return	(
-				<a href={ this.props.href } className={ cn( styles.card, this.hasCircles(), this.isCompact(), this.props.className ) } style={{ backgroundColor: this.props.backgroundColor, color: this.props.textColor }}>{ this.props.children }</a>
+				<a
+					href={ this.props.href }
+					className={ this.classnames }
+					style={ this.styles }>
+					{ this.props.children }
+				</a>
 			);
 		} else {
 			return	(
-				<div className={ cn( styles.card, this.hasCircles(), this.isCompact(), this.props.className ) } style={{ backgroundColor: this.props.backgroundColor, color: this.props.textColor }}>
+				<Item className={ this.classnames } { ...this.props }>
 					{ this.props.children }
-				</div>
+				</Item>
 			);
 		}
 	}

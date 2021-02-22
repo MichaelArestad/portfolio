@@ -9,6 +9,7 @@ import Text from "../../components/text/text";
 import Heading from "../../components/heading/heading";
 import Flex from "../../components/flex/flex";
 import FlexItem from "../../components/flex/flex-item";
+import Item from "../../components/item/item";
 
 export default function Home() {
 	return (
@@ -44,7 +45,7 @@ export default function Home() {
 
 				<Card circles backgroundColor="#000">
 					<img src="/images/jetpack/jetpack-dashboard@2x.jpg" width="800" height="448" />
-					<Card compact backgroundColor="#ffffff"><Text caption>Jetpack is a WordPress plugin with over 5 million active installs. It is a collection of security, performance, and marketing tools designed to expand the capabilities of WordPress.</Text></Card>
+					<Card compact backgroundColor="#ffffff" maxWidth="800px"><Text caption>Jetpack is a WordPress plugin with over 5 million active installs. It is a collection of security, performance, and marketing tools designed to expand the capabilities of WordPress.</Text></Card>
 				</Card>
 				<Card backgroundColor="#000" textColor="#fff">
 					<Text>I started work at Automattic in 2013 and spent a significant amount of my time working on Jetpack. When I joined the Jetpack team, the plugin was laden with broken flows and had no concrete plans for monetization.</Text>
