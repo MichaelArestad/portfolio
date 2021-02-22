@@ -19,7 +19,7 @@ export default function Home() {
 					<Back href="/">Home</Back>
 				</Hero>
 				<Card>
-					<List minimal condensed>
+					<List minimal mono condensed>
 						<li>
 							<a href="mailto:marestad@gmail.com">Email</a>
 						</li>

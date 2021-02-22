@@ -9,7 +9,7 @@ export default function Home() {
 		<Layout header home>
 			<SEO title="Michael's lil folio" />
 			<main>
-				<List minimal align="center">
+				<List minimal mono align="center">
 					<li>
 						<FancyLink href="/who">who?</FancyLink>
 					</li>

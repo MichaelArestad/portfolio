@@ -1,5 +1,6 @@
 .back {
 	display: inline-block;
+	font-family: var( --font-family_mono );
 	margin: 16px 24px 0;
 	font-size: 12px;
 	line-height: 32px; // for bigger tap target
@@ -8,5 +9,11 @@
 
 	@media ( min-width: 480px ) {
 		margin: 30px 48px 0;
+	}
+
+	a {
+		&:hover {
+			text-decoration: none;
+		}
 	}
 }

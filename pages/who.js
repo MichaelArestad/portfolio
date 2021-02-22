@@ -25,7 +25,7 @@ export default function Home() {
 				</Hero>
 
 				<Card>
-					<List title="Work" minimal condensed>
+					<List title="Work" minimal condensed mono>
 						<li>
 							<a href="https://automattic.com/">Automattic</a>
 						</li>
@@ -35,7 +35,7 @@ export default function Home() {
 						<li>State of Colorado</li>
 					</List>
 
-					<List title="Talk" minimal condensed>
+					<List title="Talk" minimal condensed mono>
 						<li>Develop Denver</li>
 						<li>WordCamp St Louis</li>
 						<li>WordCamp Denver</li>
@@ -44,7 +44,7 @@ export default function Home() {
 						<li>WordCamp Europe</li>
 					</List>
 
-					<List title="Cyber" minimal condensed>
+					<List title="Cyber" minimal condensed mono>
 						<li>
 							<a href="https://michael.blog/">blog</a>
 						</li>
@@ -56,7 +56,7 @@ export default function Home() {
 						</li>
 					</List>
 
-					<List title="Sound" minimal condensed>
+					<List title="Sound" minimal condensed mono>
 						<li>
 							<a href="https://www.youtube.com/channel/UCTkmzS2HNUxh4MnPva201ZA">youtube</a>
 						</li>

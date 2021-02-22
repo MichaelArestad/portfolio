@@ -28,7 +28,7 @@
 
 .title {
 	font-size: 24px;
-	font-family: "IBM Plex Sans Condensed", sans-serif;
+	font-family: var( --font-family_condensed );
 	font-weight: 400;
 	text-transform: uppercase;
 	margin-top: 0;
@@ -36,6 +36,7 @@
 }
 
 .description {
+	font-family: var( --font-family_mono );
 	font-weight: normal;
 	font-size: 12px;
 	margin: 0;
