@@ -5,7 +5,8 @@ export default function Item({
 	maxWidth,
 	textColor,
 	className,
-	children
+	children,
+	style
 }) {
 
 	const styles = {
@@ -14,5 +15,5 @@ export default function Item({
 		color: textColor
 	};
 
-	return <div style={ styles } className={ className }>{ children }</div>
+	return <div style={{ ...style, ...styles }} className={ className }>{ children }</div>
 }
