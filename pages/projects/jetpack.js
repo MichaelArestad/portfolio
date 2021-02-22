@@ -7,6 +7,8 @@ import Back from "../../components/back/back";
 import Card from "../../components/card/card";
 import Text from "../../components/text/text";
 import Heading from "../../components/heading/heading";
+import Flex from "../../components/flex/flex";
+import FlexItem from "../../components/flex/flex-item";
 
 export default function Home() {
 	return (
@@ -50,11 +52,15 @@ export default function Home() {
 				<Card>
 					<Heading>The plugin</Heading>
 
-					<Text><strong>I redesigned and maintained the Jetpack plugin.</strong> The most recent time, we rebuilt the entire plugin interface in React using shared components and design patterns with WordPress.com. This made going back and forth between Jetpack and WordPress.com much smoother for users as it now was a cohesive system.</Text>
+					<Flex>
+						<FlexItem maxWidth="320px">
+							<Text><strong>I redesigned and maintained the Jetpack plugin.</strong> The most recent time, we rebuilt the entire plugin interface in React using shared components and design patterns with WordPress.com. This made going back and forth between Jetpack and WordPress.com much smoother for users as it now was a cohesive system.</Text>
+						</FlexItem>
 
-					<Text><strong>I worked with a team to design and build Jetpack features.</strong> This included backup and security features, tiled galleries, the contact form, related posts, WordAds, several widgets, and several blocks. I’ll go into a few of these in detail.</Text>
+							<Text><strong>I worked with a team to design and build Jetpack features.</strong> This included backup and security features, tiled galleries, the contact form, related posts, WordAds, several widgets, and several blocks. I’ll go into a few of these in detail.</Text>
 
-					<Text><strong>I helped transition the product from a free product to a profitable product with paid plans.</strong> This included quite a range of flows between the Jetpack dashboard, jetpack.com, and WordPress.com depending on the situation.</Text>
+							<Text><strong>I helped transition the product from a free product to a profitable product with paid plans.</strong> This included quite a range of flows between the Jetpack dashboard, jetpack.com, and WordPress.com depending on the situation.</Text>
+					</Flex>
 				</Card>
 			</main>
 		</Layout>

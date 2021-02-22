@@ -1,4 +1,3 @@
-import Link from "next/link";
 import SEO from "../components/seo";
 import Layout from "../components/layout/layout";
 import Hero from "../components/hero/hero";
@@ -15,7 +14,7 @@ export default function Home() {
 				<Hero
 					title="Hire me"
 					description="I'm currently accepting new clients. If you are interested in working together, please reach out."
-					backgroundColor="#1f4bce"
+					backgroundColor="#000"
 					textColor="#fff">
 					<Back href="/">Home</Back>
 				</Hero>

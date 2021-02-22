@@ -1,0 +1,28 @@
+.fancyLink {
+	position: relative;
+	z-index: 1;
+
+	&:before {
+		$x-padding: 10px;
+		$y-padding: 6px;
+		content: "";
+		position: absolute;
+		top: -1 * $y-padding + 1;
+		left: -1 * $x-padding;
+		width: calc( 100% + #{ $x-padding * 2 } );
+		height: calc( 100% + #{ $y-padding * 2 } );
+		background: #D8FFDE;
+		z-index: -1;
+		// transition: all .3s ease-in-out;
+		transition: all .125s ease-in-out;
+		// transform: translateX( -85vw );
+		transform: scale( 0 );
+	}
+	
+	&:hover {
+		&:before {
+			// transform: translateX( 0vw );
+			transform: scale( 1 );
+		}
+	}
+}

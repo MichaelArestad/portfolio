@@ -35,7 +35,7 @@ export default function Home() {
 						<li>State of Colorado</li>
 					</List>
 
-					<List title="Speaking" minimal condensed>
+					<List title="Talk" minimal condensed>
 						<li>Develop Denver</li>
 						<li>WordCamp St Louis</li>
 						<li>WordCamp Denver</li>
@@ -56,7 +56,7 @@ export default function Home() {
 						</li>
 					</List>
 
-					<List title="Sounds" minimal condensed>
+					<List title="Sound" minimal condensed>
 						<li>
 							<a href="https://www.youtube.com/channel/UCTkmzS2HNUxh4MnPva201ZA">youtube</a>
 						</li>

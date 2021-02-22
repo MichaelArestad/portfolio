@@ -12,7 +12,7 @@
 }
 
 .heroInfo {
-	box-sizing: border-box;
+	box-sizing: content-box;
 	padding: 24px;
 	max-width: 360px;
 	position: relative;
@@ -42,7 +42,7 @@
 }
 
 .heroContent {
-	margin: 16px auto 0;
+	margin: 48px auto 0;
 	position: relative;
 }
 

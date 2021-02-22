@@ -1,5 +1,6 @@
 .heading {
-	font-size: 240px;
+	font-size: 10vw;
+	font-size: min(max(1rem, 17vw), 240px);
 	text-align: center;
 	font-weight: 700;
 	margin: 8rem 0;

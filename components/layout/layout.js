@@ -3,10 +3,14 @@ import PageMeta from "../page-meta";
 import cn from "classnames";
 import styles from "./layout.module.scss";
 
-export default function Layout({ addedStyle, backgroundColor, textColor, header, children }) {
+export default function Layout({ addedStyle, backgroundColor, textColor, header, home, children }) {
 	const hasHeader = () => {
 		if ( header === true ) {
-			return <Header />;
+			if( home ) {
+				return <Header home />;
+			} else {
+				return <Header />;
+			}
 		}
 	};
 

@@ -1,25 +1,26 @@
 import Link from "next/link";
+import FancyLink from "../components/fancyLink/fancy-link";
 import SEO from "../components/seo";
 import Layout from "../components/layout/layout";
 import List from "../components/list/list";
 
 export default function Home() {
 	return (
-		<Layout header>
+		<Layout header home>
 			<SEO title="Michael's lil folio" />
 			<main>
 				<List minimal align="center">
 					<li>
-						<Link href="/who">who?</Link>
+						<FancyLink href="/who">who?</FancyLink>
 					</li>
 					<li>
-						<Link href="/projects/">projects</Link>
+						<FancyLink href="/projects/">projects</FancyLink>
 					</li>
 					<li>
-						<Link href="/projects/eye-candy">eye candy</Link>
+						<FancyLink href="/projects/eye-candy">eye candy</FancyLink>
 					</li>
 					<li>
-						<Link href="/hire-me">hire me</Link>
+						<FancyLink href="/hire-me">hire me</FancyLink>
 					</li>
 				</List>
 				<br title="yup" />

@@ -23,6 +23,13 @@ body {
 a {
 	color: inherit;
 	text-decoration: none;
+
+	&:hover {
+		text-decoration: underline;
+		// background: #000;
+		// color: #fff;
+		// box-shadow: -4px 0 0 2px #000, 4px 0 0 2px #000;
+	}
 }
 
 * {
