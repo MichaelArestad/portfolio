@@ -16,7 +16,7 @@ export default class Card extends React.Component {
 		}
 	}
 
-	classnames = cn(
+	classes = cn(
 		styles.card,
 		this.hasCircles(),
 		this.isCompact(),
@@ -28,14 +28,14 @@ export default class Card extends React.Component {
 			return	(
 				<a
 					href={ this.props.href }
-					className={ this.classnames }
+					className={ this.classes }
 					style={ this.styles }>
 					{ this.props.children }
 				</a>
 			);
 		} else {
 			return	(
-				<Item className={ this.classnames } { ...this.props }>
+				<Item className={ this.classes } { ...this.props }>
 					{ this.props.children }
 				</Item>
 			);

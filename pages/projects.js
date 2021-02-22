@@ -25,16 +25,7 @@ export default function Home() {
 							<Link href="/projects/jetpack">Jetpack</Link>
 						</li>
 						<li>
-							<Link href="/projects/gutenberg">Gutenberg</Link>
-						</li>
-						<li>
-							<Link href="/projects/gutenberg">Gutenpack</Link>
-						</li>
-						<li>
-							<Link href="/projects/gutenberg">Activity Log</Link>
-						</li>
-						<li>
-							<Link href="/projects/gutenberg">WordPress.com</Link>
+							<Link href="/projects/eye-candy">Eye Candy</Link>
 						</li>
 					</List>
 				</Card>

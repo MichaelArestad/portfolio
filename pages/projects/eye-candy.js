@@ -24,7 +24,7 @@ export default function Home() {
 					zag="big"
 					backgroundColor="#ff0054"
 					textColor="#fff">
-					<Back href="/">Home</Back>
+					<Back href="/projects/">Projects</Back>
 				</Hero>
 
 				<Card className={ styles.eyeCandy }>
