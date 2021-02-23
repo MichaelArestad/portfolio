@@ -33,11 +33,11 @@ export default function Home() {
 								wordpress.com
 							</FancyLink>
 						</li>
-						<li>
+						{/* <li>
 							<FancyLink link href="/projects/gutenberg">
 								gutenberg
 							</FancyLink>
-						</li>
+						</li> */}
 						<li>
 							<FancyLink link href="/projects/eye-candy">
 								eye candy
