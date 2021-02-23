@@ -12,7 +12,7 @@ import Item from "../../components/item/item";
 
 export default function Home() {
 	return (
-		<Layout backgroundColor="#e7e7e7">
+		<Layout backgroundColor="#e9eff3">
 			<SEO title="Projects" />
 
 			<main>
@@ -20,7 +20,8 @@ export default function Home() {
 					title="Jetpack"
 					description="Safer. Faster. More traffic. Security, performance, and marketing tools made for WordPress sites by the WordPress experts"
 					backgroundColor="#fff"
-					textColor="#000">
+					textColor="#000"
+				>
 					<Back href="/projects/">Projects</Back>
 					<HeroContent>
 						<svg
@@ -44,50 +45,119 @@ export default function Home() {
 
 				<Card circles backgroundColor="#e9eff3">
 					<Item width="large" style={{ margin: "40px auto" }}>
-						<img src="/images/jetpack/jetpack-dashboard@2x.jpg" width="800" height="448" />
-						<Card compact backgroundColor="#ffffff" style={{ marginTop: "24px" }}><Text caption>Jetpack is a WordPress plugin with over 5 million active installs. It is a collection of security, performance, and marketing tools designed to expand the capabilities of WordPress.</Text></Card>
+						<img
+							src="/images/jetpack/jetpack-dashboard@2x.jpg"
+							width="800"
+							height="448"
+						/>
+						<Card
+							compact
+							backgroundColor="#ffffff"
+							style={{ marginTop: "24px" }}
+						>
+							<Text caption>
+								Jetpack is a WordPress plugin with over 5 million active
+								installs. It is a collection of security, performance, and
+								marketing tools designed to expand the capabilities of
+								WordPress.
+							</Text>
+						</Card>
 					</Item>
 				</Card>
 				<Card backgroundColor="#fff" textColor="#000">
 					<Item style={{ margin: "0 auto" }} width="small">
-						<Text>I started work at Automattic in 2013 and spent a significant amount of my time working on Jetpack. When I joined the Jetpack team, the plugin was laden with broken flows and had no concrete plans for monetization.</Text>
+						<Text>
+							I started work at Automattic in 2013 and spent a significant
+							amount of my time working on Jetpack. When I joined the Jetpack
+							team, the plugin was laden with broken flows and had no concrete
+							plans for monetization.
+						</Text>
 
-						<Text>By the time I left Automattic in 2020, Jetpack was a profitable business. The plugin’s interface was entirely rebuilt using a design system shared with WordPress.com. It had a focused business model centered around backups and security. Jetpack’s website was redesigned into a sophisticated and flexible platform tying nicely into the plugin.</Text>
+						<Text>
+							By the time I left Automattic in 2020, Jetpack was a profitable
+							business. The plugin’s interface was entirely rebuilt using a
+							design system shared with WordPress.com. It had a focused business
+							model centered around backups and security. Jetpack’s website was
+							redesigned into a sophisticated and flexible platform tying nicely
+							into the plugin.
+						</Text>
 					</Item>
 				</Card>
-					<Card>
+				<Card>
 					<Flex alignItems="center" justifyContent="space-between">
 						<FlexItem width="small">
 							<Heading>The plugin</Heading>
-							<Text><strong>I redesigned and maintained the Jetpack plugin.</strong> The most recent time, we rebuilt the entire plugin interface in React using shared components and design patterns with WordPress.com. This made going back and forth between Jetpack and WordPress.com much smoother for users as it now was a cohesive system.</Text>
+							<Text>
+								<strong>I redesigned and maintained the Jetpack plugin.</strong>{" "}
+								The most recent time, we rebuilt the entire plugin interface in
+								React using shared components and design patterns with
+								WordPress.com. This made going back and forth between Jetpack
+								and WordPress.com much smoother for users as it now was a
+								cohesive system.
+							</Text>
 
-							<Text><strong>I worked with a team to design and build Jetpack features.</strong> This included backup and security features, tiled galleries, the contact form, related posts, WordAds, several widgets, and several blocks. I’ll go into a few of these in detail.</Text>
+							<Text>
+								<strong>
+									I worked with a team to design and build Jetpack features.
+								</strong>{" "}
+								This included backup and security features, tiled galleries, the
+								contact form, related posts, WordAds, several widgets, and
+								several blocks. I’ll go into a few of these in detail.
+							</Text>
 
-							<Text><strong>I helped transition the product from a free product to a profitable product with paid plans.</strong> This included quite a range of flows between the Jetpack dashboard, jetpack.com, and WordPress.com depending on the situation.</Text>
+							<Text>
+								<strong>
+									I helped transition the product from a free product to a
+									profitable product with paid plans.
+								</strong>{" "}
+								This included quite a range of flows between the Jetpack
+								dashboard, jetpack.com, and WordPress.com depending on the
+								situation.
+							</Text>
 						</FlexItem>
 						<FlexItem>
-							<img src="/images/jetpack/jetpack-dashboard@2x.jpg" width="800" height="448" />
+							<img
+								src="/images/jetpack/jetpack-dashboard@2x.jpg"
+								width="800"
+								height="448"
+							/>
 						</FlexItem>
 					</Flex>
 
 					<Flex>
 						<FlexItem width="small">
 							<Heading>The website</Heading>
-							<Text><strong>I redesigned the Jetpack website.</strong> Early on, I designed and coded this primarily myself and, as the team grew, it became a group effort. This included research, hypotheses, design, implementation, testing, and iteration.</Text>
+							<Text>
+								<strong>I redesigned the Jetpack website.</strong> Early on, I
+								designed and coded this primarily myself and, as the team grew,
+								it became a group effort. This included research, hypotheses,
+								design, implementation, testing, and iteration.
+							</Text>
 						</FlexItem>
 					</Flex>
 
 					<Flex>
 						<FlexItem width="small">
 							<Heading>WordPress.com integration</Heading>
-							<Text><strong>I integrated Jetpack into WordPress.com’s React-based dashboard</strong> and even designed/coded some of the most used components on WordPress.com’s interface.</Text>
+							<Text>
+								<strong>
+									I integrated Jetpack into WordPress.com’s React-based
+									dashboard
+								</strong>{" "}
+								and even designed/coded some of the most used components on
+								WordPress.com’s interface.
+							</Text>
 						</FlexItem>
 					</Flex>
 
 					<Flex>
 						<FlexItem width="small">
 							<Heading>Events</Heading>
-							<Text><strong>I designed collateral for events</strong> including booths, swag, and the conference branding. I also attended several events representing Automattic and Jetpack.</Text>
+							<Text>
+								<strong>I designed collateral for events</strong> including
+								booths, swag, and the conference branding. I also attended
+								several events representing Automattic and Jetpack.
+							</Text>
 						</FlexItem>
 					</Flex>
 				</Card>
