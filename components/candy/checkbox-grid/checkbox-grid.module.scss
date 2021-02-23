@@ -16,11 +16,12 @@ $focus-size: 3px;
 	}
 }
 
-.checkboxGrid {
+.checkboxGrid.checkboxGrid {
 	background: #f9f9f9;
 	box-sizing: border-box;
 	width: 396px;
 	font-size: 0;
+	flex-grow: 0;
 
 	
 	input[type=checkbox] {

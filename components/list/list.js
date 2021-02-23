@@ -1,7 +1,7 @@
 import cn from "classnames";
 import styles from "./list.module.scss";
 
-export default function List({ title, minimal, mono, condensed, align, children }) {
+export default function List({ title, className, minimal, mono, condensed, align, children }) {
 	const isMinimal = () => {
 		if ( minimal ) {
 			return styles.minimal;
@@ -40,6 +40,6 @@ export default function List({ title, minimal, mono, condensed, align, children 
 			</div>
 		);
 	} else {
-		return <ul className={ cn( styles.list, isMinimal(), isCondensed(), isMono(), alignment() ) }>{ children }</ul>;
+		return <ul className={ cn( styles.list, isMinimal(), isCondensed(), isMono(), alignment(), className ) }>{ children }</ul>;
 	}
 }

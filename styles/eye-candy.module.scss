@@ -2,9 +2,11 @@
 	display: flex;
 	flex-wrap: wrap;
 
-	div {
-		@media ( min-width: 640px ) {
-			max-width: 33%;
+	> div {
+		flex-grow: 1;
+
+		@media ( min-width: 768px ) {
+			max-width: 45%;
 		}
 	}
 }
@@ -38,6 +40,10 @@
 	background-size: 400px 400px;
 	transition: all 20s ease-in-out;
 	background-position: center center;
+
+	@media ( max-width: 768px ){
+		min-height: 50vh;
+	}
 
 	&:hover {
 		// @include thevoid( 4px, $stripe-color: black );

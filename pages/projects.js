@@ -20,7 +20,7 @@ export default function Home() {
 				</Hero>
 				
 				<Card>
-					<List minimal mono align="center">
+					<List className={ styles.list } minimal mono align="center">
 						<li>
 							<FancyLink link href="/projects/jetpack">Jetpack</FancyLink>
 						</li>

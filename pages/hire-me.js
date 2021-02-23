@@ -4,6 +4,7 @@ import Hero from "../components/hero/hero";
 import Back from "../components/back/back";
 import Card from "../components/card/card";
 import List from "../components/list/list";
+import styles from "../styles/hire-me.module.scss";
 
 export default function Home() {
 	return (
@@ -19,7 +20,7 @@ export default function Home() {
 					<Back href="/">Home</Back>
 				</Hero>
 				<Card>
-					<List minimal mono condensed>
+					<List className={ styles.list } minimal mono condensed>
 						<li>
 							<a href="mailto:marestad@gmail.com">Email</a>
 						</li>

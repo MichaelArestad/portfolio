@@ -5,7 +5,7 @@ import styles from "./vaultpress.module.scss";
 export default class VaultPress extends React.Component {
 	render() {
 		return (
-			<Card href="https://codepen.io/MichaelArestad/pen/pGalK" addedClass={ styles.vaultPress }>
+			<Card addedClass={ styles.vaultPress }>
 				<svg
 					xmlns="http://www.w3.org/2000/svg"
 					width={250}

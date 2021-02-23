@@ -1,4 +1,3 @@
-import Link from "next/link";
 import SEO from "../../components/seo";
 import Layout from "../../components/layout/layout";
 import Hero from "../../components/hero/hero";
@@ -20,8 +19,8 @@ export default function Home() {
 				<Hero
 					title="Jetpack"
 					description="Safer. Faster. More traffic. Security, performance, and marketing tools made for WordPress sites by the WordPress experts"
-					backgroundColor="#000000"
-					textColor="#fff">
+					backgroundColor="#fff"
+					textColor="#000">
 					<Back href="/projects/">Projects</Back>
 					<HeroContent>
 						<svg
@@ -33,23 +32,23 @@ export default function Home() {
 						>
 							<path
 								d="M139.5 70c0 38.384-31.116 69.5-69.5 69.5S.5 108.384.5 70 31.616.5 70 .5s69.5 31.116 69.5 69.5z"
-								stroke="#fff"
+								stroke="#000"
 							/>
 							<path
 								d="M107.652 58.744l-33.68 65.303V58.744h33.68zM32.347 81.122l33.547-65.165v65.165H32.347z"
-								stroke="#fff"
+								stroke="#000"
 							/>
 						</svg>
 					</HeroContent>
 				</Hero>
 
-				<Card circles backgroundColor="#000">
+				<Card circles backgroundColor="#e9eff3">
 					<Item width="large" style={{ margin: "40px auto" }}>
 						<img src="/images/jetpack/jetpack-dashboard@2x.jpg" width="800" height="448" />
 						<Card compact backgroundColor="#ffffff" style={{ marginTop: "24px" }}><Text caption>Jetpack is a WordPress plugin with over 5 million active installs. It is a collection of security, performance, and marketing tools designed to expand the capabilities of WordPress.</Text></Card>
 					</Item>
 				</Card>
-				<Card backgroundColor="#000" textColor="#fff">
+				<Card backgroundColor="#fff" textColor="#000">
 					<Item style={{ margin: "0 auto" }} width="small">
 						<Text>I started work at Automattic in 2013 and spent a significant amount of my time working on Jetpack. When I joined the Jetpack team, the plugin was laden with broken flows and had no concrete plans for monetization.</Text>
 

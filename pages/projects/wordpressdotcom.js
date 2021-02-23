@@ -17,27 +17,27 @@ export default function Home() {
 
 			<main>
 				<Hero
-					title="Gutenberg"
-					description="A WordPress editing experience rebuilt from the ground up"
-					backgroundColor="#000000"
+					title="WordPress.com"
+					description="Build a site. Sell your stuff. Start a blog."
+					backgroundColor="#117ac9"
 					textColor="#fff">
 					<Back href="/projects/">Projects</Back>
 				</Hero>
 
-				<Card circles backgroundColor="#000">
+				<Card circles backgroundColor="#117ac9">
 					<Item width="large" style={{ margin: "40px auto" }}>
 						<Card compact backgroundColor="#ffffff" style={{ marginTop: "24px" }}><Text caption>TBD</Text></Card>
 					</Item>
 				</Card>
-				<Card backgroundColor="#000" textColor="#fff">
+				<Card backgroundColor="#117ac9" textColor="#fff">
 					<Item style={{ margin: "0 auto" }} width="small">
-						<Text>TBD</Text>
+						<Text>Content TBD</Text>
 					</Item>
 				</Card>
-					<Card>
+				<Card>
 					<Flex alignItems="center" justifyContent="space-between">
 						<FlexItem width="small">
-							<Heading>The editor</Heading>
+							<Heading>Calypso</Heading>
 							<Text>TBD</Text>
 						</FlexItem>
 					</Flex>
