@@ -10,16 +10,19 @@ export default function Home() {
 			<main>
 				<List minimal mono align="center">
 					<li>
-						<FancyLink link href="/who">who?</FancyLink>
+						<FancyLink link href="/who">
+							who?
+						</FancyLink>
 					</li>
 					<li>
-						<FancyLink link href="/projects/">projects</FancyLink>
+						<FancyLink link href="/projects/">
+							projects
+						</FancyLink>
 					</li>
 					<li>
-						<FancyLink link href="/projects/eye-candy">eye candy</FancyLink>
-					</li>
-					<li>
-						<FancyLink link href="/hire-me">hire me</FancyLink>
+						<FancyLink link href="/hire-me">
+							hire me
+						</FancyLink>
 					</li>
 				</List>
 				<br title="yup" />
