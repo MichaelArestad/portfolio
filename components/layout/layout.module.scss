@@ -6,3 +6,21 @@
 	min-height: 100vh;
 	padding-bottom: 64px;
 }
+
+.x {
+	&:before,
+	&:after {
+		content: "";
+		height: 1px;
+		width: 200vw;
+		background: #000;
+		position: fixed;
+		opacity: .14;
+		top: 70%;
+		left: -50%;
+		transform: rotate(-45deg);
+	}
+	&::after {
+		transform: rotate(45deg);
+	}
+}
