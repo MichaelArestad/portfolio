@@ -16,19 +16,17 @@ export default function Home() {
 					title="Hire me"
 					description="I'm currently accepting new clients. If you are interested in working together, please reach out."
 					backgroundColor="#000"
-					textColor="#fff">
+					textColor="#fff"
+				>
 					<Back href="/">Home</Back>
 				</Hero>
 				<Card>
-					<List className={ styles.list } minimal mono condensed>
+					<List className={styles.list} minimal mono condensed>
 						<li>
 							<a href="mailto:marestad@gmail.com">Email</a>
 						</li>
 						<li>
-							<a href="https://michael.blog/">Blog</a>
-						</li>
-						<li>
-							<a href="https://github.com/MichaelArestad">GitHub</a>
+							<a href="https://www.linkedin.com/in/michaelarestad/">LinkedIn</a>
 						</li>
 						<li>
 							<a href="https://twitter.com/michaelarestad">Twitter</a>

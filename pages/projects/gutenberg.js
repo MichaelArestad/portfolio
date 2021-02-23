@@ -20,13 +20,28 @@ export default function Home() {
 					title="Gutenberg"
 					description="A WordPress editing experience rebuilt from the ground up"
 					backgroundColor="#000000"
-					textColor="#fff">
+					textColor="#fff"
+				>
 					<Back href="/projects/">Projects</Back>
 				</Hero>
 
 				<Card circles backgroundColor="#000">
 					<Item width="large" style={{ margin: "40px auto" }}>
-						<Card compact backgroundColor="#ffffff" style={{ marginTop: "24px" }}><Text caption>TBD</Text></Card>
+						<img
+							src="/images/gutenberg/gberg-demo@2x.jpg"
+							width="800"
+							height="448"
+						/>
+						<Card
+							compact
+							backgroundColor="#ffffff"
+							style={{ marginTop: "24px" }}
+						>
+							<Text caption>
+								Gutenberg is a new breed of editor with a block-based interface
+								built in React.
+							</Text>
+						</Card>
 					</Item>
 				</Card>
 				<Card backgroundColor="#000" textColor="#fff">
@@ -34,7 +49,7 @@ export default function Home() {
 						<Text>TBD</Text>
 					</Item>
 				</Card>
-					<Card>
+				<Card>
 					<Flex alignItems="center" justifyContent="space-between">
 						<FlexItem width="small">
 							<Heading>The editor</Heading>
