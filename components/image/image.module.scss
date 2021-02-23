@@ -1,0 +1,7 @@
+.image {
+	--image-border-color: #fff;
+}
+
+.hasBorder {
+	box-shadow: 0 0 0 8px var( --image-border-color ), 0 0 0 9px #000; 
+}

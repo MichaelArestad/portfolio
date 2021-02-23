@@ -1,8 +1,8 @@
 .flex {
-	margin: 0 -24px;
 	display: block;
 	
 	@media ( min-width: 1200px ) {
+		margin: 0 -24px;
 		display: flex;
 		max-width: 1440px;
 		margin: 0 auto;
@@ -10,7 +10,7 @@
 }
 
 .flexItem {
-	margin: 0 auto;
+	margin: 0 auto 48px;
 
 	@media ( min-width: 1200px ) {
 		margin: 24px;

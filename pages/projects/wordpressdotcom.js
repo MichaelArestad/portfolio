@@ -9,10 +9,12 @@ import Heading from "../../components/heading/heading";
 import Flex from "../../components/flex/flex";
 import FlexItem from "../../components/flex/flex-item";
 import Item from "../../components/item/item";
+import Image from "../../components/image/image";
+import Spacer from "../../components/spacer/spacer";
 
 export default function Home() {
 	return (
-		<Layout backgroundColor="#e7e7e7">
+		<Layout>
 			<SEO title="Projects" />
 
 			<main>
@@ -46,11 +48,11 @@ export default function Home() {
 
 				<Card backgroundColor="#117ac9" textColor="#fff">
 					<Item style={{ margin: "0 auto" }} width="small">
-						<Text>WordPress.com started as a blogging platform and evolved into a platform to build a huge variety of websites. Nearly all of the work I did integrated with WordPress.com in some way, but I want to specifically share my work on Calypso.</Text>
+						<Text><a href="https://wordpress.com/">WordPress.com</a> started as a blogging platform and grew into a flexible website-building machine. Nearly all of the work I did integrated with WordPress.com in some way. To start, I want to share my work on Calypso.</Text>
 
 						<Text>One of the wildest projects I worked on was to help completely rebuild the WordPress admin interface as a React application. This application is known as Calypso and uses the WordPress API to communicate with WordPress behind the scenes.</Text>
 
-						<Text>When the project first started, I was tasked with areas of the dashboard that are related to Jetpack. I ended up designing and helping build the Activity Log, Plugins, and People sections along with various Jetpack connection and management flows.</Text>
+						<Text>When the project first started, I worked on areas of the dashboard that are related to Jetpack. By the time I left Automattic, I ended up designing and implementing the Activity Log, Plugins, and People sections along with various Jetpack connection and management flows.</Text>
 					</Item>
 				</Card>
 
@@ -58,16 +60,18 @@ export default function Home() {
 					<Flex alignItems="center" justifyContent="space-between">
 						<FlexItem width="small">
 							<Heading>Activity Log</Heading>
-							<Text><strong>I worked with a team on the design and I oversaw the implementation of the Activity Log project.</strong> When we shifted Jetpack to be more security focused, we made a gargantuan effort to build a rock-solid and intuitive backup interface. The interface was built into WordPress.com's dashboard so a user could restore their Jetpack site even if the site was down. It isn't unusual for a site to break because of a plugin or theme update and this interface gave the user an undo button for their entire site.</Text>
+							<Text><strong>I worked with a team on the design and I oversaw the implementation of the Activity Log project.</strong> When we shifted Jetpack to be more security-focused, we made a gargantuan effort to build a rock-solid and intuitive backup interface. The interface was built into WordPress.com's dashboard so a user could restore their Jetpack site even if the site was down. It isn't unusual for a site to break because of a plugin or theme update and this interface gave the user an undo button for their entire site.</Text>
 
 							<Text>We designed the interface to resemble a ledger to simplify the concept of rewinding a site to a previous state. The ledger was also invaluable in helping both users and Happiness Engineers (support) identify changes on a site that either were unintentional or made by another user.</Text>
 						</FlexItem>
 
 						<FlexItem>
-							<img src="/images/wordpressdotcom/dotcom-activity-log@2x.jpg" width="800" height="448" />
+							<Image border src="/images/wordpressdotcom/dotcom-activity-log@2x.jpg" width="800" height="448" margin="0 auto" />
 						</FlexItem>
 					</Flex>
 				</Card>
+
+				<Spacer />
 
 				<Card>
 					<Flex flexDirection="row-reverse" alignItems="center" justifyContent="space-between">
@@ -77,48 +81,55 @@ export default function Home() {
 						</FlexItem>
 
 						<FlexItem>
-							<img src="/images/wordpressdotcom/dotcom-plugins@2x.jpg" width="800" height="448" />
+							<Image border src="/images/wordpressdotcom/dotcom-plugins@2x.jpg" width="800" height="448" margin="0 auto" />
 						</FlexItem>
 					</Flex>
-
 				</Card>
+
+				<Spacer />
 
 				<Card>
 					<Flex alignItems="center" justifyContent="space-between">
 						<FlexItem width="small">
 							<Heading>People</Heading>
-							<Text><strong>I quickly designed and helped implement an interface for managing users on a site.</strong> It combined the various tools and lists to manage site users, readers, and email followers. Before, this functionality was spread out in multiple interfaces and was frustrating to use. People also lets folks manage outstanding invites to the site if needed.</Text>
+							<Text><strong>I quickly designed and implemented an interface for managing users on a site.</strong> It combined the various tools and lists to manage site users, readers, and email followers. Before, this functionality was spread out in multiple interfaces and was frustrating to use. People also lets folks manage outstanding invites to the site if needed.</Text>
 
-							<Text>We decided to call it people as it felt a little less dehumanizing than "users."</Text>
+							<Text>Note: We decided to call it "People" as it felt a little less dehumanizing than "Users."</Text>
 						</FlexItem>
 
 						<FlexItem>
-							<img src="/images/wordpressdotcom/dotcom-people@2x.jpg" width="800" height="448" />
+							<Image border src="/images/wordpressdotcom/dotcom-people@2x.jpg" width="800" height="448" margin="0 auto" />
 						</FlexItem>
 					</Flex>
 				</Card>
+
+				<Spacer />
 
 				<Card>
 					<Flex flexDirection="row-reverse" alignItems="center" justifyContent="space-between">
 						<FlexItem width="small">
 							<Heading>Settings</Heading>
-							<Text><strong>I aligned both WordPress.com setting and Jetpack settings</strong> in an effort to organize and simplify Jetpack settings. This way a user going from the Jetpack Dashboard to WordPress.com's dashboard would not have to relearn where all the settings were. The work included reorganization, but I also took the time to improve several of the settings form components and design patterns.</Text>
+							<Text><strong>I aligned both WordPress.com setting and Jetpack settings</strong> in an effort to organize and simplify Jetpack settings. At the time, Jetpack had over 40 modules and settings exposed for most of them. Now, the settings are consistent across dashboards and many of the unnecessary settings have been removed. I also took the time to improve several of the settings form components and design patterns.</Text>
 						</FlexItem>
 
 						<FlexItem>
-							<img src="/images/wordpressdotcom/dotcom-settings@2x.jpg" width="800" height="448" />
+							<Image border src="/images/wordpressdotcom/dotcom-settings@2x.jpg" width="800" height="448" margin="0 auto" />
 						</FlexItem>
 					</Flex>
 				</Card>
+
+				<Spacer />
 
 				<Card>
 					<Flex alignItems="center" justifyContent="space-between">
 						<FlexItem width="small">
 							<Heading>My first React Components</Heading>
-							<Text><strong>I designed and built the Card, Button, Spinner, and a slew of other components.</strong> Many remain largely unchanged outside of some minor tweaks to styling, though our devs did a great job of improving on my crude React components. Building these components awakened a deep interest in systematic design.</Text>
+							<Text><strong>I designed and built the Card, Button, Spinner, and a slew of other components.</strong> Over time, our devs improving on my crude React components, but the core styling is still there. Building these components awakened my deep interest in systematic design.</Text>
 						</FlexItem>
 					</Flex>
 				</Card>
+
+				<Spacer height="120px" />
 			</main>
 		</Layout>
 	);
