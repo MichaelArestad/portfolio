@@ -2,12 +2,14 @@ import styles from "./flex.module.scss";
 
 export default function Flex({ 
 	alignItems,
+	flexDirection,
 	justifyContent,
 	children })
 	{
 
 	const styling = {
 		alignItems: alignItems,
+		flexDirection: flexDirection,
 		justifyContent: justifyContent
 	};
 
