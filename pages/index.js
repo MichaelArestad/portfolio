@@ -1,4 +1,3 @@
-import Link from "next/link";
 import FancyLink from "../components/fancyLink/fancy-link";
 import SEO from "../components/seo";
 import Layout from "../components/layout/layout";

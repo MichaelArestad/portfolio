@@ -2,6 +2,7 @@ import Header from "../header/header";
 import PageMeta from "../page-meta";
 import cn from "classnames";
 import styles from "./layout.module.scss";
+import SourceBadge from "../sourceBadge/souce-badge";
 
 export default function Layout({ addedStyle, backgroundColor, textColor, header, home, children }) {
 	const hasHeader = () => {
@@ -19,6 +20,7 @@ export default function Layout({ addedStyle, backgroundColor, textColor, header,
 			<PageMeta />
 			{ hasHeader() }
 			{ children }
+			<SourceBadge />
 		</div>
 	);
 }
