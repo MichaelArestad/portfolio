@@ -1,3 +1,22 @@
+@keyframes rainbow-bg {
+	0%   { background-color: hsla( 72, 100, 50, 1 ); }
+	10%  { background-color: hsla( 108, 100, 50, 1 ); }
+	20%  { background-color: hsla( 144, 100, 50, 1 ); }
+	30%  { background-color: hsla( 180, 100, 50, 1 ); }
+	40%  { background-color: hsla( 216, 100, 80, 1 ); }
+	50%  { background-color: hsla( 252, 100, 84, 1 ); }
+	60%  { background-color: hsla( 288, 100, 80, 1 ); }
+	70%  { background-color: hsla( 324, 100, 80, 1 ); }
+	80%  { background-color: hsla( 360, 100, 80, 1 ); }
+	90%  { background-color: hsla( 36, 100, 70, 1 ); }
+	100% { background-color: hsla( 72, 100, 50, 1 ); }
+}
+
+.container {
+	animation: rainbow-bg 30s infinite ease-in-out alternate-reverse;
+	animation-name: rainbow-bg;
+}
+
 .heading {
 	margin: 6vh 0;
 	font-size: 10vw;
@@ -5,6 +24,9 @@
 	text-align: center;
 	font-weight: 700;
 	font-family: var( --font-family_mono );
+	color: transparent;
+	-webkit-text-stroke: 1px #000;
+	text-stroke: 1px #000;
 }
 
 .list {
