@@ -1,26 +1,31 @@
-import SEO from "../components/seo";
-import Layout from "../components/layout/layout";
-import Hero from "../components/hero/hero";
 import Back from "../components/back/back";
 import Card from "../components/card/card";
+import Heading from "../components/heading/heading";
+import Hero from "../components/hero/hero";
+import HeroContent from "../components/hero/hero-content";
+import Layout from "../components/layout/layout";
 import List from "../components/list/list";
+import SEO from "../components/seo";
+import Spacer from "../components/spacer/spacer";
+import Text from "../components/text/text";
+
 import styles from "../styles/hire-me.module.scss";
 
 export default function Home() {
 	return (
-		<Layout>
+		<Layout backgroundColor="#000000" textColor="#ffffff">
 			<SEO title="say hi" />
 
 			<main>
-				<Hero
-					title="Hire me"
-					description="I'm currently accepting new clients. If you are interested in working together, please reach out."
-					backgroundColor="#000"
-					textColor="#fff"
-				>
-					<Back href="/">Home</Back>
-				</Hero>
-				<Card>
+				<Back href="/">Home</Back>
+				<Card width="small" style={{ margin: "40px auto" }}>
+					<Spacer height="15vh" />
+					<Heading>Hire me</Heading>
+					<Text>
+						I'm currently accepting new clients. If you are interested in
+						working together, please reach out.
+					</Text>
+					<Spacer />
 					<List className={styles.list} minimal mono condensed>
 						<li>
 							<a href="mailto:marestad@gmail.com">Email</a>
