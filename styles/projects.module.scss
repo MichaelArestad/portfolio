@@ -1,7 +1,12 @@
 .heading {
+	margin: 0;
 	font-size: 10vw;
 	font-size: min(max(1rem, 17vw), 240px);
 	text-align: center;
 	font-weight: 700;
-	margin: 8rem 0;
+	font-family: var( --font-family_mono );
 }
+
+// .hero {
+// 	justify-content: flex-start;
+// }

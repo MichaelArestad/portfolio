@@ -5,7 +5,7 @@ import styles from "./darknet.module.scss";
 export default class DarkNet extends React.Component {
 	render() {
 		return (
-			<Card className={ styles.darknet }>
+			<Card addedClass={ styles.darknet }>
 				<svg
 					className={ styles.darknetBeacon }
 					width={26}

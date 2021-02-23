@@ -3,7 +3,7 @@ import Link from "next/link";
 
 export default function FancyLink({ link, href, children }) {
 	if ( link ) {
-		return <Link href={ href } className={ styles.fancyLink }>{ children }</Link>
+		return <span className={ styles.fancyLink }><Link href={ href }>{ children }</Link></span>
 	} else {
 		return <a href={ href } className={ styles.fancyLink }>{ children }</a>
 	}

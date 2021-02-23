@@ -9,6 +9,11 @@
 	@media ( min-width: 480px ) {
 		min-height: 80vh;
 	}
+
+	&.isCompact {
+		justify-content: flex-start;
+		min-height: 0;
+	}
 }
 
 .heroInfo {

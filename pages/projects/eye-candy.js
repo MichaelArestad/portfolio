@@ -27,8 +27,8 @@ export default function Home() {
 					<Back href="/projects/">Projects</Back>
 				</Hero>
 
-				<Card className={ styles.eyeCandy }>
-					<Card className={ styles.theVoid }></Card>
+				<Card addedClass={ styles.eyeCandy }>
+					<Card addedClass={ styles.theVoid }></Card>
 
 					{/* <Sixty /> */}
 					<VaultPress />
@@ -40,128 +40,6 @@ export default function Home() {
 
 					<CheckboxGrid />
 				</Card>
-
-
-
-				<List minimal>
-					<li>
-						<Link href="/projects/gutenberg">Gutenberg</Link>
-					</li>
-					<li>
-						<Link href="/projects/gutenberg">Gutenpack</Link>
-					</li>
-					<li>
-						<Link href="/projects/gutenberg">Jetpack</Link>
-					</li>
-					<li>
-						<Link href="/projects/gutenberg">Activity Log</Link>
-					</li>
-					<li>
-						<Link href="/projects/gutenberg">WordPress.com</Link>
-					</li>
-				</List>
-				<List minimal>
-					<li>
-						<Link href="/projects/gutenberg">Gutenberg</Link>
-					</li>
-					<li>
-						<Link href="/projects/gutenberg">Gutenpack</Link>
-					</li>
-					<li>
-						<Link href="/projects/gutenberg">Jetpack</Link>
-					</li>
-					<li>
-						<Link href="/projects/gutenberg">Activity Log</Link>
-					</li>
-					<li>
-						<Link href="/projects/gutenberg">WordPress.com</Link>
-					</li>
-				</List>
-				<List minimal>
-					<li>
-						<Link href="/projects/gutenberg">Gutenberg</Link>
-					</li>
-					<li>
-						<Link href="/projects/gutenberg">Gutenpack</Link>
-					</li>
-					<li>
-						<Link href="/projects/gutenberg">Jetpack</Link>
-					</li>
-					<li>
-						<Link href="/projects/gutenberg">Activity Log</Link>
-					</li>
-					<li>
-						<Link href="/projects/gutenberg">WordPress.com</Link>
-					</li>
-				</List>
-				<List minimal>
-					<li>
-						<Link href="/projects/gutenberg">Gutenberg</Link>
-					</li>
-					<li>
-						<Link href="/projects/gutenberg">Gutenpack</Link>
-					</li>
-					<li>
-						<Link href="/projects/gutenberg">Jetpack</Link>
-					</li>
-					<li>
-						<Link href="/projects/gutenberg">Activity Log</Link>
-					</li>
-					<li>
-						<Link href="/projects/gutenberg">WordPress.com</Link>
-					</li>
-				</List>
-				<List minimal>
-					<li>
-						<Link href="/projects/gutenberg">Gutenberg</Link>
-					</li>
-					<li>
-						<Link href="/projects/gutenberg">Gutenpack</Link>
-					</li>
-					<li>
-						<Link href="/projects/gutenberg">Jetpack</Link>
-					</li>
-					<li>
-						<Link href="/projects/gutenberg">Activity Log</Link>
-					</li>
-					<li>
-						<Link href="/projects/gutenberg">WordPress.com</Link>
-					</li>
-				</List>
-				<List minimal>
-					<li>
-						<Link href="/projects/gutenberg">Gutenberg</Link>
-					</li>
-					<li>
-						<Link href="/projects/gutenberg">Gutenpack</Link>
-					</li>
-					<li>
-						<Link href="/projects/gutenberg">Jetpack</Link>
-					</li>
-					<li>
-						<Link href="/projects/gutenberg">Activity Log</Link>
-					</li>
-					<li>
-						<Link href="/projects/gutenberg">WordPress.com</Link>
-					</li>
-				</List>
-				<List minimal>
-					<li>
-						<Link href="/projects/gutenberg">Gutenberg</Link>
-					</li>
-					<li>
-						<Link href="/projects/gutenberg">Gutenpack</Link>
-					</li>
-					<li>
-						<Link href="/projects/gutenberg">Jetpack</Link>
-					</li>
-					<li>
-						<Link href="/projects/gutenberg">Activity Log</Link>
-					</li>
-					<li>
-						<Link href="/projects/gutenberg">WordPress.com</Link>
-					</li>
-				</List>
 			</main>
 		</Layout>
 	);

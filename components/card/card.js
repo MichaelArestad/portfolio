@@ -20,11 +20,13 @@ export default class Card extends React.Component {
 		styles.card,
 		this.hasCircles(),
 		this.isCompact(),
+		this.props.addedClass,
 		this.props.className
 	);
 
 	renderCard() {
 		if ( this.props.href ) {
+			console.log( this.props.classes );
 			return	(
 				<a
 					href={ this.props.href }
@@ -34,6 +36,7 @@ export default class Card extends React.Component {
 				</a>
 			);
 		} else {
+			console.log( this.props.classes );
 			return	(
 				<Item className={ this.classes } { ...this.props }>
 					{ this.props.children }

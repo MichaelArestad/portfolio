@@ -7,6 +7,7 @@ export default function Item({
 	width,
 	textColor,
 	className,
+	addedClass,
 	children,
 	style
 }) {
@@ -31,5 +32,5 @@ export default function Item({
 		color: textColor
 	};
 
-	return <div style={{ ...style, ...styling }} className={ cn( className, howWide() ) }>{ children }</div>
+	return <div style={{ ...style, ...styling }} className={ cn( className, addedClass, howWide() ) }>{ children }</div>
 }

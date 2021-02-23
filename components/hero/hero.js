@@ -6,12 +6,14 @@ export default function Hero({
 	description,
 	backgroundColor,
 	textColor,
+	addedClass,
 	className,
+	compact,
 	zag,
 	zagColor,
 	children }) {
 
-		const isBigZag = () => {
+	const isBigZag = () => {
 		if ( zag === "big" ) {
 			return styles.bigZag;
 		} else {
@@ -29,6 +31,12 @@ export default function Hero({
 		}
 	};
 
+	const isCompact = () => {
+		if ( compact ) {
+			return styles.isCompact;
+		}
+	};
+
 	const heroInfo = (
 		<div className={ styles.heroInfo }>
 			<h1 className={ styles.title }>{ title }</h1>
@@ -43,7 +51,7 @@ export default function Hero({
 	};
 
 	return (
-		<header className={ cn( styles.hero, className ) } style={{ background: backgroundColor, color: textColor }}>
+		<header className={ cn( styles.hero, className, addedClass, isCompact() ) } style={{ background: backgroundColor, color: textColor }}>
 			{ hasZag() }
 			{ children }
 			{ hasHeroInfo() }

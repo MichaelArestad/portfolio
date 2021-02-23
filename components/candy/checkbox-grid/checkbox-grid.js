@@ -3,7 +3,7 @@ import Card from "../../card/card";
 
 export default function CheckboxGrid({ className, children }) {
 	return	(
-		<Card className={ styles.checkboxGrid }>
+		<Card addedClass={ styles.checkboxGrid }>
 			<input type="checkbox"></input>
 			<input type="checkbox"></input>
 			<input type="checkbox"></input>
