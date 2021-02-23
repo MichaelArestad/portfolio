@@ -11,11 +11,14 @@
 	background: #e23a39;
 	overflow: hidden;
 	text-align: center;
-	min-width: 442px;
+	
+	@media (min-width: 768px) {
+		max-width: 442px;		
+	}
 
 	svg {
-		margin: 48px;
-		width: 250px;
+		margin: 48px 0;
+		width: 100%;
 	}
 
 	path {

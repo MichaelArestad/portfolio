@@ -16,12 +16,22 @@ $focus-size: 3px;
 	}
 }
 
-.checkboxGrid.checkboxGrid {
+.container.container {
 	background: #f9f9f9;
-	box-sizing: border-box;
-	width: 396px;
+	display: flex;
+	align-items: center;
+	max-width: none;
+}
+
+.grid.grid {
+	display: block;
 	font-size: 0;
-	flex-grow: 0;
+	// width: 300px;
+	margin: 0 auto;
+
+	@media ( min-width: 492px ) {
+		width: 300px;
+	}
 
 	
 	input[type=checkbox] {

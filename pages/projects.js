@@ -10,28 +10,38 @@ import styles from "../styles/projects.module.scss";
 
 export default function Home() {
 	return (
-		<Layout addedStyle={ styles.container } backgroundColor="#FFE600">
+		<Layout addedStyle={styles.container} backgroundColor="#FFE600">
 			<SEO title="Projects" />
 
-			<main className={ styles.main }>
-				<Hero compact addedClass={ styles.hero }>
+			<main className={styles.main}>
+				<Hero compact addedClass={styles.hero}>
 					<Back href="/">Home</Back>
-					<HeroContent><h2 className={ styles.heading }>PROjEcTs</h2></HeroContent>
+					<HeroContent>
+						<h2 className={styles.heading}>PROjEcTs</h2>
+					</HeroContent>
 				</Hero>
-				
+
 				<Card>
-					<List className={ styles.list } minimal mono align="center">
+					<List className={styles.list} minimal mono align="center">
 						<li>
-							<FancyLink link href="/projects/jetpack">Jetpack</FancyLink>
+							<FancyLink link href="/projects/jetpack">
+								jetpack
+							</FancyLink>
 						</li>
 						<li>
-							<FancyLink link href="/projects/wordpressdotcom">WordPress.com</FancyLink>
+							<FancyLink link href="/projects/wordpressdotcom">
+								wordpress.com
+							</FancyLink>
 						</li>
 						<li>
-							<FancyLink link href="/projects/gutenberg">Gutenberg</FancyLink>
+							<FancyLink link href="/projects/gutenberg">
+								gutenberg
+							</FancyLink>
 						</li>
 						<li>
-							<FancyLink link href="/projects/eye-candy">Eye Candy</FancyLink>
+							<FancyLink link href="/projects/eye-candy">
+								eye candy
+							</FancyLink>
 						</li>
 					</List>
 				</Card>
