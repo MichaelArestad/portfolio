@@ -1,14 +1,15 @@
-import SEO from "../../components/seo";
-import Layout from "../../components/layout/layout";
-import Hero from "../../components/hero/hero";
-import HeroContent from "../../components/hero/hero-content";
 import Back from "../../components/back/back";
 import Card from "../../components/card/card";
-import Text from "../../components/text/text";
-import Heading from "../../components/heading/heading";
 import Flex from "../../components/flex/flex";
 import FlexItem from "../../components/flex/flex-item";
+import Heading from "../../components/heading/heading";
+import Hero from "../../components/hero/hero";
+import HeroContent from "../../components/hero/hero-content";
+import Image from "../../components/image/image";
 import Item from "../../components/item/item";
+import Layout from "../../components/layout/layout";
+import SEO from "../../components/seo";
+import Text from "../../components/text/text";
 
 export default function Home() {
 	return (
@@ -45,7 +46,7 @@ export default function Home() {
 
 				<Card circles backgroundColor="#e9eff3">
 					<Item width="large" style={{ margin: "40px auto" }}>
-						<img
+						<Image
 							src="/images/jetpack/jetpack-dashboard@2x.jpg"
 							width="800"
 							height="448"
@@ -116,7 +117,8 @@ export default function Home() {
 							</Text>
 						</FlexItem>
 						<FlexItem>
-							<img
+							<Image
+								border="#e9eff3"
 								src="/images/jetpack/jetpack-dashboard@2x.jpg"
 								width="800"
 								height="448"
@@ -135,6 +137,22 @@ export default function Home() {
 							</Text>
 						</FlexItem>
 					</Flex>
+
+					<Image
+						align="right"
+						caption="jetpack.me 2012"
+						src="/images/jetpack/web2012@2x.jpg"
+						width="800"
+						height="448"
+					/>
+
+					<Image
+						href="#"
+						caption="jetpack.me 2013"
+						src="/images/jetpack/web2013@2x.jpg"
+						width="800"
+						height="448"
+					/>
 
 					<Flex>
 						<FlexItem width="small">
