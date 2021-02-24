@@ -1,4 +1,5 @@
 import React from "react";
+import cn from "classnames";
 
 import Card from "../card/card";
 import Text from "../text/text";
@@ -28,7 +29,11 @@ export default class Image extends React.PureComponent {
 	hasCaption() {
 		if (this.props.caption) {
 			return (
-				<Card addedClass={styles.card} compact style={this.alignment()}>
+				<Card
+					addedClass={cn(styles.card, this.props.addedClass)}
+					compact
+					style={this.alignment()}
+				>
 					<Text caption>{this.props.caption}</Text>
 				</Card>
 			);
@@ -48,11 +53,7 @@ export default class Image extends React.PureComponent {
 		}
 
 		return (
-			<TagName
-				href={this.props.href}
-				className={styles.image}
-				style={{ width: this.props.width + "px" }}
-			>
+			<TagName href={this.props.href} className={styles.image}>
 				<img
 					className={this.hasBorder()}
 					style={styling}

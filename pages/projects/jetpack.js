@@ -8,8 +8,10 @@ import HeroContent from "../../components/hero/hero-content";
 import Image from "../../components/image/image";
 import Item from "../../components/item/item";
 import Layout from "../../components/layout/layout";
+import Link from "next/link";
 import SEO from "../../components/seo";
 import Text from "../../components/text/text";
+import GalleryOverlap from "../../components/gallery-overlap/gallery-overlap";
 
 export default function Home() {
 	return (
@@ -118,7 +120,6 @@ export default function Home() {
 						</FlexItem>
 						<FlexItem>
 							<Image
-								border="#e9eff3"
 								src="/images/jetpack/jetpack-dashboard@2x.jpg"
 								width="800"
 								height="448"
@@ -138,29 +139,62 @@ export default function Home() {
 						</FlexItem>
 					</Flex>
 
-					<Image
-						align="right"
-						caption="jetpack.me 2012"
-						src="/images/jetpack/web2012@2x.jpg"
-						width="800"
-						height="448"
-					/>
+					<GalleryOverlap>
+						<Image
+							caption="jetpack.me 2012"
+							src="/images/jetpack/web2012@2x.jpg"
+							width="800"
+							height="448"
+						/>
 
-					<Image
-						href="#"
-						caption="jetpack.me 2013"
-						src="/images/jetpack/web2013@2x.jpg"
-						width="800"
-						height="448"
-					/>
+						<Image
+							align="right"
+							href="#"
+							caption="jetpack.me 2013"
+							src="/images/jetpack/web2013@2x.jpg"
+							width="800"
+							height="448"
+						/>
+
+						<Image
+							caption="jetpack.me 2014"
+							src="/images/jetpack/web2014@2x.jpg"
+							width="800"
+							height="448"
+						/>
+
+						<Image
+							align="right"
+							href="#"
+							caption="jetpack.com 2016"
+							src="/images/jetpack/web2016@2x.jpg"
+							width="800"
+							height="448"
+						/>
+					</GalleryOverlap>
+
+					<Flex>
+						<FlexItem>
+							<Image
+								align="center"
+								href="#"
+								caption="jetpack.com 2018"
+								src="/images/jetpack/web2018@2x.jpg"
+								width="1344"
+								height="448"
+							/>
+						</FlexItem>
+					</Flex>
 
 					<Flex>
 						<FlexItem width="small">
 							<Heading>WordPress.com integration</Heading>
 							<Text>
 								<strong>
-									I integrated Jetpack into WordPress.com’s React-based
-									dashboard
+									I integrated Jetpack into{" "}
+									<Link href="/projects/wordpressdotcom">
+										WordPress.com’s React-based dashboard
+									</Link>
 								</strong>{" "}
 								and even designed/coded some of the most used components on
 								WordPress.com’s interface.
