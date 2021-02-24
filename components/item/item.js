@@ -1,7 +1,6 @@
 import cn from "classnames";
 import styles from "./item.module.scss";
 
-
 export default function Item({
 	backgroundColor,
 	width,
@@ -9,18 +8,19 @@ export default function Item({
 	className,
 	addedClass,
 	children,
-	style
+	style,
 }) {
-
 	const howWide = () => {
-		if ( width ) {
-			switch ( width ) {
+		if (width) {
+			switch (width) {
 				case "small":
 					return styles.isSmall;
 				case "medium":
 					return styles.isMedium;
 				case "large":
 					return styles.isLarge;
+				case "epic":
+					return styles.isEpic;
 				default:
 					break;
 			}
@@ -29,8 +29,15 @@ export default function Item({
 
 	const styling = {
 		backgroundColor: backgroundColor,
-		color: textColor
+		color: textColor,
 	};
 
-	return <div style={{ ...style, ...styling }} className={ cn( className, addedClass, howWide() ) }>{ children }</div>
+	return (
+		<div
+			style={{ ...style, ...styling }}
+			className={cn(className, addedClass, howWide())}
+		>
+			{children}
+		</div>
+	);
 }

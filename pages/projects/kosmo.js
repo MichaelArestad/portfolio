@@ -4,220 +4,405 @@ import Flex from "../../components/flex/flex";
 import FlexItem from "../../components/flex/flex-item";
 import Heading from "../../components/heading/heading";
 import Hero from "../../components/hero/hero";
-import HeroContent from "../../components/hero/hero-content";
 import Image from "../../components/image/image";
 import Item from "../../components/item/item";
 import Layout from "../../components/layout/layout";
-import Link from "next/link";
+import List from "../../components/list/list";
 import SEO from "../../components/seo";
-import Spacer from "../../components/spacer/spacer";
 import Text from "../../components/text/text";
-import GalleryOverlap from "../../components/gallery-overlap/gallery-overlap";
+import YouTube from "../../components/youtube/youtube";
 
 export default function Home() {
 	return (
-		<Layout backgroundColor="#e9eff3">
+		<Layout>
 			<SEO title="Kosmo" />
 
 			<main>
 				<Hero
-					title="Jetpack"
-					description="Safer. Faster. More traffic. Security, performance, and marketing tools made for WordPress sites by the WordPress experts"
-					backgroundColor="#fff"
-					textColor="#000"
+					title="Kosmo"
+					description="very synth much heck"
+					zag
+					backgroundColor="#242424"
+					textColor="#fff"
 				>
 					<Back href="/projects/">Projects</Back>
-					<HeroContent>
-						<svg
-							width={140}
-							height={140}
-							viewBox="0 0 140 140"
-							fill="none"
-							xmlns="http://www.w3.org/2000/svg"
-						>
-							<path
-								d="M139.5 70c0 38.384-31.116 69.5-69.5 69.5S.5 108.384.5 70 31.616.5 70 .5s69.5 31.116 69.5 69.5z"
-								stroke="#000"
-							/>
-							<path
-								d="M107.652 58.744l-33.68 65.303V58.744h33.68zM32.347 81.122l33.547-65.165v65.165H32.347z"
-								stroke="#000"
-							/>
-						</svg>
-					</HeroContent>
 				</Hero>
 
-				<Card circles backgroundColor="#e9eff3">
+				<Card backgroundColor="#242424">
+					<YouTube src="https://www.youtube.com/embed/JLYqVV-UbW8" />
+				</Card>
+
+				<Card backgroundColor="#000">
 					<Item width="large" style={{ margin: "40px auto" }}>
-						<Image
-							src="/images/jetpack/jetpack-dashboard@2x.jpg"
-							width="800"
-							height="448"
-						/>
+						<Image src="/images/kosmo/full@2x.jpg" width="800" height="600" />
 						<Card
 							compact
-							backgroundColor="#ffffff"
+							backgroundColor="#242424"
+							textColor="#fff"
 							style={{ marginTop: "24px" }}
 						>
 							<Text caption>
-								Jetpack is a WordPress plugin with over 5 million active
-								installs. It is a collection of security, performance, and
-								marketing tools designed to expand the capabilities of
-								WordPress.
+								This giant wall of synth is Kosmo. Kosmo is a modular
+								synthesizer I built over the last year using modules primarily
+								designed by other folks.
 							</Text>
 						</Card>
 					</Item>
 				</Card>
-				<Card backgroundColor="#fff" textColor="#000">
-					<Item style={{ margin: "0 auto" }} width="small">
+
+				<Card circles backgroundColor="#242424">
+					<Card
+						width="large"
+						backgroundColor="#ffffff"
+						style={{ margin: "40px auto" }}
+					>
 						<Text>
-							I started work at Automattic in 2013 and spent a significant
-							amount of my time working on Jetpack. When I joined the Jetpack
-							team, the plugin was laden with broken flows and had no concrete
-							plans for monetization.
+							This is a page showing my latest KOSMO setup.{" "}
+							<a href="https://twitter.com/michaelarestad">Let me know</a> if
+							you have any questions.
 						</Text>
 
 						<Text>
-							By the time I left Automattic in 2020, Jetpack was a profitable
-							business. The plugin’s interface was entirely rebuilt using a
-							design system shared with WordPress.com. It had a focused business
-							model centered around backups and security. Jetpack’s website was
-							redesigned into a sophisticated and flexible platform tying nicely
-							into the plugin.
+							I was particularly drawn to Kosmo modules because I rather enjoy
+							the build and they are cost effective. Sam (Look Mum No Computer)
+							and a few others from the forums have made PCBs and front panels
+							available to purchase. That means all I needed to do to start off
+							my modular is order the components and assemble the module. It
+							also is somewhat less expensive than purchasing Eurorack modules,
+							which can be hundreds of dollars for a single module.
 						</Text>
-					</Item>
+					</Card>
 				</Card>
+
 				<Card>
+					<Flex
+						flexDirection="row-reverse"
+						alignItems="center"
+						justifyContent="space-between"
+					>
+						<FlexItem>
+							<Image
+								caption="This case I built out of rotting plywood from under the shed. It has a folding handle for easy carrying."
+								src="/images/kosmo/top@2x.jpg"
+								width="800"
+								height="600"
+							/>
+						</FlexItem>
+						<FlexItem width="small">
+							<Heading>Top case</Heading>
+
+							<Heading level="4">ROW 1</Heading>
+							<List minimal condensed>
+								<li>
+									3 x{" "}
+									<a href="https://www.lookmumnocomputer.com/projects#/1222-performance-vco">
+										LMNC #1222 Performance VCO
+									</a>
+								</li>
+								<li>
+									1 x{" "}
+									<a href="https://www.lookmumnocomputer.com/projects#/performance-filter">
+										LMNC #1113 PERFORMANCE FILTER
+									</a>
+								</li>
+								<li>
+									1 x{" "}
+									<a href="https://www.lookmumnocomputer.com/projects#/2399-triple-splashback">
+										LMNC #2399 TRIPLE SPLASHBACK
+									</a>
+								</li>
+								<li>
+									1 x{" "}
+									<a href="https://www.lookmumnocomputer.com/projects#/1157-mini-adsr">
+										LMNC #1157 MINI ADSR
+									</a>
+								</li>
+								<li>
+									1 x{" "}
+									<a href="https://www.lookmumnocomputer.com/projects#/11831184-quad-vca-mixer">
+										LMNC #1184 QUAD VCA MIXER
+									</a>
+								</li>
+								<li>
+									<a href=""></a>
+								</li>
+							</List>
+
+							<Heading level="4">ROW 2</Heading>
+							<List minimal condensed>
+								<li>
+									1 x{" "}
+									<a href="https://www.lookmumnocomputer.com/projects#/vclfo">
+										LMNC #1145 VCLFO
+									</a>
+								</li>
+								<li>
+									1 x{" "}
+									<a href="https://www.lookmumnocomputer.com/projects#/1114-funky-filter">
+										LMNC #1114 FUNKY FILTER (GRR)
+									</a>
+								</li>
+								<li>
+									2 x{" "}
+									<a href="https://www.lookmumnocomputer.com/projects#/1161-buffered-multiple">
+										LMNC #1161 BUFFERED MULTIPLE
+									</a>
+								</li>
+								<li>1 x DIALUP - I made this</li>
+								<li>
+									1 x RAT DISTORTION - I made this (
+									<a href="https://pushermanproductions.com/product/phil-moulder-guitar-pedal-proco-rat/">
+										Proco Rat pedal
+									</a>
+									)
+								</li>
+								<li>
+									1 x{" "}
+									<a href="https://www.lookmumnocomputer.com/projects#/1157-mini-adsr">
+										LMNC #1157 MINI ADSR
+									</a>
+								</li>
+								<li>
+									1 x{" "}
+									<a href="https://www.lookmumnocomputer.com/projects#/1007-midi-cv">
+										LMNC #1007 MIDIMUSO MIDI TO CV
+									</a>
+								</li>
+							</List>
+						</FlexItem>
+					</Flex>
+
 					<Flex alignItems="center" justifyContent="space-between">
-						<FlexItem width="small">
-							<Heading>The plugin</Heading>
-							<Text>
-								<strong>I redesigned and maintained the Jetpack plugin.</strong>{" "}
-								The most recent time, we rebuilt the entire plugin interface in
-								React using shared components and design patterns with
-								WordPress.com. This made going back and forth between Jetpack
-								and WordPress.com much smoother for users as it now was a
-								cohesive system.
-							</Text>
-
-							<Text>
-								<strong>
-									I worked with a team to design and build Jetpack features.
-								</strong>{" "}
-								This included backup and security features, tiled galleries, the
-								contact form, related posts, WordAds, several widgets, and
-								several blocks.
-							</Text>
-
-							<Text>
-								<strong>
-									I helped transition the product from a free product to a
-									profitable product with paid plans.
-								</strong>{" "}
-								This included quite a range of flows between the Jetpack
-								dashboard, jetpack.com, and WordPress.com depending on the
-								situation.
-							</Text>
-						</FlexItem>
 						<FlexItem>
 							<Image
-								src="/images/jetpack/jetpack-dashboard@2x.jpg"
+								caption="A slightly wider case and the blueprint for any future cases."
+								src="/images/kosmo/bottom@2x.jpg"
 								width="800"
-								height="448"
+								height="600"
 							/>
+						</FlexItem>
+						<FlexItem width="small">
+							<Heading>Bottom case</Heading>
+							<Heading level="4">ROW 1</Heading>
+							<List minimal condensed>
+								<li>
+									1 x{" "}
+									<a href="https://www.lookmumnocomputer.com/projects#/1222-performance-vco">
+										LMNC #1222 Performance VCO
+									</a>
+								</li>
+								<li>
+									1 x{" "}
+									<a href="https://reverb.com/item/34546784-crucfx-kosmo-euro-playset-pcb-panel-set">
+										crucFX KOSMO EURO PLAYSET
+									</a>
+								</li>
+								<li>
+									1 x <a href="http://www.makenoisemusic.com/modules/maths"></a>
+									MATHS
+								</li>
+								<li>
+									1 x{" "}
+									<a href="http://www.makenoisemusic.com/modules/morphagene"></a>
+									MORPHAGENE
+								</li>
+								<li>
+									1 x <a href="https://squarp.net/rample/">RAMPLE</a>
+								</li>
+								<li>
+									1 x{" "}
+									<a href="https://www.lookmumnocomputer.com/projects#/performance-filter">
+										LMNC #1113 PERFORMANCE FILTER
+									</a>
+								</li>
+								<li>
+									1 x{" "}
+									<a href="https://www.lookmumnocomputer.com/projects#/11831184-quad-vca-mixer">
+										LMNC #1184 QUAD VCA MIXER
+									</a>
+								</li>
+								<li>
+									<a href=""></a>
+								</li>
+								<li>
+									<a href=""></a>
+								</li>
+							</List>
+
+							<Heading level="4">ROW 2</Heading>
+							<List minimal condensed>
+								<li>
+									1 x{" "}
+									<a href="https://www.lookmumnocomputer.com/projects#/vclfo">
+										LMNC #1145 VCLFO
+									</a>
+								</li>
+								<li>
+									2 x{" "}
+									<a href="https://www.lookmumnocomputer.com/projects#/1161-buffered-multiple">
+										LMNC #1161 BUFFERED MULTIPLE
+									</a>
+								</li>
+								<li>
+									1 x{" "}
+									<a href="https://lookmumnocomputer.discourse.group/t/k25-series-2-5cm-kosmo-utilities">
+										CTORP ATTENUVERTER
+									</a>
+								</li>
+								<li>
+									1 x{" "}
+									<a href="https://lookmumnocomputer.discourse.group/t/k25-series-2-5cm-kosmo-utilities">
+										CTORP GLIDE
+									</a>
+								</li>
+								<li>
+									1 x{" "}
+									<a href="https://github.com/holmesrichards/Mikrokosmos">
+										MIKROKOSMOS
+									</a>
+								</li>
+								<li>
+									1 x{" "}
+									<a href="https://www.lookmumnocomputer.com/projects#/2000-megadrone">
+										LMNC #2000 MEGADRONE
+									</a>
+								</li>
+								<li>
+									2 x{" "}
+									<a href="https://www.lookmumnocomputer.com/projects#/1157-mini-adsr">
+										LMNC #1157 MINI ADSR
+									</a>
+								</li>
+							</List>
 						</FlexItem>
 					</Flex>
 
 					<Flex>
 						<FlexItem width="small">
-							<Heading>The website</Heading>
-							<Text>
-								<strong>I redesigned the Jetpack website.</strong> Early on, I
-								designed and coded this primarily myself and, as the team grew,
-								it became a group effort. This included research, hypotheses,
-								design, implementation, testing, and iteration.
-							</Text>
-						</FlexItem>
-					</Flex>
+							<Heading>In other cases (or shelved)</Heading>
+							<Text>These cases are still in progress.</Text>
 
-					<GalleryOverlap>
-						<Image
-							caption="jetpack.me 2012"
-							src="/images/jetpack/web2012@2x.jpg"
-							width="800"
-							height="448"
-						/>
-
-						<Image
-							align="right"
-							caption="jetpack.me 2013"
-							src="/images/jetpack/web2013@2x.jpg"
-							width="800"
-							height="448"
-						/>
-
-						<Image
-							caption="jetpack.me 2014"
-							src="/images/jetpack/web2014@2x.jpg"
-							width="800"
-							height="448"
-						/>
-
-						<Image
-							align="right"
-							caption="jetpack.com 2016"
-							src="/images/jetpack/web2016@2x.jpg"
-							width="800"
-							height="448"
-						/>
-					</GalleryOverlap>
-
-					<Flex>
-						<FlexItem>
-							<Image
-								align="center"
-								href="https://jetpack.com/"
-								caption="jetpack.com 2018"
-								src="/images/jetpack/web2018@2x.jpg"
-								width="1344"
-								height="448"
-							/>
-						</FlexItem>
-					</Flex>
-
-					<Spacer />
-
-					<Flex>
-						<FlexItem width="small">
-							<Heading>WordPress.com integration</Heading>
-							<Text>
-								<strong>
-									I integrated Jetpack into WordPress.com’s React-based
-									dashboard
-								</strong>{" "}
-								and even designed/coded some of the most used components on
-								WordPress.com’s interface.{" "}
-								<Link href="/projects/wordpressdotcom">
-									I go over a few of the projects here.
-								</Link>
-							</Text>
-						</FlexItem>
-						<FlexItem>
-							<Image
-								src="/images/jetpack/dotcom-integration@2x.jpg"
-								width="800"
-								height="448"
-							/>
+							<List minimal condensed>
+								<li>
+									1 x{" "}
+									<a href="https://github.com/holmesrichards/GateGrinder">
+										GATE GRINDER
+									</a>
+								</li>
+								<li>
+									1 x{" "}
+									<a href="https://www.lookmumnocomputer.com/projects#/vclfo">
+										LMNC #1145 VCLFO
+									</a>
+								</li>
+								<li>
+									1 x{" "}
+									<a href="https://github.com/holmesrichards/Mikrokosmos">
+										MUSIC BOX - I made this
+									</a>
+								</li>
+								<li>
+									1 x{" "}
+									<a href="https://www.lookmumnocomputer.com/projects#/1114-funky-filter">
+										LMNC #1114 FUNKY FILTER (GRR)
+									</a>
+								</li>
+								<li>
+									1 x{" "}
+									<a href="https://www.lookmumnocomputer.com/projects#/1163-mini-mixer">
+										LMNC #1163 MINI MIXER
+									</a>
+								</li>
+								<li>
+									1 x{" "}
+									<a href="https://lookmumnocomputer.discourse.group/t/k25-series-2-5cm-kosmo-utilities">
+										CTORP ATTENUVERTER
+									</a>
+								</li>
+								<li>
+									1 x{" "}
+									<a href="https://lookmumnocomputer.discourse.group/t/k25-series-2-5cm-kosmo-utilities">
+										CTORP GLIDE
+									</a>
+								</li>
+								<li>
+									1 x{" "}
+									<a href="https://www.lookmumnocomputer.com/projects#/apcapcapc">
+										LMNC AAAPPPCCC
+									</a>
+								</li>
+								<li>
+									<a href=""></a>
+								</li>
+							</List>
 						</FlexItem>
 					</Flex>
 
 					<Flex>
 						<FlexItem width="small">
-							<Heading>Events</Heading>
+							<Heading>On the bench</Heading>
+							<Text>My to do list.</Text>
+
+							<List minimal condensed>
+								<li>
+									1 x{" "}
+									<a href="https://github.com/holmesrichards/QuantizerModule">
+										DUAL QUANTIZER
+									</a>
+								</li>
+								<li>
+									2 x{" "}
+									<a href="https://lookmumnocomputer.discourse.group/t/k25-series-2-5cm-kosmo-utilities">
+										CTORP LFO
+									</a>
+								</li>
+								<li>
+									2 x{" "}
+									<a href="https://lookmumnocomputer.discourse.group/t/k25-series-2-5cm-kosmo-utilities">
+										CTORP ATTENUATOR
+									</a>
+								</li>
+								<li>
+									2 x{" "}
+									<a href="https://lookmumnocomputer.discourse.group/t/k25-series-2-5cm-kosmo-utilities">
+										CTORP DUAL G2T
+									</a>
+								</li>
+								<li>
+									2 x{" "}
+									<a href="https://lookmumnocomputer.discourse.group/t/k25-series-2-5cm-kosmo-utilities">
+										CTORP SUB OSC
+									</a>
+								</li>
+								<li>
+									2 x{" "}
+									<a href="https://lookmumnocomputer.discourse.group/t/k25-series-2-5cm-kosmo-utilities">
+										CTORP A/R EG
+									</a>
+								</li>
+								<li>
+									2 x{" "}
+									<a href="https://lookmumnocomputer.discourse.group/t/kosmo-sequential-switch">
+										CTORP SEQUENTIAL SWITCH
+									</a>
+								</li>
+								<li>
+									1 x{" "}
+									<a href="https://www.lookmumnocomputer.com/projects#/1171-oba">
+										LMNC #1171 OBA
+									</a>
+								</li>
+							</List>
+						</FlexItem>
+					</Flex>
+
+					<Flex>
+						<FlexItem width="small">
+							<Heading>Why is this here?</Heading>
 							<Text>
-								<strong>I designed collateral for events</strong> including
-								booths, swag, and the conference branding. I also attended
-								several events representing Automattic and Jetpack.
+								Because it's a project I'm continually iterating on stretching
+								the limits of my design, electrical, and coding skills. Also, I
+								think it's pretty rad.
 							</Text>
 						</FlexItem>
 					</Flex>

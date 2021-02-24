@@ -48,6 +48,11 @@ export default function Home() {
 								eye candy
 							</FancyLink>
 						</li>
+						<li>
+							<FancyLink link href="/projects/kosmo">
+								kosmo
+							</FancyLink>
+						</li>
 					</List>
 				</Card>
 			</main>
