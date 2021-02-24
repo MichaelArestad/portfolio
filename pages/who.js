@@ -26,7 +26,7 @@ export default function Home() {
 				</Hero>
 
 				<Card>
-					<List title="Work" minimal condensed mono>
+					<List title="Experience" minimal condensed mono>
 						<li>
 							<a href="https://automattic.com/">Automattic</a>
 						</li>
@@ -36,11 +36,11 @@ export default function Home() {
 						<li>State of Colorado</li>
 					</List>
 
-					<List title="Talk" minimal condensed mono>
+					<List title="Speaking" minimal condensed mono>
 						<li>Develop Denver</li>
-						<li>WordCamp St Louis</li>
+						<li>WordCamp St. Louis</li>
 						<li>WordCamp Denver</li>
-						<li>WordCamp SF</li>
+						<li>WordCamp San Francisco</li>
 						<li>WordCamp US</li>
 						<li>WordCamp Europe</li>
 					</List>
