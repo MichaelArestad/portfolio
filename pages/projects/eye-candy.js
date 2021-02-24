@@ -1,8 +1,6 @@
-import Link from "next/link";
 import SEO from "../../components/seo";
 import Card from "../../components/card/card";
 import Layout from "../../components/layout/layout";
-import List from "../../components/list/list";
 import Back from "../../components/back/back";
 import Hero from "../../components/hero/hero";
 import styles from "../../styles/eye-candy.module.scss";
@@ -19,7 +17,7 @@ export default function Home() {
 			backgroundColor="#373737"
 			textColor="#ffffff"
 		>
-			<SEO title="Projects" />
+			<SEO title="Eye Candy" />
 
 			<main>
 				<Hero

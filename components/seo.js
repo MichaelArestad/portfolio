@@ -11,7 +11,9 @@ export default function SEO({
 	image = "",
 	description = defaultDescription,
 }) {
-	const siteTitle = title ? `${title} - Michael Arestad` : "Michael's stuff";
+	const siteTitle = title
+		? `${title} - Michael Arestad`
+		: "Michael Arestad was here";
 	const router = useRouter();
 
 	const url = `${baseUrl}${router.asPath}`;

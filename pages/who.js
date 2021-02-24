@@ -1,7 +1,7 @@
 import SEO from "../components/seo";
 import Layout from "../components/layout/layout";
-import Hero from "../components/hero/hero"
-import HeroContent from "../components/hero/hero-content"
+import Hero from "../components/hero/hero";
+import HeroContent from "../components/hero/hero-content";
 import Card from "../components/card/card";
 import List from "../components/list/list";
 import Back from "../components/back/back";
@@ -10,14 +10,15 @@ import Avatar from "../components/avatar/avatar";
 export default function Home() {
 	return (
 		<Layout>
-			<SEO title="who even is" />
+			<SEO title="whoami" />
 
 			<main>
 				<Hero
 					title="Michael Arestad"
 					description="product designer, front-end developer, open source software fanatic, type nerd, graphic artist, and mediocre (at best) musician"
 					backgroundColor="#000"
-					textColor="#fff">
+					textColor="#fff"
+				>
 					<Back href="/">Home</Back>
 					<HeroContent>
 						<Avatar size="140" />
@@ -58,7 +59,9 @@ export default function Home() {
 
 					<List title="Sound" minimal condensed mono>
 						<li>
-							<a href="https://www.youtube.com/channel/UCTkmzS2HNUxh4MnPva201ZA">youtube</a>
+							<a href="https://www.youtube.com/channel/UCTkmzS2HNUxh4MnPva201ZA">
+								youtube
+							</a>
 						</li>
 						<li>
 							<a href="https://soundcloud.com/heckseven">soundcloud</a>

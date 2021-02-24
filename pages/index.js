@@ -6,7 +6,7 @@ import List from "../components/list/list";
 export default function Home() {
 	return (
 		<Layout header home>
-			<SEO title="Michael's lil folio" />
+			<SEO />
 			<main>
 				<List minimal mono align="center">
 					<li>

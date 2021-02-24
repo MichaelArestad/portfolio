@@ -15,7 +15,7 @@ import Spacer from "../../components/spacer/spacer";
 export default function Home() {
 	return (
 		<Layout>
-			<SEO title="Projects" />
+			<SEO title="WordPress.com" />
 
 			<main>
 				<Hero

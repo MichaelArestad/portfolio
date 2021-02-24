@@ -13,7 +13,7 @@ import Item from "../../components/item/item";
 export default function Home() {
 	return (
 		<Layout backgroundColor="#e7e7e7">
-			<SEO title="Projects" />
+			<SEO title="Gutenberg" />
 
 			<main>
 				<Hero

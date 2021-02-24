@@ -14,7 +14,7 @@ import styles from "../styles/hire-me.module.scss";
 export default function Home() {
 	return (
 		<Layout backgroundColor="#000000" textColor="#ffffff">
-			<SEO title="say hi" />
+			<SEO title="got any jobby trees where i can find some jobs?" />
 
 			<main>
 				<Back href="/">Home</Back>
