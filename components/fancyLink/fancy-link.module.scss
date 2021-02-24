@@ -45,12 +45,12 @@
 	&::before,
 	&::after {
 		position: absolute;
-		top: 0;
+		top: -5px;
 		right: 100%;
 		margin: 0 4px;
 		content: var( --surprise-content );
 		display: inline-block;
-		transform: rotateZ(-90deg) scale(0);
+		transform: rotateZ(90deg) scale(0);
 		// transform: rotateZ(-90deg) rotateX( 180deg ) scale(1);
 		transition: all .15s ease-in-out;
 		transform-origin: center center;
@@ -59,7 +59,7 @@
 	&:after {
 		right: auto;
 		left: 100%;
-		transform: rotateZ(270deg) rotateX( 180deg ) scale(0);
+		transform: rotateZ(90deg) rotateX( 180deg ) scale(0);
 	}
 
 	&:hover,

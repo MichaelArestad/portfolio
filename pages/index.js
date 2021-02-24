@@ -20,7 +20,7 @@ export default function Home() {
 						</FancyLink>
 					</li>
 					<li>
-						<FancyLink link href="/hire-me">
+						<FancyLink surprise="💎" link href="/hire-me">
 							hire me
 						</FancyLink>
 					</li>
