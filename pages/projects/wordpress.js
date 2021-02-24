@@ -126,11 +126,12 @@ export default function Home() {
 
 						<FlexItem>
 							<iframe
-								width="800"
-								height="450"
+								width="632"
+								height="354"
 								src="https://videopress.com/embed/e9kH4FzP"
-								frameborder="0"
-								allowfullscreen
+								frameBorder="0"
+								allowFullScreen
+								style={{ width: "800px", height: "450px" }}
 							></iframe>
 							<script src="https://videopress.com/videopress-iframe.js"></script>
 						</FlexItem>
