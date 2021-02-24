@@ -10,6 +10,7 @@ import Item from "../../components/item/item";
 import Layout from "../../components/layout/layout";
 import Link from "next/link";
 import SEO from "../../components/seo";
+import Spacer from "../../components/spacer/spacer";
 import Text from "../../components/text/text";
 import GalleryOverlap from "../../components/gallery-overlap/gallery-overlap";
 
@@ -105,7 +106,7 @@ export default function Home() {
 								</strong>{" "}
 								This included backup and security features, tiled galleries, the
 								contact form, related posts, WordAds, several widgets, and
-								several blocks. I’ll go into a few of these in detail.
+								several blocks.
 							</Text>
 
 							<Text>
@@ -184,19 +185,29 @@ export default function Home() {
 						</FlexItem>
 					</Flex>
 
+					<Spacer />
+
 					<Flex>
 						<FlexItem width="small">
 							<Heading>WordPress.com integration</Heading>
 							<Text>
 								<strong>
-									I integrated Jetpack into{" "}
-									<Link href="/projects/wordpressdotcom">
-										WordPress.com’s React-based dashboard
-									</Link>
+									I integrated Jetpack into WordPress.com’s React-based
+									dashboard
 								</strong>{" "}
 								and even designed/coded some of the most used components on
-								WordPress.com’s interface.
+								WordPress.com’s interface.{" "}
+								<Link href="/projects/wordpressdotcom">
+									I go over a few of the projects here.
+								</Link>
 							</Text>
+						</FlexItem>
+						<FlexItem>
+							<Image
+								src="/images/jetpack/dotcom-integration@2x.jpg"
+								width="800"
+								height="448"
+							/>
 						</FlexItem>
 					</Flex>
 
