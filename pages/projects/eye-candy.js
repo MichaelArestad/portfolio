@@ -14,21 +14,26 @@ import Sixty from "../../components/candy/sixty/sixty";
 
 export default function Home() {
 	return (
-		<Layout addedStyle={ styles.container } backgroundColor="#373737" textColor="#ffffff">
+		<Layout
+			addedStyle={styles.container}
+			backgroundColor="#373737"
+			textColor="#ffffff"
+		>
 			<SEO title="Projects" />
 
 			<main>
 				<Hero
 					title="Eye candy"
-					description="for the discerning individual"
+					description="a design and code playground"
 					zag="big"
 					backgroundColor="#ff0054"
-					textColor="#fff">
+					textColor="#fff"
+				>
 					<Back href="/projects/">Projects</Back>
 				</Hero>
 
-				<Card addedClass={ styles.eyeCandy }>
-					<Card addedClass={ styles.theVoid }></Card>
+				<Card addedClass={styles.eyeCandy}>
+					<Card addedClass={styles.theVoid}></Card>
 
 					{/* <Sixty /> */}
 					<VaultPress />
