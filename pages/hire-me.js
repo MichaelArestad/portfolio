@@ -7,8 +7,6 @@ import SEO from "../components/seo";
 import Spacer from "../components/spacer/spacer";
 import Text from "../components/text/text";
 
-import styles from "../styles/hire-me.module.scss";
-
 export default function Home() {
 	return (
 		<Layout backgroundColor="#000000" textColor="#ffffff">
