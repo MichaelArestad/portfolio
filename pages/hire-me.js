@@ -22,7 +22,7 @@ export default function Home() {
 						working together, please reach out.
 					</Text>
 					<Spacer />
-					<List className={styles.list} minimal mono condensed>
+					<List minimal mono condensed>
 						<li>
 							<a href="mailto:marestad@gmail.com">Email</a>
 						</li>
