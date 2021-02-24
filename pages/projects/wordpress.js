@@ -124,16 +124,18 @@ export default function Home() {
 							</Text>
 						</FlexItem>
 
-						<FlexItem>
-							<iframe
-								width="632"
-								height="354"
-								src="https://videopress.com/embed/e9kH4FzP"
-								frameBorder="0"
-								allowFullScreen
-								style={{ width: "800px", height: "450px" }}
-							></iframe>
-							<script src="https://videopress.com/videopress-iframe.js"></script>
+						<FlexItem style={{ flexGrow: "1" }}>
+							<div className="videoWrapper">
+								<iframe
+									className="videoIframe"
+									width="632"
+									height="354"
+									src="https://videopress.com/embed/e9kH4FzP"
+									frameBorder="0"
+									allowFullScreen
+								></iframe>
+								<script src="https://videopress.com/videopress-iframe.js"></script>
+							</div>
 						</FlexItem>
 					</Flex>
 				</Card>
