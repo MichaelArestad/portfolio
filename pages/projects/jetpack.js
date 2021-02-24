@@ -149,7 +149,6 @@ export default function Home() {
 
 						<Image
 							align="right"
-							href="#"
 							caption="jetpack.me 2013"
 							src="/images/jetpack/web2013@2x.jpg"
 							width="800"
@@ -165,7 +164,6 @@ export default function Home() {
 
 						<Image
 							align="right"
-							href="#"
 							caption="jetpack.com 2016"
 							src="/images/jetpack/web2016@2x.jpg"
 							width="800"
@@ -177,7 +175,7 @@ export default function Home() {
 						<FlexItem>
 							<Image
 								align="center"
-								href="#"
+								href="https://jetpack.com/"
 								caption="jetpack.com 2018"
 								src="/images/jetpack/web2018@2x.jpg"
 								width="1344"

@@ -5,13 +5,13 @@ import cn from "classnames";
 
 export default class Card extends React.Component {
 	hasCircles() {
-		if ( this.props.circles ) {
+		if (this.props.circles) {
 			return styles.circles;
 		}
 	}
 
 	isCompact() {
-		if ( this.props.compact ) {
+		if (this.props.compact) {
 			return styles.compact;
 		}
 	}
@@ -21,25 +21,20 @@ export default class Card extends React.Component {
 		this.hasCircles(),
 		this.isCompact(),
 		this.props.addedClass,
-		this.props.className
+		this.props.className,
 	);
 
 	renderCard() {
-		if ( this.props.href ) {
-			console.log( this.props.classes );
-			return	(
-				<a
-					href={ this.props.href }
-					className={ this.classes }
-					style={ this.styles }>
-					{ this.props.children }
+		if (this.props.href) {
+			return (
+				<a href={this.props.href} className={this.classes} style={this.styles}>
+					{this.props.children}
 				</a>
 			);
 		} else {
-			console.log( this.props.classes );
-			return	(
-				<Item className={ this.classes } { ...this.props }>
-					{ this.props.children }
+			return (
+				<Item className={this.classes} {...this.props}>
+					{this.props.children}
 				</Item>
 			);
 		}
