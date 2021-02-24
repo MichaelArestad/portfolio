@@ -1,14 +1,16 @@
-import SEO from "../../components/seo";
-import Layout from "../../components/layout/layout";
-import Hero from "../../components/hero/hero";
-import HeroContent from "../../components/hero/hero-content";
 import Back from "../../components/back/back";
 import Card from "../../components/card/card";
 import Text from "../../components/text/text";
-import Heading from "../../components/heading/heading";
 import Flex from "../../components/flex/flex";
 import FlexItem from "../../components/flex/flex-item";
+import Heading from "../../components/heading/heading";
+import Hero from "../../components/hero/hero";
+import HeroContent from "../../components/hero/hero-content";
 import Item from "../../components/item/item";
+import Image from "../../components/image/image";
+import Layout from "../../components/layout/layout";
+import List from "../../components/list/list";
+import SEO from "../../components/seo";
 
 export default function Home() {
 	return (
@@ -18,7 +20,7 @@ export default function Home() {
 			<main>
 				<Hero
 					title="WordPress"
-					description="A WordPress editing experience rebuilt from the ground up"
+					description="An open source software you can use to create a beautiful website, blog, or app"
 					backgroundColor="#23282d"
 					textColor="#fff"
 				>
@@ -46,7 +48,7 @@ export default function Home() {
 				<Card backgroundColor="#0073aa">
 					<Item width="large" style={{ margin: "40px auto" }}>
 						<img
-							src="/images/gutenberg/gberg-demo@2x.jpg"
+							src="/images/wordpress/dashboard@2x.jpg"
 							width="800"
 							height="448"
 						/>
@@ -56,14 +58,15 @@ export default function Home() {
 							style={{ marginTop: "24px" }}
 						>
 							<Text caption>
-								Gutenberg is a new breed of editor with a block-based interface
-								built in React.
+								<a href="https://wordpress.org/">WordPress</a> now powers 40% of
+								the web and is driven by volunteers. I am a proud contributer
+								having donated design and code work to the project.
 							</Text>
 						</Card>
 					</Item>
 				</Card>
 
-				<Card backgroundColor="#000" textColor="#fff">
+				<Card backgroundColor="#23282d" textColor="#fff">
 					<Item style={{ margin: "0 auto" }} width="small">
 						<Text>
 							I have been using WordPress for so long I am not even sure when I
@@ -80,26 +83,56 @@ export default function Home() {
 				<Card>
 					<Flex alignItems="center" justifyContent="space-between">
 						<FlexItem width="small">
-							<Heading>Press This</Heading>
-							<Text>TBD</Text>
-						</FlexItem>
-					</Flex>
-				</Card>
-
-				<Card>
-					<Flex alignItems="center" justifyContent="space-between">
-						<FlexItem width="small">
-							<Heading>Commit</Heading>
-							<Text>TBD</Text>
-						</FlexItem>
-					</Flex>
-				</Card>
-
-				<Card>
-					<Flex alignItems="center" justifyContent="space-between">
-						<FlexItem width="small">
 							<Heading>Editors</Heading>
-							<Text>TBD</Text>
+							<Text>
+								Most of my contributions to WordPress have been focused on the
+								editing and site-customizing experience. My interest in
+								contributing started with the idea that I could improve the
+								design of parts of the editor that were frustrating to me. Down
+								the rabbit hole, I went. Over the next several years, I worked
+								on the various WordPress editors (Press This, Classic editor,
+								Customizer, Gutenberg) and even some WordPress.com concept
+								editors that eventually led us to Gutenberg.
+							</Text>
+						</FlexItem>
+					</Flex>
+				</Card>
+
+				<Card>
+					<Flex
+						flexDirection="row-reverse"
+						alignItems="center"
+						justifyContent="space-between"
+					>
+						<FlexItem width="small">
+							<Heading>Press This</Heading>
+							<Text>
+								One of my first major projects on WordPress was a redesign of a
+								bookmarklet tool called Press This. It's effectively a tiny
+								version of the WordPress editor that allows users to quote or
+								repost content from other sites. It was the main feature in
+								WordPress 4.2 Powell. I designed it and Stephane Daury built it
+								along with some help from others familiar with the editor. It
+								was also one of the first, if not the first, feature to be built
+								as a plugin to speed up development. The next several releases
+								used the Feature Plugin development cycle for major changes.
+							</Text>
+
+							<Text>
+								Looking back at it now, there is a striking resemblance between
+								it and the new WordPress editor, Gutenberg.
+							</Text>
+						</FlexItem>
+
+						<FlexItem>
+							<iframe
+								width="800"
+								height="450"
+								src="https://videopress.com/embed/e9kH4FzP"
+								frameborder="0"
+								allowfullscreen
+							></iframe>
+							<script src="https://videopress.com/videopress-iframe.js"></script>
 						</FlexItem>
 					</Flex>
 				</Card>
@@ -108,7 +141,34 @@ export default function Home() {
 					<Flex alignItems="center" justifyContent="space-between">
 						<FlexItem width="small">
 							<Heading>Gutenberg</Heading>
-							<Text>TBD</Text>
+							<Text>
+								The most recent major project I worked on was{" "}
+								<a href="https://github.com/WordPress/gutenberg/">
+									the Gutenberg editor for WordPress
+								</a>
+								. I contributed countless hours to the design and code of it. I
+								also led the transition of it from being a post and page editor
+								to a tool that can be used to edit any content on a site.
+								Because of the depth of this work, I'm taking some time to write
+								this up as a project of it's own. In the meantime,{" "}
+								<a href="https://wordpress.org/gutenberg/">
+									take Gutenberg for a spin
+								</a>
+								.
+							</Text>
+
+							<Text>
+								I also updated several Jetpack features to work seamlessly with
+								it.
+							</Text>
+						</FlexItem>
+
+						<FlexItem>
+							<Image
+								src="/images/gutenberg/gberg-demo@2x.jpg"
+								width="800"
+								height="448"
+							/>
 						</FlexItem>
 					</Flex>
 				</Card>
@@ -116,8 +176,86 @@ export default function Home() {
 				<Card>
 					<Flex alignItems="center" justifyContent="space-between">
 						<FlexItem width="small">
+							<Heading>Commit</Heading>
+							<Text>
+								In 2015, I was granted commit access to WordPress. I was one of
+								the first designers granted access. I am still very much honored
+								to be a WordPress core committer. You can read{" "}
+								<a href="https://michael.blog/2015/12/11/wordpress-commit/">
+									my blog post about it
+								</a>{" "}
+								if you wish to know more.
+							</Text>
+						</FlexItem>
+					</Flex>
+				</Card>
+
+				<Card>
+					<Flex
+						flexDirection="row-reverse"
+						alignItems="center"
+						justifyContent="space-between"
+					>
+						<FlexItem width="small">
 							<Heading>Events</Heading>
-							<Text>TBD</Text>
+							<Text>
+								I designed the branding, website, collateral, and swag for a few
+								WordPress events called WordCamps. WordCamps take place all over
+								the world and usually are local to a city. I did design work for{" "}
+								<a href="https://denver.wordcamp.org/2015/">
+									WordCamp Denver 2015
+								</a>
+								, WordCamp San Francisco 2014, and WordCamp Denver 2013. I also
+								worked on a handful of the State of the Word slides. You can
+								even spot me on stage doing last minute updates (ask me about
+								this) on one of them.{" "}
+							</Text>
+						</FlexItem>
+
+						<FlexItem>
+							<Image
+								border
+								src="/images/wordpress/wcden@2x.jpg"
+								width="800"
+								height="448"
+							/>
+						</FlexItem>
+					</Flex>
+				</Card>
+
+				<Card>
+					<Flex alignItems="center" justifyContent="space-between">
+						<FlexItem width="small">
+							<Heading>Musings</Heading>
+							<Text>
+								Because I spend so much time thinking about and working on
+								WordPress, I sometimes have some interesting ideas that I write
+								down. Here are a handful of blog posts that might be
+								interesting.
+							</Text>
+
+							<List minimal condensed>
+								<li>
+									<a href="https://michael.blog/2020/05/29/wordpress-the-site-builder/">
+										WordPress – the site builder
+									</a>
+								</li>
+								<li>
+									<a href="https://michael.blog/2015/08/26/wordpress-dark-admin-concept/">
+										Dark admin concept
+									</a>
+								</li>
+								<li>
+									<a href="https://michael.blog/2017/07/25/improving-the-wordpress-experience/">
+										Improving the WordPress experience
+									</a>
+								</li>
+								<li>
+									<a href="https://michael.blog/2016/01/06/the-shape-of-wordpress-shapes-the-web/">
+										The shape of WordPress shapes the web
+									</a>
+								</li>
+							</List>
 						</FlexItem>
 					</Flex>
 				</Card>

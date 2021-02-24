@@ -24,13 +24,18 @@ export default function Home() {
 				<Card>
 					<List className={styles.list} minimal mono align="center">
 						<li>
+							<FancyLink link href="/projects/wordpressdotcom">
+								wordpress.com
+							</FancyLink>
+						</li>
+						<li>
 							<FancyLink link href="/projects/jetpack">
 								jetpack
 							</FancyLink>
 						</li>
 						<li>
-							<FancyLink link href="/projects/wordpressdotcom">
-								wordpress.com
+							<FancyLink link href="/projects/wordpress">
+								wordpress
 							</FancyLink>
 						</li>
 						{/* <li>
