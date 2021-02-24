@@ -27,3 +27,48 @@
 // 		}
 // 	}
 // }
+
+.isInverted {
+	box-shadow: 0 0 0 4px transparent;
+
+	&:hover,
+	&:focus {
+		background: #000;
+		color: #fff;
+		box-shadow: 0 0 0 4px black;
+	}
+}
+
+.hasSurprise {
+	--surprise-content: "😀";
+	position: relative;
+	&::before,
+	&::after {
+		position: absolute;
+		top: 0;
+		right: 100%;
+		margin: 0 4px;
+		content: var( --surprise-content );
+		display: inline-block;
+		transform: rotateZ(-90deg) scale(0);
+		// transform: rotateZ(-90deg) rotateX( 180deg ) scale(1);
+		transition: all .15s ease-in-out;
+		transform-origin: center center;
+	}
+
+	&:after {
+		right: auto;
+		left: 100%;
+		transform: rotateZ(270deg) rotateX( 180deg ) scale(0);
+	}
+
+	&:hover,
+	&:focus, {
+		&::before {
+			transform: rotateZ(0) scale(1.5);
+		}
+		&::after {
+			transform: rotateZ(180deg) rotateX( 180deg ) scale(1.5);
+		}
+	}
+}

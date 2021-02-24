@@ -29,7 +29,7 @@ export default function Home() {
 							</FancyLink>
 						</li>
 						<li>
-							<FancyLink link href="/projects/jetpack">
+							<FancyLink surprise="🚀" link href="/projects/jetpack">
 								jetpack
 							</FancyLink>
 						</li>
@@ -44,12 +44,12 @@ export default function Home() {
 							</FancyLink>
 						</li> */}
 						<li>
-							<FancyLink link href="/projects/eye-candy">
+							<FancyLink surprise="🍭" link href="/projects/eye-candy">
 								eye candy
 							</FancyLink>
 						</li>
 						<li>
-							<FancyLink link href="/projects/kosmo">
+							<FancyLink inverted surprise="⚡️" link href="/projects/kosmo">
 								kosmo
 							</FancyLink>
 						</li>
