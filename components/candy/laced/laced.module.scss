@@ -9,14 +9,11 @@
 	font-style: normal;
 }
 
-.container {
-	background: #262626;
-	width: 100%;
-	display: flex;
-	align-items: flex-start;
-}
-
 .laced {
+	padding: 48px;
+	background: #000;
+	width: 100%;
+	transition: all .15s ease-in-out;
 	font-family: 'LacedRegular',"pragmatica-web", sans-serif;
 	text-transform: uppercase;
 	font-size: 40px;
@@ -35,7 +32,15 @@
 		font-size: 80px;
 	}
 
+	&:hover,
 	&:focus {
+		background: #222;
+	}
+
+	&:focus {
+		background: #fff;
+		color: #000;
 		text-transform: lowercase;
+		outline: none;
 	}
 }
