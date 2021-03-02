@@ -1,0 +1,38 @@
+@mixin thevoid( $stripe-width: 8px, $stripes: 180, $stripe-color: #fff ) {
+	$gradient: ();
+
+
+	@for $i from 1 through $stripes {
+		$color: transparent;
+
+		@if ( $i / 2 ) == floor( $i / 2 ) {
+			$color: $stripe-color;
+		}
+
+		$stripe-data: $color $stripe-width * ($i - 1), $color $stripe-width * $i;
+
+		$gradient: join($gradient, $stripe-data, comma );
+	}
+	background-image: radial-gradient(
+		circle,
+		$gradient
+	);
+}
+
+.theVoid {
+	width: 100%;
+	background-color: #fff;
+	@include thevoid( $stripe-color: black );
+	background-size: 400px 400px;
+	transition: all 20s ease-in-out;
+	background-position: center center;
+
+	@media ( max-width: 768px ){
+		min-height: 50vh;
+	}
+
+	&:hover {
+		// @include thevoid( 4px, $stripe-color: black );
+		background-size: 50px 50px;
+	}
+}

@@ -9,6 +9,7 @@ import CheckboxGrid from "../../components/candy/checkbox-grid/checkbox-grid";
 import DarkNet from "../../components/candy/darknet/darknet";
 import VaultPress from "../../components/candy/vaultpress/vaultpress";
 import Sixty from "../../components/candy/sixty/sixty";
+import TheVoid from "../../components/candy/the-void/the-void";
 
 export default function Home() {
 	return (
@@ -31,16 +32,9 @@ export default function Home() {
 				</Hero>
 
 				<Card addedClass={styles.eyeCandy}>
-					<Card addedClass={styles.theVoid}></Card>
-
-					{/* <Sixty /> */}
+					<TheVoid />
 					<VaultPress />
 					<DarkNet />
-
-					{/* <Card className={ styles.discoBars }>
-						<img src="/images/discobars.gif" width="498" height="400" />
-					</Card> */}
-
 					<CheckboxGrid />
 				</Card>
 			</main>
