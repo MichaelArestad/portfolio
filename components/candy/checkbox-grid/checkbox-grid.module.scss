@@ -22,6 +22,10 @@ $focus-size: 3px;
 	display: flex;
 	align-items: center;
 	max-width: none;
+
+	@media ( max-width: 520px ) {
+		display: none;
+	}
 }
 
 .grid.grid {
