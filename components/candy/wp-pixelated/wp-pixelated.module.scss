@@ -1,0 +1,57 @@
+@keyframes bling {
+	20% {
+		transform: scale( 1.5 );
+	}
+	40% {
+		transform: scale( .75 );
+	}
+	60% {
+		transform: scale( 1.2 );
+	}
+	80% {
+		transform: scale( .9);
+	}
+	100% {
+		transform: scale( 1 );
+	}
+}
+
+.container {
+	display: flex;
+	align-items: center;
+
+	&:hover {
+		filter: grayscale(0);
+	}
+}
+
+.wpPixelated {
+	margin: 0 auto;
+	max-width: 310px;
+	max-width: 155px;
+
+	path {
+		opacity: 0;
+	}
+}
+
+.base.base {
+	opacity: 1;
+	fill: #fff;
+	transform: translate( -0.03225806452%, -0.03225806452% );
+}
+
+.container:hover {
+	.wpPixelated {
+		animation-name: bling;
+		animation: bling .7s linear 1;
+
+		path {
+			opacity: 1;
+		}
+		.base {
+			fill: #240000;
+			transform: none;
+		}
+	}
+}

@@ -15,6 +15,7 @@ import Laced from "../../components/candy/laced/laced";
 import TheVoid from "../../components/candy/the-void/the-void";
 import VaultPress from "../../components/candy/vaultpress/vaultpress";
 import WcDen from "../../components/candy/wcden/wcden";
+import WpPixelated from "../../components/candy/wp-pixelated/wp-pixelated";
 
 export default function Home() {
 	return (
@@ -41,14 +42,15 @@ export default function Home() {
 						<VaultPress />
 						<Laced />
 						<DarkNet />
-						<WcDen />
+						<WpPixelated />
 						<CheckboxGrid />
 						<EchoHelloWorld />
+						<WcDen />
 						<AsciiRocketeer />
 						<Anvil />
 						<WcDen icon="speaker" />
-						<TheVoid />
 						<Aurora />
+						<TheVoid />
 						<WcDen icon="heart" />
 					</div>
 				</Card>
