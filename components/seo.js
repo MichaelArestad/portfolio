@@ -2,7 +2,7 @@ import Head from "next/head";
 import { useRouter } from "next/router";
 
 const baseUrl = "https://michaelarestad.com";
-const defaultDescription = `Heyo!`;
+const defaultDescription = `The playground and portfolio of Michael Arestad.`;
 
 // This is entirely copied from https://github.com/ItsJonQ/jonquach/blob/master/components/seo.js
 
