@@ -45,9 +45,9 @@
 	&::before,
 	&::after {
 		position: absolute;
-		top: -5px;
+		top: 2px;
 		right: 100%;
-		margin: 0 4px;
+		margin: 0 12px;
 		content: var( --surprise-content );
 		display: inline-block;
 		transform: rotateZ(90deg) scale(0);
