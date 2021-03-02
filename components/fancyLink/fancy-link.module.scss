@@ -35,7 +35,7 @@
 	&:focus {
 		background: #000;
 		color: #fff;
-		box-shadow: 0 0 0 4px black;
+		box-shadow: 4px 0 0 4px #000, -4px 0 0 4px #000;
 	}
 }
 
