@@ -24,8 +24,13 @@
 	background-color: #fff;
 	@include thevoid( $stripe-color: black );
 	background-size: 400px 400px;
-	transition: all 20s ease-in-out;
+	// transition: all 2s ease-in-out;
+	transition: background-color .2s ease-in-out, background-size 10s ease-in-out;
 	background-position: center center;
+
+	&:hover {
+		background-color: #FFE600;
+	}
 
 	@media ( max-width: 768px ){
 		min-height: 50vh;

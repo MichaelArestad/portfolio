@@ -1,8 +1,10 @@
 .darknet.darknet {
-	background: #121317;
+	background: #000;
 	flex-grow: 0;
 
 	&:hover {
+		background: #121317;
+
 		.beacon__a,
 		.beacon__r,
 		.beacon__k,

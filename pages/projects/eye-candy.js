@@ -36,8 +36,8 @@ export default function Home() {
 					<VaultPress />
 					<Laced />
 					<WcDen />
-					<CheckboxGrid />
 					<DarkNet />
+					<CheckboxGrid />
 					<TheVoid />
 					<WcDen icon="speaker" />
 					<WcDen icon="heart" />
