@@ -38,11 +38,11 @@ export default function Home() {
 								wordpress
 							</FancyLink>
 						</li>
-						{/* <li>
+						<li>
 							<FancyLink link href="/projects/gutenberg">
 								gutenberg
 							</FancyLink>
-						</li> */}
+						</li>
 						<li>
 							<FancyLink surprise="🍭" link href="/projects/eye-candy">
 								eye candy
