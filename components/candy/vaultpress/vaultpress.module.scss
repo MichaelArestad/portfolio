@@ -11,6 +11,8 @@
 	overflow: hidden;
 	text-align: center;
 	transition: all .15s ease-in-out;
+	display: flex;
+	align-items: center;
 	
 	@media (min-width: 768px) {
 		max-width: 442px;		

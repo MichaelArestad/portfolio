@@ -8,6 +8,7 @@ import styles from "../../styles/eye-candy.module.scss";
 import AsciiRocketeer from "../../components/candy/ascii-rocketeer/ascii-rocketeer";
 import CheckboxGrid from "../../components/candy/checkbox-grid/checkbox-grid";
 import DarkNet from "../../components/candy/darknet/darknet";
+import EchoHelloWorld from "../../components/candy/echo-hello-world/echo-hello-world";
 import Laced from "../../components/candy/laced/laced";
 import TheVoid from "../../components/candy/the-void/the-void";
 import VaultPress from "../../components/candy/vaultpress/vaultpress";
@@ -36,11 +37,12 @@ export default function Home() {
 				<Card addedClass={styles.eyeCandy}>
 					<VaultPress />
 					<Laced />
-					<WcDen />
 					<DarkNet />
+					<WcDen />
 					<CheckboxGrid />
-					<WcDen icon="speaker" />
+					<EchoHelloWorld />
 					<AsciiRocketeer />
+					<WcDen icon="speaker" />
 					<TheVoid />
 					<WcDen icon="heart" />
 				</Card>

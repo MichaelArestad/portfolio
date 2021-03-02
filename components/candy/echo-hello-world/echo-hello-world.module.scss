@@ -1,0 +1,31 @@
+$speed: .15s;
+
+.container.container {
+	background: #000;
+	transition: all $speed ease-in-out;
+	max-width: 360px;
+	filter: grayscale(100%);
+
+	&:hover {
+		background: #fff;
+		filter: grayscale(0);
+
+		.rectangle {
+			fill: #001611;
+		}
+
+		.gradient {
+			opacity: 1;
+		}
+	}
+}
+
+.rectangle {
+	fill: #000;
+	transition: all .5s ease-in-out;
+}
+
+.gradient {
+	opacity: 0;
+	transition: all $speed ease-in-out;
+}
