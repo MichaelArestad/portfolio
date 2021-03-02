@@ -27,11 +27,14 @@
 
 .wpPixelated {
 	margin: 0 auto;
-	max-width: 310px;
 	max-width: 155px;
 
 	path {
 		opacity: 0;
+	}
+
+	@media ( min-width: 480px ) {
+		width: 155px;
 	}
 }
 

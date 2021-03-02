@@ -16,4 +16,8 @@
 	path {
 		transition: all .15s ease-in-out;
 	}
+
+	@media ( min-width: 480px ) {
+		width: 360px;
+	}
 }

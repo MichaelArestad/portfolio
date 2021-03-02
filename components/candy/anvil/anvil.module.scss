@@ -12,4 +12,8 @@
 .anvil {
 	margin: 0 auto;
 	max-width: 360px;
+
+	@media ( min-width: 480px ) {
+		width: 360px;
+	}
 }
