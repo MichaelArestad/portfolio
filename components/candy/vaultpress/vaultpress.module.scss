@@ -1,16 +1,16 @@
-
 @keyframes vaultpress {
 	100% {
-		stroke-dasharray: 1600;
-		stroke-dashoffset: 0;
-		stroke-width: 2px;
+		stroke-dasharray: 475;
+		stroke-dashoffset: -950;
+		stroke-width: 0;
 	}
 }
 
 .vaultPress {
-	background: #e23a39;
+	background: #000;
 	overflow: hidden;
 	text-align: center;
+	transition: all .15s ease-in-out;
 	
 	@media (min-width: 768px) {
 		max-width: 442px;		
@@ -29,13 +29,17 @@
 		animation-iteration-count: infinite;
 		animation-play-state: paused;
 		fill: transparent;
-		stroke-dasharray: 475;
-		stroke-dashoffset: -950;
-		stroke-width: 0;
+		stroke-dasharray: 1600;
+		stroke-dashoffset: 0;
+		stroke-width: 2px;
 		stroke: #fff;
 	}
 
-	&:hover path {
-		animation-play-state: running;
+	&:hover {
+		background: #e23a39;
+
+		& path {
+			animation-play-state: running;
+		}
 	}
 }
