@@ -7,6 +7,7 @@ import styles from "../../styles/eye-candy.module.scss";
 
 import Anvil from "../../components/candy/anvil/anvil";
 import AsciiRocketeer from "../../components/candy/ascii-rocketeer/ascii-rocketeer";
+import Aurora from "../../components/candy/aurora/aurora";
 import CheckboxGrid from "../../components/candy/checkbox-grid/checkbox-grid";
 import DarkNet from "../../components/candy/darknet/darknet";
 import EchoHelloWorld from "../../components/candy/echo-hello-world/echo-hello-world";
@@ -47,6 +48,7 @@ export default function Home() {
 						<Anvil />
 						<WcDen icon="speaker" />
 						<TheVoid />
+						<Aurora />
 						<WcDen icon="heart" />
 					</div>
 				</Card>

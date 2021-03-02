@@ -1,0 +1,19 @@
+.container {
+	display: flex;
+	align-items: center;
+
+	&:hover {
+		path {
+			fill: #8378ff;
+		}
+	}
+}
+
+.aurora {
+	max-width: 360px;
+	margin: 0 auto;
+
+	path {
+		transition: all .15s ease-in-out;
+	}
+}
