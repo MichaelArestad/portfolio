@@ -1,0 +1,25 @@
+.container {
+	background: #000;
+	display: flex;
+	align-items: center;
+	transition: all .15s ease-in-out;
+
+	&:hover {
+		background: #1e8cbe;
+	}
+}
+
+.rocketeer {
+	margin: 0 auto;
+	font-family: Menlo, "Courier New", monospace;
+	font-size: 2px;
+	line-height: 1.2;
+
+	@media ( min-width: 480px ) {
+		font-size: 4px;;
+	}
+
+	@media ( min-width: 1200px ) {
+		font-size: 7px;;
+	}
+}

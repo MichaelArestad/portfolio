@@ -5,6 +5,7 @@ import Layout from "../../components/layout/layout";
 import SEO from "../../components/seo";
 import styles from "../../styles/eye-candy.module.scss";
 
+import AsciiRocketeer from "../../components/candy/ascii-rocketeer/ascii-rocketeer";
 import CheckboxGrid from "../../components/candy/checkbox-grid/checkbox-grid";
 import DarkNet from "../../components/candy/darknet/darknet";
 import Laced from "../../components/candy/laced/laced";
@@ -38,8 +39,9 @@ export default function Home() {
 					<WcDen />
 					<DarkNet />
 					<CheckboxGrid />
-					<TheVoid />
 					<WcDen icon="speaker" />
+					<AsciiRocketeer />
+					<TheVoid />
 					<WcDen icon="heart" />
 				</Card>
 			</main>
