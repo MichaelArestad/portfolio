@@ -39,16 +39,16 @@ export default function Home() {
 
 				<Card addedClass={styles.eyeCandy}>
 					<div className={styles.container}>
-						<VaultPress />
-						<Laced />
 						<DarkNet />
-						<WpPixelated />
-						<CheckboxGrid />
-						<EchoHelloWorld />
-						<WcDen />
 						<AsciiRocketeer />
-						<Anvil />
+						<WpPixelated />
+						<VaultPress />
+						<EchoHelloWorld />
+						<Laced />
+						<WcDen />
 						<WcDen icon="speaker" />
+						<Anvil />
+						<CheckboxGrid />
 						<Aurora />
 						<TheVoid />
 						<WcDen icon="heart" />
