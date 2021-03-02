@@ -20,11 +20,11 @@
 }
 
 .theVoid {
+	min-height: 360px;
 	width: 100%;
 	background-color: #fff;
 	@include thevoid( $stripe-color: black );
 	background-size: 400px 400px;
-	// transition: all 2s ease-in-out;
 	transition: background-color .2s ease-in-out, background-size 10s ease-in-out;
 	background-position: center center;
 

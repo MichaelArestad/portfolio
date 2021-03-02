@@ -1,0 +1,15 @@
+.container {
+	background: #000;
+	display: flex;
+	align-items: center;
+	transition: all .15s ease-in-out;
+
+	&:hover {
+		background: #3f5975;
+	}
+}
+
+.anvil {
+	margin: 0 auto;
+	max-width: 360px;
+}

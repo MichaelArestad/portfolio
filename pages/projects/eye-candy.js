@@ -5,6 +5,7 @@ import Layout from "../../components/layout/layout";
 import SEO from "../../components/seo";
 import styles from "../../styles/eye-candy.module.scss";
 
+import Anvil from "../../components/candy/anvil/anvil";
 import AsciiRocketeer from "../../components/candy/ascii-rocketeer/ascii-rocketeer";
 import CheckboxGrid from "../../components/candy/checkbox-grid/checkbox-grid";
 import DarkNet from "../../components/candy/darknet/darknet";
@@ -35,16 +36,19 @@ export default function Home() {
 				</Hero>
 
 				<Card addedClass={styles.eyeCandy}>
-					<VaultPress />
-					<Laced />
-					<DarkNet />
-					<WcDen />
-					<CheckboxGrid />
-					<EchoHelloWorld />
-					<AsciiRocketeer />
-					<WcDen icon="speaker" />
-					<TheVoid />
-					<WcDen icon="heart" />
+					<div className={styles.container}>
+						<VaultPress />
+						<Laced />
+						<DarkNet />
+						<WcDen />
+						<CheckboxGrid />
+						<EchoHelloWorld />
+						<AsciiRocketeer />
+						<Anvil />
+						<WcDen icon="speaker" />
+						<TheVoid />
+						<WcDen icon="heart" />
+					</div>
 				</Card>
 			</main>
 		</Layout>
