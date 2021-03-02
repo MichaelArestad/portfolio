@@ -50,6 +50,13 @@
 .heroContent {
 	margin: 48px auto 0;
 	position: relative;
+
+	image,
+	svg {
+		@media ( max-width: 480px ) {
+			transform: scale( .75 );
+		}
+	}
 }
 
 .zag,
