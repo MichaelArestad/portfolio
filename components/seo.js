@@ -17,7 +17,7 @@ export default function SEO({
 	const router = useRouter();
 
 	const url = `${baseUrl}${router.asPath}`;
-	const imagePath = image ? `${baseUrl}${image}` : undefined;
+	const imagePath = image ? `${baseUrl}${image}` : "/images/maximum-seo.jpg";
 
 	return (
 		<Head>
