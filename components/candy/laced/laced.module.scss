@@ -1,0 +1,41 @@
+@font-face {
+	font-family: 'LacedRegular';
+	src: url('/fonts/laced/laced-regular-webfont.eot');
+	src: url('/fonts/laced/laced-regular-webfont.eot?#iefix') format('embedded-opentype'),
+			 url('/fonts/laced/laced-regular-webfont.woff') format('woff'),
+			 url('/fonts/laced/laced-regular-webfont.ttf') format('truetype'),
+			 url('/fonts/laced/laced-regular-webfont.svg#LacedRegular') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+.container {
+	background: #262626;
+	width: 100%;
+	display: flex;
+	align-items: flex-start;
+}
+
+.laced {
+	font-family: 'LacedRegular',"pragmatica-web", sans-serif;
+	text-transform: uppercase;
+	font-size: 40px;
+	line-height: 0.7945205479;
+	word-break: break-all;
+
+	@media ( min-width: 480px ) {
+		font-size: 56px;
+	}
+
+	@media ( min-width: 800px ) {
+		font-size: 72px;
+	}
+
+	@media ( min-width: 1400px ) {
+		font-size: 80px;
+	}
+
+	&:focus {
+		text-transform: lowercase;
+	}
+}
