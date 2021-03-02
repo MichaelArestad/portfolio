@@ -2,6 +2,11 @@
 	background: #000;
 	display: flex;
 	flex-wrap: wrap;
+	justify-content: center;
+
+	@media ( min-width: 768px ) {
+		justify-content: space-between;
+	}
 
 	> div {
 		flex-grow: 1;
