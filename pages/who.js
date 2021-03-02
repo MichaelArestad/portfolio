@@ -45,6 +45,19 @@ export default function Home() {
 						<li>WordCamp Europe</li>
 					</List>
 
+					<List title="Skill" minimal condensed mono>
+						<li>Product Design</li>
+						<li>Systems Design</li>
+						<li>UX/UI/IA Design</li>
+						<li>Typography</li>
+						<li>Brand Identity</li>
+						<li>Graphic Design</li>
+						<li>Project Management</li>
+						<li>Front-end Development</li>
+						<li>Rapid Prototyping</li>
+						<li>Git/SVN</li>
+					</List>
+
 					<List title="Cyber" minimal condensed mono>
 						<li>
 							<a href="https://michael.blog/">blog</a>
