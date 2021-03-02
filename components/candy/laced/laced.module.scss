@@ -12,6 +12,8 @@
 .laced {
 	padding: 48px;
 	background: #000;
+	color: #fff;
+	border: none;
 	width: 100%;
 	transition: all .15s ease-in-out;
 	font-family: 'LacedRegular',"pragmatica-web", sans-serif;
@@ -26,6 +28,8 @@
 
 	@media ( min-width: 800px ) {
 		font-size: 72px;
+
+		max-width: 50%;
 	}
 
 	@media ( min-width: 1400px ) {
