@@ -7,11 +7,16 @@
 	&:hover {
 		background: #3f5975;
 	}
+
+	@media ( max-width: 480px ) {
+		width: 100%;
+	}
 }
 
 .anvil {
 	margin: 0 auto;
 	max-width: 360px;
+	min-width: 80px;
 
 	@media ( min-width: 480px ) {
 		width: 360px;
