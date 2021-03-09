@@ -1,14 +1,16 @@
+@import "../../styles/functions/rem.scss";
+
 .back {
 	display: inline-block;
 	font-family: var( --font-family_mono );
-	margin: 16px 24px 0;
+	margin: var( --unit-2 ) var( --unit-3 ) 0;
 	font-size: var( --font-size-s );
-	line-height: 32px; // for bigger tap target
+	line-height: var( --unit-4 ); // for bigger tap target
 	text-transform: uppercase;
 	position: relative;
 
 	@media ( min-width: 480px ) {
-		margin: 30px 48px 0;
+		margin: rem( 30px ) var( --unit-6 ) 0;
 	}
 
 	a {

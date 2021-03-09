@@ -28,6 +28,11 @@
 	--unit-3: calc( 3 * var( --unit-base ) ); // 24px
 	--unit-4: calc( 4 * var( --unit-base ) ); // 32px
 	--unit-5: calc( 5 * var( --unit-base ) ); // 40px
+	--unit-6: calc( 6 * var( --unit-base ) ); // 48px
+	--unit-7: calc( 7 * var( --unit-base ) ); // 56px
+	--unit-8: calc( 8 * var( --unit-base ) ); // 64px
+	--unit-9: calc( 9 * var( --unit-base ) ); // 72px
+	--unit-10: calc( 10 * var( --unit-base ) ); // 80px
 }
 
 html,

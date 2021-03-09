@@ -1,7 +1,7 @@
 .galleryOverlap {
 	> a,
 	> div {
-		margin-bottom: 24px;
+		margin-bottom: var( --unit-3 );
 	}
 
 	@media ( min-width: 768px ) {

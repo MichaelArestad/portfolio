@@ -14,7 +14,7 @@ export default function Home() {
 
 			<main>
 				<Back href="/">Home</Back>
-				<Card width="small" style={{ margin: "40px auto" }}>
+				<Card width="s" style={{ margin: "var( --unit-5 ) auto" }}>
 					<Spacer height="15vh" />
 					<Heading>Hire me</Heading>
 					<Text>

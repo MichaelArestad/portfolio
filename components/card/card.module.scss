@@ -1,14 +1,16 @@
+@import "../../styles/functions/rem.scss";
+
 .card {
-	padding: 48px;
+	padding: var( --unit-6 );
 	display: block;
 }
 
 .circles {
 	background-image: url("/images/circles.svg");
-	background-size: 2568px 2568px;
+	background-size: rem( 2568px ) rem( 2568px );
 	background-position: center center;
 }
 
 .compact {
-	padding: 18px 24px;
+	padding: rem( 18px ) var( --unit-3 );
 }

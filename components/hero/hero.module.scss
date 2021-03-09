@@ -18,12 +18,12 @@
 
 .heroInfo {
 	box-sizing: content-box;
-	padding: 24px;
+	padding: var( --unit-3 );
 	max-width: var( --layout-width-xs );
 	position: relative;
 
 	@media ( min-width: 480px) {
-		padding: 48px;
+		padding: var( --unit-6 );
 	}
 }
 
@@ -37,7 +37,7 @@
 	font-weight: 400;
 	text-transform: uppercase;
 	margin-top: 0;
-	margin-bottom: 24px;
+	margin-bottom: var( --unit-3 );
 }
 
 .description {
@@ -48,7 +48,7 @@
 }
 
 .heroContent {
-	margin: 48px auto 0;
+	margin: var( --unit-6 ) auto 0;
 	position: relative;
 
 	image,

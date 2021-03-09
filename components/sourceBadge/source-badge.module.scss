@@ -1,10 +1,12 @@
+@import "../../styles/functions/rem.scss";
+
 .sourceBadge {
 	position: absolute;
-		bottom: 24px;
-		right: 36px;
+		bottom: var( --unit-3 );
+		right: rem( 36px );
 
 	a {
 		display: inline-block;
-		padding: 8px 12px;
+		padding: var( --unit-1 ) rem( 12px );
 	}
 }

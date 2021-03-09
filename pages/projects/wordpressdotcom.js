@@ -41,7 +41,7 @@ export default function Home() {
 				</Hero>
 
 				<Card circles backgroundColor="#e3f3ff">
-					<Item width="l" style={{ margin: "40px auto" }}>
+					<Item width="l" style={{ margin: "var( --unit-5 ) auto" }}>
 						<img
 							src="/images/wordpressdotcom/dotcom-dashboard@2x.jpg"
 							width="800"

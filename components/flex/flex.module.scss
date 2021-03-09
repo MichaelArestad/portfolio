@@ -1,8 +1,10 @@
+@import "../../styles/functions/rem.scss";
+
 .flex {
 	display: block;
 	
 	@media ( min-width: 1200px ) {
-		margin: 0 -24px;
+		margin: 0 rem( -24px );
 		display: flex;
 		max-width: 1440px;
 		margin: 0 auto;
@@ -10,9 +12,9 @@
 }
 
 .flexItem {
-	margin: 0 auto 48px;
+	margin: 0 auto var( --unit-6 );
 
 	@media ( min-width: 1200px ) {
-		margin: 48px;
+		margin: var( --unit-6 );
 	}
 }
