@@ -17,13 +17,13 @@
 .title {
 	margin-top: 0;
 	margin-bottom: 24px;
-	font-size: 24px;
+	font-size: var( --font-size-xl );
 	font-weight: 400;
 	text-transform: uppercase;
 }
 
 .minimal {
-	font-size: 14px;
+	font-size: var( --font-size-m );
 	list-style: none;
 	margin: 0;
 	padding: 0;
@@ -34,7 +34,7 @@
 }
 
 .condensed {
-	font-size: 12px;
+	font-size: var( --font-size-s );
 	line-height: 2;
 
 	li {

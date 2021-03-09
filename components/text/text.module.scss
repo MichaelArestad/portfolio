@@ -9,11 +9,11 @@
 }
 
 .isBig {
-	font-size: 24px;
+	font-size: var( --font-size-xl );
 }
 
 .caption {
 	font-family: var( --font-family_mono );
-	font-size: 12px;
+	font-size: var( --font-size-s );
 	margin: 0;
 }

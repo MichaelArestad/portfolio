@@ -2,7 +2,7 @@
 	display: inline-block;
 	font-family: var( --font-family_mono );
 	margin: 16px 24px 0;
-	font-size: 12px;
+	font-size: var( --font-size-s );
 	line-height: 32px; // for bigger tap target
 	text-transform: uppercase;
 	position: relative;
