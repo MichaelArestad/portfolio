@@ -15,14 +15,14 @@
 .rocketeer {
 	margin: 0 auto;
 	font-family: Menlo, "Courier New", monospace;
-	font-size: rem( 3px );
+	font-size: 3px;
 	line-height: 1.2;
 
 	@include break-xs {
-		font-size: rem( 4px );
+		font-size: 4px;
 	}
 
 	@include break-xxl {
-		font-size: rem( 7px );
+		font-size: 7px;
 	}
 }
