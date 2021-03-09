@@ -1,6 +1,6 @@
 .text {
 	font-family: var( --font-family_sans );
-	font-size: 14px;
+	font-size: var( --root-font-size );
 	line-height: 1.5;
 	
 	a {
