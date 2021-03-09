@@ -1,7 +1,7 @@
 // To do - get these locally once I remove unused typefaces
 @import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=IBM+Plex+Sans+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=IBM+Plex+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=IBM+Plex+Serif:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap");
 
-@import "./rem";
+@import "./functions/rem";
 
 :root {
 	--font-family_condensed: 'IBM Plex Sans Condensed', sans-serif;
@@ -16,11 +16,18 @@
 	--font-size-xl: #{ rem( 24px ) };
 	--font-size-xxl: #{ rem( 40px ) };
 
-	--layout-width-xs: 320px;
-	--layout-width-s: 360px;
-	--layout-width-m: 440px;
-	--layout-width-l: 800px;
-	--layout-width-xl: 1244px;
+	--layout-width-xs: #{ rem( 320px ) };
+	--layout-width-s: #{ rem( 360px ) };
+	--layout-width-m: #{ rem( 440px ) };
+	--layout-width-l: #{ rem( 800px ) };
+	--layout-width-xl: #{ rem( 1244px ) };
+
+	--unit-base: #{ rem( 8px ) }; // 8px
+	--unit-1: var( --unit-base );
+	--unit-2: calc( 2 * var( --unit-base ) ); // 16px
+	--unit-3: calc( 3 * var( --unit-base ) ); // 24px
+	--unit-4: calc( 4 * var( --unit-base ) ); // 32px
+	--unit-5: calc( 5 * var( --unit-base ) ); // 40px
 }
 
 html,

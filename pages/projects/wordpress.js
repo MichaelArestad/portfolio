@@ -46,7 +46,7 @@ export default function Home() {
 				</Hero>
 
 				<Card backgroundColor="#0073aa">
-					<Item width="l" style={{ margin: "40px auto" }}>
+					<Item width="l" style={{ margin: "var( --unit-5 ) auto" }}>
 						<img
 							src="/images/wordpress/dashboard@2x.jpg"
 							width="800"
@@ -55,7 +55,7 @@ export default function Home() {
 						<Card
 							compact
 							backgroundColor="#ffffff"
-							style={{ marginTop: "24px" }}
+							style={{ marginTop: "var( --unit-3 )" }}
 						>
 							<Text caption>
 								<a href="https://wordpress.org/">WordPress</a> now powers 40% of
@@ -67,7 +67,7 @@ export default function Home() {
 				</Card>
 
 				<Card backgroundColor="#23282d" textColor="#fff">
-					<Item style={{ margin: "0 auto" }} width="m">
+					<Item style={{ margin: "var( --unit-5 ) auto" }} width="m">
 						<Text size="l">
 							I have been using WordPress for so long I am not even sure when I
 							first started. It's been well over a decade. Before I started

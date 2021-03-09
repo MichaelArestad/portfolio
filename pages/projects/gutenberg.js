@@ -26,7 +26,7 @@ export default function Home() {
 				</Hero>
 
 				<Card circles backgroundColor="#000">
-					<Item width="large" style={{ margin: "40px auto" }}>
+					<Item width="l" style={{ margin: "var( --unit-5 ) auto" }}>
 						<img
 							src="/images/gutenberg/gberg-demo@2x.jpg"
 							width="800"
@@ -35,7 +35,7 @@ export default function Home() {
 						<Card
 							compact
 							backgroundColor="#ffffff"
-							style={{ marginTop: "24px" }}
+							style={{ marginTop: "var( --unit-3 )" }}
 						>
 							<Text caption>
 								Gutenberg is a new breed of editor with a block-based interface
@@ -45,13 +45,13 @@ export default function Home() {
 					</Item>
 				</Card>
 				<Card backgroundColor="#000" textColor="#fff">
-					<Item style={{ margin: "0 auto" }} width="small">
-						<Text>TBD</Text>
+					<Item centered width="s">
+						<Text size="l">TBD</Text>
 					</Item>
 				</Card>
 				<Card>
 					<Flex alignItems="center" justifyContent="space-between">
-						<FlexItem width="small">
+						<FlexItem width="s">
 							<Heading>The editor</Heading>
 							<Text>TBD</Text>
 						</FlexItem>

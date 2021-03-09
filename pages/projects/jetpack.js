@@ -48,7 +48,7 @@ export default function Home() {
 				</Hero>
 
 				<Card circles backgroundColor="#e9eff3">
-					<Item width="l" style={{ margin: "40px auto" }}>
+					<Item width="l" style={{ margin: "var( --unit-5 ) auto" }}>
 						<Image
 							src="/images/jetpack/jetpack-dashboard@2x.jpg"
 							width="800"
@@ -57,7 +57,7 @@ export default function Home() {
 						<Card
 							compact
 							backgroundColor="#ffffff"
-							style={{ marginTop: "24px" }}
+							style={{ marginTop: "var( --unit-3" }}
 						>
 							<Text caption>
 								Jetpack is a WordPress plugin with over 5 million active

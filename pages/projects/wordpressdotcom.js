@@ -50,7 +50,7 @@ export default function Home() {
 						<Card
 							compact
 							backgroundColor="#ffffff"
-							style={{ marginTop: "24px" }}
+							style={{ marginTop: "var( --unit-3 )" }}
 						>
 							<Text caption>
 								WordPress.com hosts millions of websites and is powered by, you
@@ -61,7 +61,7 @@ export default function Home() {
 				</Card>
 
 				<Card backgroundColor="#117ac9" textColor="#fff">
-					<Item style={{ margin: "0 auto" }} width="m">
+					<Item style={{ margin: "var( --unit-5 ) auto" }} width="m">
 						<Text size="l">
 							<a href="https://wordpress.com/">WordPress.com</a> started as a
 							blogging platform and grew into a flexible website-building
@@ -248,8 +248,6 @@ export default function Home() {
 						</FlexItem>
 					</Flex>
 				</Card>
-
-				<Spacer height="120px" />
 			</main>
 		</Layout>
 	);

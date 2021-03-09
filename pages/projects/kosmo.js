@@ -33,13 +33,13 @@ export default function Home() {
 				</Card>
 
 				<Card backgroundColor="#000">
-					<Item width="l" style={{ margin: "40px auto" }}>
+					<Item width="l" style={{ margin: "var( --unit-5 ) auto" }}>
 						<Image src="/images/kosmo/full@2x.jpg" width="800" height="600" />
 						<Card
 							compact
 							backgroundColor="#242424"
 							textColor="#fff"
-							style={{ marginTop: "24px" }}
+							style={{ marginTop: "var( --unit-3 )" }}
 						>
 							<Text caption>
 								This giant wall of synth is Kosmo. Kosmo is a modular
@@ -54,9 +54,9 @@ export default function Home() {
 					<Card
 						width="l"
 						backgroundColor="#ffffff"
-						style={{ margin: "40px auto" }}
+						style={{ margin: "var( --unit-5 ) auto" }}
 					>
-						<Item width="m" style={{ margin: "40px auto" }}>
+						<Item width="m" style={{ margin: "var( --unit-5 ) auto" }}>
 							<Text size="l">
 								This is a page showing my latest KOSMO setup.{" "}
 								<a href="https://twitter.com/michaelarestad">Let me know</a> if

@@ -48,7 +48,7 @@ export default function Home() {
 				</Hero>
 
 				<Card circles backgroundColor="#e9eff3">
-					<Item width="l" style={{ margin: "40px auto" }}>
+					<Item width="l" style={{ margin: "var( --unit-5 ) auto" }}>
 						<Image
 							src="/images/jetpack/jetpack-dashboard@2x.jpg"
 							width="800"
@@ -57,7 +57,7 @@ export default function Home() {
 						<Card
 							compact
 							backgroundColor="#ffffff"
-							style={{ marginTop: "24px" }}
+							style={{ marginTop: "var( --unit-3 )" }}
 						>
 							<Text caption>
 								A complete record of everything that happens on your site.
@@ -67,7 +67,7 @@ export default function Home() {
 				</Card>
 
 				<Card backgroundColor="#fff" textColor="#000">
-					<Item style={{ margin: "40px auto" }} width="m">
+					<Item style={{ margin: "var( --unit-5 ) auto" }} width="m">
 						<Text size="l">
 							The Activity Log is a list of every event on a WordPress site that
 							comes with the ability to rewind the site to any specific event. I
@@ -165,7 +165,7 @@ export default function Home() {
 				</Card>
 				<Image src="/images/activity-log/jetpack-activity-log.png" />
 				<Card>
-					<Item style={{ margin: "0 auto" }} width="m">
+					<Item centered width="m">
 						<Heading>My involvement</Heading>
 						<Text>
 							I worked with a team on the design and I oversaw the
