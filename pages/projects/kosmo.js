@@ -78,14 +78,10 @@ export default function Home() {
 				</Card>
 
 				<Card>
-					<Flex
-						flexDirection="row-reverse"
-						alignItems="center"
-						justifyContent="space-between"
-					>
+					<Flex alignItems="center" justifyContent="space-between">
 						<FlexItem>
 							<Image
-								caption="This case I built out of rotting plywood from under the shed. It has a folding handle for easy carrying."
+								caption="The latest case for housing utilitarian gems"
 								src="/images/kosmo/top.jpg"
 								srcset="/images/kosmo/top@2x.jpg 2x"
 								width="800"
@@ -94,6 +90,90 @@ export default function Home() {
 						</FlexItem>
 						<FlexItem width="s">
 							<Heading>Top case</Heading>
+
+							<Heading level="4">ROW 1</Heading>
+							<List minimal condensed>
+								<li>
+									1 x{" "}
+									<a href="https://github.com/holmesrichards/GateGrinder">
+										GATE GRINDER
+									</a>
+								</li>
+								<li>
+									1 x{" "}
+									<a href="https://lookmumnocomputer.discourse.group/t/kosmo-sequential-switch">
+										CTORP SEQUENTIAL SWITCH (waiting on parts)
+									</a>
+								</li>
+								<li>
+									1 x{" "}
+									<a href="https://lookmumnocomputer.discourse.group/t/k25-series-2-5cm-kosmo-utilities">
+										CTORP GLIDE
+									</a>
+								</li>
+								<li>
+									1 x{" "}
+									<a href="https://lookmumnocomputer.discourse.group/t/k25-series-2-5cm-kosmo-utilities">
+										CTORP LFO
+									</a>
+								</li>
+								<li>
+									1 x{" "}
+									<a href="https://lookmumnocomputer.discourse.group/t/k25-series-2-5cm-kosmo-utilities">
+										CTORP DUAL G2T
+									</a>
+								</li>
+								<li>
+									1 x{" "}
+									<a href="https://lookmumnocomputer.discourse.group/t/k25-series-2-5cm-kosmo-utilities">
+										CTORP SUB OSC
+									</a>
+								</li>
+								<li>
+									1 x{" "}
+									<a href="https://lookmumnocomputer.discourse.group/t/k25-series-2-5cm-kosmo-utilities">
+										CTORP ATTENUATOR (waiting on part)
+									</a>
+								</li>
+								<li>
+									1 x{" "}
+									<a href="https://lookmumnocomputer.discourse.group/t/k25-series-2-5cm-kosmo-utilities">
+										CTORP ATTENUVERTER
+									</a>
+								</li>
+								<li>
+									1 x{" "}
+									<a href="https://lookmumnocomputer.discourse.group/t/k25-series-2-5cm-kosmo-utilities">
+										CTORP A/R EG
+									</a>
+								</li>
+								<li>1 x crucFX VLPG</li>
+								<li>
+									1 x{" "}
+									<a href="https://www.lookmumnocomputer.com/projects#/1163-mini-mixer">
+										LMNC #1163 MINI MIXER
+									</a>
+								</li>
+							</List>
+						</FlexItem>
+					</Flex>
+
+					<Flex
+						flexDirection="row-reverse"
+						alignItems="center"
+						justifyContent="space-between"
+					>
+						<FlexItem>
+							<Image
+								caption="This case I built out of rotting plywood from under the shed. It has a folding handle for easy carrying."
+								src="/images/kosmo/middle.jpg"
+								srcset="/images/kosmo/middle@2x.jpg 2x"
+								width="800"
+								height="600"
+							/>
+						</FlexItem>
+						<FlexItem width="s">
+							<Heading>Middle case</Heading>
 
 							<Heading level="4">ROW 1</Heading>
 							<List minimal condensed>
@@ -126,9 +206,6 @@ export default function Home() {
 									<a href="https://www.lookmumnocomputer.com/projects#/11831184-quad-vca-mixer">
 										LMNC #1184 QUAD VCA MIXER
 									</a>
-								</li>
-								<li>
-									<a href=""></a>
 								</li>
 							</List>
 
@@ -282,18 +359,38 @@ export default function Home() {
 						</FlexItem>
 					</Flex>
 
+					<Flex
+						flexDirection="row-reverse"
+						alignItems="center"
+						justifyContent="space-between"
+					>
+						<FlexItem>
+							<Image
+								caption="A Frankenstein's ampsterp for sure"
+								src="/images/kosmo/speakers.jpg"
+								srcset="/images/kosmo/speakers@2x.jpg 2x"
+								width="800"
+								height="600"
+							/>
+						</FlexItem>
+						<FlexItem width="s">
+							<Heading>BUILT-IN AMP!</Heading>
+							<Text>
+								One day I got jealous of all those synths with built-in speakers
+								so I figured I would make my own. I took one of those small belt
+								Marshall amps that I found busted at a garage sale, combined it
+								with speakers harvested from a failed circuit bend, and made
+								this monstrousity to be the base of my Kosmo modular.
+							</Text>
+						</FlexItem>
+					</Flex>
+
 					<Flex>
 						<FlexItem width="s">
 							<Heading>In other cases (or shelved)</Heading>
 							<Text>These cases are still in progress.</Text>
 
 							<List minimal condensed>
-								<li>
-									1 x{" "}
-									<a href="https://github.com/holmesrichards/GateGrinder">
-										GATE GRINDER
-									</a>
-								</li>
 								<li>
 									1 x{" "}
 									<a href="https://www.lookmumnocomputer.com/projects#/vclfo">
@@ -314,20 +411,26 @@ export default function Home() {
 								</li>
 								<li>
 									1 x{" "}
-									<a href="https://www.lookmumnocomputer.com/projects#/1163-mini-mixer">
-										LMNC #1163 MINI MIXER
+									<a href="https://lookmumnocomputer.discourse.group/t/k25-series-2-5cm-kosmo-utilities">
+										CTORP LFO
 									</a>
 								</li>
 								<li>
 									1 x{" "}
 									<a href="https://lookmumnocomputer.discourse.group/t/k25-series-2-5cm-kosmo-utilities">
-										CTORP ATTENUVERTER
+										CTORP DUAL G2T
 									</a>
 								</li>
 								<li>
 									1 x{" "}
 									<a href="https://lookmumnocomputer.discourse.group/t/k25-series-2-5cm-kosmo-utilities">
-										CTORP GLIDE
+										CTORP SUB OSC
+									</a>
+								</li>
+								<li>
+									1 x{" "}
+									<a href="https://lookmumnocomputer.discourse.group/t/k25-series-2-5cm-kosmo-utilities">
+										CTORP A/R EG
 									</a>
 								</li>
 								<li>
@@ -336,6 +439,7 @@ export default function Home() {
 										LMNC AAAPPPCCC
 									</a>
 								</li>
+								<li>1 x crucFX VLPG</li>
 								<li>
 									<a href=""></a>
 								</li>
@@ -356,39 +460,9 @@ export default function Home() {
 									</a>
 								</li>
 								<li>
-									2 x{" "}
-									<a href="https://lookmumnocomputer.discourse.group/t/k25-series-2-5cm-kosmo-utilities">
-										CTORP LFO
-									</a>
-								</li>
-								<li>
-									2 x{" "}
+									1 x{" "}
 									<a href="https://lookmumnocomputer.discourse.group/t/k25-series-2-5cm-kosmo-utilities">
 										CTORP ATTENUATOR
-									</a>
-								</li>
-								<li>
-									2 x{" "}
-									<a href="https://lookmumnocomputer.discourse.group/t/k25-series-2-5cm-kosmo-utilities">
-										CTORP DUAL G2T
-									</a>
-								</li>
-								<li>
-									2 x{" "}
-									<a href="https://lookmumnocomputer.discourse.group/t/k25-series-2-5cm-kosmo-utilities">
-										CTORP SUB OSC
-									</a>
-								</li>
-								<li>
-									2 x{" "}
-									<a href="https://lookmumnocomputer.discourse.group/t/k25-series-2-5cm-kosmo-utilities">
-										CTORP A/R EG
-									</a>
-								</li>
-								<li>
-									2 x{" "}
-									<a href="https://lookmumnocomputer.discourse.group/t/kosmo-sequential-switch">
-										CTORP SEQUENTIAL SWITCH
 									</a>
 								</li>
 								<li>
