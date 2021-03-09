@@ -1,4 +1,12 @@
 .list {
+	font-size: 14px;
+	padding-left: 16px;
+	list-style-type: circle;
+
+	li {
+		margin-bottom: 16px;
+	}
+
 	+ .list {
 		margin-top: 80px;
 	}
