@@ -33,7 +33,7 @@ export default function Home() {
 				</Card>
 
 				<Card backgroundColor="#000">
-					<Item width="large" style={{ margin: "40px auto" }}>
+					<Item width="l" style={{ margin: "40px auto" }}>
 						<Image src="/images/kosmo/full@2x.jpg" width="800" height="600" />
 						<Card
 							compact
@@ -52,25 +52,28 @@ export default function Home() {
 
 				<Card circles backgroundColor="#242424">
 					<Card
-						width="large"
+						width="l"
 						backgroundColor="#ffffff"
 						style={{ margin: "40px auto" }}
 					>
-						<Text>
-							This is a page showing my latest KOSMO setup.{" "}
-							<a href="https://twitter.com/michaelarestad">Let me know</a> if
-							you have any questions.
-						</Text>
+						<Item width="m" style={{ margin: "40px auto" }}>
+							<Text size="l">
+								This is a page showing my latest KOSMO setup.{" "}
+								<a href="https://twitter.com/michaelarestad">Let me know</a> if
+								you have any questions.
+							</Text>
 
-						<Text>
-							I was particularly drawn to Kosmo modules because I rather enjoy
-							the build and they are cost effective. Sam (Look Mum No Computer)
-							and a few others from the forums have made PCBs and front panels
-							available to purchase. That means all I needed to do to start off
-							my modular is order the components and assemble the module. It
-							also is somewhat less expensive than purchasing Eurorack modules,
-							which can be hundreds of dollars for a single module.
-						</Text>
+							<Text size="l">
+								I was particularly drawn to Kosmo modules because I rather enjoy
+								the build and they are cost effective. Sam (Look Mum No
+								Computer) and a few others from the forums have made PCBs and
+								front panels available to purchase. That means all I needed to
+								do to start off my modular is order the components and assemble
+								the module. It also is somewhat less expensive than purchasing
+								Eurorack modules, which can be hundreds of dollars for a single
+								module.
+							</Text>
+						</Item>
 					</Card>
 				</Card>
 
@@ -88,7 +91,7 @@ export default function Home() {
 								height="600"
 							/>
 						</FlexItem>
-						<FlexItem width="small">
+						<FlexItem width="s">
 							<Heading>Top case</Heading>
 
 							<Heading level="4">ROW 1</Heading>
@@ -181,7 +184,7 @@ export default function Home() {
 								height="600"
 							/>
 						</FlexItem>
-						<FlexItem width="small">
+						<FlexItem width="s">
 							<Heading>Bottom case</Heading>
 							<Heading level="4">ROW 1</Heading>
 							<List minimal condensed>
@@ -278,7 +281,7 @@ export default function Home() {
 					</Flex>
 
 					<Flex>
-						<FlexItem width="small">
+						<FlexItem width="s">
 							<Heading>In other cases (or shelved)</Heading>
 							<Text>These cases are still in progress.</Text>
 
@@ -339,7 +342,7 @@ export default function Home() {
 					</Flex>
 
 					<Flex>
-						<FlexItem width="small">
+						<FlexItem width="s">
 							<Heading>On the bench</Heading>
 							<Text>My to do list.</Text>
 
@@ -397,7 +400,7 @@ export default function Home() {
 					</Flex>
 
 					<Flex>
-						<FlexItem width="small">
+						<FlexItem width="s">
 							<Heading>Why is this here?</Heading>
 							<Text>
 								Because it's a project I'm continually iterating on stretching

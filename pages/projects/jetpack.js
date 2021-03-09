@@ -48,7 +48,7 @@ export default function Home() {
 				</Hero>
 
 				<Card circles backgroundColor="#e9eff3">
-					<Item width="large" style={{ margin: "40px auto" }}>
+					<Item width="l" style={{ margin: "40px auto" }}>
 						<Image
 							src="/images/jetpack/jetpack-dashboard@2x.jpg"
 							width="800"
@@ -69,15 +69,15 @@ export default function Home() {
 					</Item>
 				</Card>
 				<Card backgroundColor="#fff" textColor="#000">
-					<Item style={{ margin: "0 auto" }} width="small">
-						<Text>
+					<Item style={{ margin: "0 auto" }} width="m">
+						<Text size="l">
 							I started work at Automattic in 2013 and spent a significant
 							amount of my time working on Jetpack. When I joined the Jetpack
 							team, the plugin was laden with broken flows and had no concrete
 							plans for monetization.
 						</Text>
 
-						<Text>
+						<Text size="l">
 							By the time I left Automattic in 2020, Jetpack was a profitable
 							business. The plugin’s interface was entirely rebuilt using a
 							design system shared with WordPress.com. It had a focused business
@@ -89,7 +89,7 @@ export default function Home() {
 				</Card>
 				<Card>
 					<Flex alignItems="center" justifyContent="space-between">
-						<FlexItem width="small">
+						<FlexItem width="s">
 							<Heading>The plugin</Heading>
 							<Text>
 								<strong>I redesigned and maintained the Jetpack plugin.</strong>{" "}
@@ -129,7 +129,7 @@ export default function Home() {
 					</Flex>
 
 					<Flex>
-						<FlexItem width="small">
+						<FlexItem width="s">
 							<Heading>The website</Heading>
 							<Text>
 								<strong>I redesigned the Jetpack website.</strong> Early on, I
@@ -188,7 +188,7 @@ export default function Home() {
 					<Spacer />
 
 					<Flex>
-						<FlexItem width="small">
+						<FlexItem width="s">
 							<Heading>WordPress.com integration</Heading>
 							<Text>
 								<strong>
@@ -212,7 +212,7 @@ export default function Home() {
 					</Flex>
 
 					<Flex>
-						<FlexItem width="small">
+						<FlexItem width="s">
 							<Heading>Events</Heading>
 							<Text>
 								<strong>I designed collateral for events</strong> including

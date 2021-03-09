@@ -41,7 +41,7 @@ export default function Home() {
 				</Hero>
 
 				<Card circles backgroundColor="#e3f3ff">
-					<Item width="large" style={{ margin: "40px auto" }}>
+					<Item width="l" style={{ margin: "40px auto" }}>
 						<img
 							src="/images/wordpressdotcom/dotcom-dashboard@2x.jpg"
 							width="800"
@@ -61,8 +61,8 @@ export default function Home() {
 				</Card>
 
 				<Card backgroundColor="#117ac9" textColor="#fff">
-					<Item style={{ margin: "0 auto" }} width="small">
-						<Text>
+					<Item style={{ margin: "0 auto" }} width="m">
+						<Text size="l">
 							<a href="https://wordpress.com/">WordPress.com</a> started as a
 							blogging platform and grew into a flexible website-building
 							machine. Nearly all of the work I did integrated with
@@ -70,14 +70,14 @@ export default function Home() {
 							Calypso.
 						</Text>
 
-						<Text>
+						<Text size="l">
 							One of the wildest projects I worked on was to help completely
 							rebuild the WordPress admin interface as a React application. This
 							application is known as Calypso and uses the WordPress API to
 							communicate with WordPress behind the scenes.
 						</Text>
 
-						<Text>
+						<Text size="l">
 							When the project first started, I worked on areas of the dashboard
 							that are related to Jetpack. By the time I left Automattic, I
 							ended up designing and implementing the Activity Log, Plugins, and
@@ -89,7 +89,7 @@ export default function Home() {
 
 				<Card>
 					<Flex alignItems="center" justifyContent="space-between">
-						<FlexItem width="small">
+						<FlexItem width="s">
 							<Heading>Activity Log</Heading>
 							<Text>
 								<strong>
@@ -134,7 +134,7 @@ export default function Home() {
 						alignItems="center"
 						justifyContent="space-between"
 					>
-						<FlexItem width="small">
+						<FlexItem width="s">
 							<Heading>Plugins</Heading>
 							<Text>
 								<strong>
@@ -163,7 +163,7 @@ export default function Home() {
 
 				<Card>
 					<Flex alignItems="center" justifyContent="space-between">
-						<FlexItem width="small">
+						<FlexItem width="s">
 							<Heading>People</Heading>
 							<Text>
 								<strong>
@@ -203,7 +203,7 @@ export default function Home() {
 						alignItems="center"
 						justifyContent="space-between"
 					>
-						<FlexItem width="small">
+						<FlexItem width="s">
 							<Heading>Settings</Heading>
 							<Text>
 								<strong>
@@ -234,7 +234,7 @@ export default function Home() {
 
 				<Card>
 					<Flex alignItems="center" justifyContent="space-between">
-						<FlexItem width="small">
+						<FlexItem width="s">
 							<Heading>My first React Components</Heading>
 							<Text>
 								<strong>

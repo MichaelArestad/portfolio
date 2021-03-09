@@ -1,20 +1,33 @@
 import styles from "./text.module.scss";
 import cn from "classnames";
 
-export default function Text({ isBig, caption, className, children }) {
-	const isTextBig = () => {
-		if ( isBig ) {
-			return styles.isBig;
+export default function Text({ caption, size, className, children }) {
+	const getSize = () => {
+		switch (size) {
+			case "s":
+				return styles.s;
+			case "m":
+				return styles.m;
+			case "l":
+				return styles.l;
+			case "xl":
+				return styles.xl;
+			case "xxl":
+				return styles.xxl;
+			default:
+				break;
 		}
 	};
 
 	const isCaption = () => {
-		if ( caption ) {
+		if (caption) {
 			return styles.caption;
 		}
-	}
+	};
 
-	return	(
-		<p className={ cn( styles.text, className, isTextBig(), isCaption() ) }>{ children }</p>
+	return (
+		<p className={cn(styles.text, className, getSize(), isCaption())}>
+			{children}
+		</p>
 	);
 }

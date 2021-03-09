@@ -46,7 +46,7 @@ export default function Home() {
 				</Hero>
 
 				<Card backgroundColor="#0073aa">
-					<Item width="large" style={{ margin: "40px auto" }}>
+					<Item width="l" style={{ margin: "40px auto" }}>
 						<img
 							src="/images/wordpress/dashboard@2x.jpg"
 							width="800"
@@ -67,8 +67,8 @@ export default function Home() {
 				</Card>
 
 				<Card backgroundColor="#23282d" textColor="#fff">
-					<Item style={{ margin: "0 auto" }} width="small">
-						<Text>
+					<Item style={{ margin: "0 auto" }} width="m">
+						<Text size="l">
 							I have been using WordPress for so long I am not even sure when I
 							first started. It's been well over a decade. Before I started
 							working at Automattic, I had been contributing here and there to
@@ -82,7 +82,7 @@ export default function Home() {
 
 				<Card>
 					<Flex alignItems="center" justifyContent="space-between">
-						<FlexItem width="small">
+						<FlexItem width="s">
 							<Heading>Editors</Heading>
 							<Text>
 								Most of my contributions to WordPress have been focused on the
@@ -104,7 +104,7 @@ export default function Home() {
 						alignItems="center"
 						justifyContent="space-between"
 					>
-						<FlexItem width="small">
+						<FlexItem width="s">
 							<Heading>Press This</Heading>
 							<Text>
 								One of my first major projects on WordPress was a redesign of a
@@ -142,7 +142,7 @@ export default function Home() {
 
 				<Card>
 					<Flex alignItems="center" justifyContent="space-between">
-						<FlexItem width="small">
+						<FlexItem width="s">
 							<Heading>Gutenberg</Heading>
 							<Text>
 								The most recent major project I worked on was{" "}
@@ -178,7 +178,7 @@ export default function Home() {
 
 				<Card>
 					<Flex alignItems="center" justifyContent="space-between">
-						<FlexItem width="small">
+						<FlexItem width="s">
 							<Heading>Commit</Heading>
 							<Text>
 								In 2015, I was granted commit access to WordPress. I was one of
@@ -199,7 +199,7 @@ export default function Home() {
 						alignItems="center"
 						justifyContent="space-between"
 					>
-						<FlexItem width="small">
+						<FlexItem width="s">
 							<Heading>Events</Heading>
 							<Text>
 								I designed the branding, website, collateral, and swag for a few
@@ -228,7 +228,7 @@ export default function Home() {
 
 				<Card>
 					<Flex alignItems="center" justifyContent="space-between">
-						<FlexItem width="small">
+						<FlexItem width="s">
 							<Heading>Musings</Heading>
 							<Text>
 								Because I spend so much time thinking about and working on
@@ -237,7 +237,7 @@ export default function Home() {
 								interesting.
 							</Text>
 
-							<List minimal condensed>
+							<List>
 								<li>
 									<a href="https://michael.blog/2020/05/29/wordpress-the-site-builder/">
 										WordPress – the site builder

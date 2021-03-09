@@ -10,7 +10,11 @@
 	list-style-type: circle;
 
 	li {
-		margin-bottom: 16px;
+		margin-bottom: 1em;
+	}
+
+	a {
+		text-decoration: underline;
 	}
 }
 
@@ -31,6 +35,15 @@
 	li {
 		margin-bottom: 1rem;
 	}
+
+	a {
+		text-decoration: none;
+
+		&:hover,
+		&:focus {
+			text-decoration: underline;
+		}
+	}
 }
 
 .condensed {
@@ -39,10 +52,6 @@
 
 	li {
 		margin-bottom: 0;
-	}
-
-	a {
-		text-decoration: underline;
 	}
 }
 

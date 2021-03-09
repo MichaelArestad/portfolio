@@ -19,7 +19,7 @@
 .heroInfo {
 	box-sizing: content-box;
 	padding: 24px;
-	max-width: 360px;
+	max-width: var( --layout-width-xs );
 	position: relative;
 
 	@media ( min-width: 480px) {

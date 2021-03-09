@@ -15,6 +15,12 @@
 	--font-size-l: #{ rem( 18px ) };
 	--font-size-xl: #{ rem( 24px ) };
 	--font-size-xxl: #{ rem( 40px ) };
+
+	--layout-width-xs: 320px;
+	--layout-width-s: 360px;
+	--layout-width-m: 440px;
+	--layout-width-l: 800px;
+	--layout-width-xl: 1244px;
 }
 
 html,

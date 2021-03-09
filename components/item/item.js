@@ -3,6 +3,7 @@ import styles from "./item.module.scss";
 
 export default function Item({
 	backgroundColor,
+	centered,
 	width,
 	textColor,
 	className,
@@ -13,17 +14,25 @@ export default function Item({
 	const howWide = () => {
 		if (width) {
 			switch (width) {
-				case "small":
-					return styles.isSmall;
-				case "medium":
-					return styles.isMedium;
-				case "large":
-					return styles.isLarge;
-				case "epic":
-					return styles.isEpic;
+				case "xs":
+					return styles.xs;
+				case "s":
+					return styles.s;
+				case "m":
+					return styles.m;
+				case "l":
+					return styles.l;
+				case "xl":
+					return styles.xl;
 				default:
 					break;
 			}
+		}
+	};
+
+	const isCentered = () => {
+		if (centered) {
+			return styles.centered;
 		}
 	};
 
@@ -35,7 +44,7 @@ export default function Item({
 	return (
 		<div
 			style={{ ...style, ...styling }}
-			className={cn(className, addedClass, howWide())}
+			className={cn(className, addedClass, howWide(), isCentered())}
 		>
 			{children}
 		</div>

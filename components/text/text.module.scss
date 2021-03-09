@@ -1,15 +1,12 @@
 .text {
 	font-family: var( --font-family_sans );
 	font-size: var( --font-size-m );
-	line-height: 1.5;
+	line-height: 1.6;
+	margin: 1em 0;
 	
 	a {
 		text-decoration: underline;
 	}
-}
-
-.isBig {
-	font-size: var( --font-size-xl );
 }
 
 .caption {
@@ -17,3 +14,27 @@
 	font-size: var( --font-size-s );
 	margin: 0;
 }
+
+.s {
+	font-size: var( --font-size-s );
+}
+
+.m {
+	font-size: var( --font-size-m );
+}
+
+.l {
+	font-size: var( --font-size-l );
+	font-weight: 300;
+}
+
+.xl {
+	font-size: var( --font-size-xl );
+	font-weight: 300;
+}
+
+.xxl { 
+	font-size: var( --font-size-xxl );
+	font-weight: 300;
+}
+

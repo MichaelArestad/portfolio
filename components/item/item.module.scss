@@ -1,4 +1,9 @@
-.isSmall {	max-width: 320px; }
-.isMedium {	max-width: 360px; }
-.isLarge { max-width: 800px; }
-.isEpic { max-width: 1244px; }
+.centered {
+  margin: 0 auto;
+}
+
+.xs {	max-width: var( --layout-width-xs ); }
+.s {	max-width: var( --layout-width-s ); }
+.m {	max-width: var( --layout-width-m ); }
+.l { max-width: var( --layout-width-l ); }
+.xl { max-width: var( --layout-width-xl ); }
