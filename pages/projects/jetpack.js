@@ -50,7 +50,9 @@ export default function Home() {
 				<Card circles backgroundColor="#e9eff3">
 					<Item width="l" style={{ margin: "var( --unit-5 ) auto" }}>
 						<Image
-							src="/images/jetpack/jetpack-dashboard@2x.jpg"
+							alt="The Jetpack plugin dashboard"
+							src="/images/jetpack/jetpack-dashboard.jpg"
+							srcset="/images/jetpack/jetpack-dashboard@2x.jpg 2x"
 							width="800"
 							height="448"
 						/>
@@ -121,7 +123,9 @@ export default function Home() {
 						</FlexItem>
 						<FlexItem>
 							<Image
-								src="/images/jetpack/jetpack-dashboard@2x.jpg"
+								alt="The Jetpack plugin settings"
+								src="/images/jetpack/jetpack-settings.jpg"
+								srcset="/images/jetpack/jetpack-settings@2x.jpg"
 								width="800"
 								height="448"
 							/>
@@ -143,7 +147,8 @@ export default function Home() {
 					<GalleryOverlap>
 						<Image
 							caption="jetpack.me 2012"
-							src="/images/jetpack/web2012@2x.jpg"
+							src="/images/jetpack/web2012.jpg"
+							srcset="/images/jetpack/web2012@2x.jpg 2x"
 							width="800"
 							height="448"
 						/>
@@ -151,14 +156,16 @@ export default function Home() {
 						<Image
 							align="right"
 							caption="jetpack.me 2013"
-							src="/images/jetpack/web2013@2x.jpg"
+							src="/images/jetpack/web2013.jpg"
+							srcset="/images/jetpack/web2013@2x.jpg 2x"
 							width="800"
 							height="448"
 						/>
 
 						<Image
 							caption="jetpack.me 2014"
-							src="/images/jetpack/web2014@2x.jpg"
+							src="/images/jetpack/web2014.jpg"
+							srcset="/images/jetpack/web2014@2x.jpg 2x"
 							width="800"
 							height="448"
 						/>
@@ -166,7 +173,8 @@ export default function Home() {
 						<Image
 							align="right"
 							caption="jetpack.com 2016"
-							src="/images/jetpack/web2016@2x.jpg"
+							src="/images/jetpack/web2016.jpg"
+							srcset="/images/jetpack/web2016@2x.jpg 2x"
 							width="800"
 							height="448"
 						/>
@@ -175,10 +183,12 @@ export default function Home() {
 					<Flex>
 						<FlexItem>
 							<Image
+								alt="The current Jetpack website"
 								align="center"
 								href="https://jetpack.com/"
 								caption="jetpack.com 2018"
-								src="/images/jetpack/web2018@2x.jpg"
+								src="/images/jetpack/web2018.jpg"
+								srcset="/images/jetpack/web2018@2x.jpg 2x"
 								width="1344"
 								height="448"
 							/>
@@ -204,7 +214,9 @@ export default function Home() {
 						</FlexItem>
 						<FlexItem>
 							<Image
-								src="/images/jetpack/dotcom-integration@2x.jpg"
+								alt="WordPress.com's dashboard showing stats and insights"
+								src="/images/jetpack/dotcom-integration.jpg"
+								srcset="/images/jetpack/dotcom-integration@2x.jpg 2x"
 								width="800"
 								height="448"
 							/>

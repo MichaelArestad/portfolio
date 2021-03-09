@@ -43,7 +43,9 @@ export default function Home() {
 				<Card circles backgroundColor="#e3f3ff">
 					<Item width="l" style={{ margin: "var( --unit-5 ) auto" }}>
 						<img
-							src="/images/wordpressdotcom/dotcom-dashboard@2x.jpg"
+							alt="The WordPress.com dashboard"
+							src="/images/wordpressdotcom/dotcom-dashboard.jpg"
+							srcset="/images/wordpressdotcom/dotcom-dashboard@2x.jpg 2x"
 							width="800"
 							height="448"
 						/>
@@ -117,7 +119,9 @@ export default function Home() {
 						<FlexItem>
 							<Image
 								border
-								src="/images/wordpressdotcom/dotcom-activity-log@2x.jpg"
+								alt="The Activity Logo showing a few event types"
+								src="/images/wordpressdotcom/dotcom-activity-log.jpg"
+								srcset="/images/wordpressdotcom/dotcom-activity-log@2x.jpg 2x"
 								width="800"
 								height="448"
 								margin="0 auto"
@@ -150,7 +154,9 @@ export default function Home() {
 						<FlexItem>
 							<Image
 								border
-								src="/images/wordpressdotcom/dotcom-plugins@2x.jpg"
+								alt="The Plugins browser"
+								src="/images/wordpressdotcom/dotcom-plugins.jpg"
+								srcset="/images/wordpressdotcom/dotcom-plugins@2x.jpg 2x"
 								width="800"
 								height="448"
 								margin="0 auto"
@@ -186,7 +192,9 @@ export default function Home() {
 						<FlexItem>
 							<Image
 								border
-								src="/images/wordpressdotcom/dotcom-people@2x.jpg"
+								alt="The People view"
+								src="/images/wordpressdotcom/dotcom-people.jpg"
+								srcset="/images/wordpressdotcom/dotcom-people@2x.jpg 2x"
 								width="800"
 								height="448"
 								margin="0 auto"
@@ -221,7 +229,9 @@ export default function Home() {
 						<FlexItem>
 							<Image
 								border
-								src="/images/wordpressdotcom/dotcom-settings@2x.jpg"
+								alt="WordPress.com settings"
+								src="/images/wordpressdotcom/dotcom-settings.jpg"
+								srcset="/images/wordpressdotcom/dotcom-settings@2x.jpg 2x"
 								width="800"
 								height="448"
 								margin="0 auto"

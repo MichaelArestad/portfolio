@@ -58,6 +58,7 @@ export default class Image extends React.PureComponent {
 					className={this.hasBorder()}
 					style={styling}
 					src={this.props.src}
+					srcset={this.props.srcset}
 					width={this.props.width}
 					height={this.props.height}
 					alt={this.props.alt}

@@ -48,7 +48,8 @@ export default function Home() {
 				<Card backgroundColor="#0073aa">
 					<Item width="l" style={{ margin: "var( --unit-5 ) auto" }}>
 						<img
-							src="/images/wordpress/dashboard@2x.jpg"
+							src="/images/wordpress/dashboard.jpg"
+							srcset="/images/wordpress/dashboard@2x.jpg 2x"
 							width="800"
 							height="448"
 						/>
@@ -168,7 +169,8 @@ export default function Home() {
 
 						<FlexItem>
 							<Image
-								src="/images/gutenberg/gberg-demo@2x.jpg"
+								src="/images/gutenberg/gberg-demo.jpg"
+								srcset="/images/gutenberg/gberg-demo@2x.jpg 2x"
 								width="800"
 								height="448"
 							/>
@@ -218,7 +220,8 @@ export default function Home() {
 						<FlexItem>
 							<Image
 								border
-								src="/images/wordpress/wcden@2x.jpg"
+								src="/images/wordpress/wcden.jpg"
+								srcset="/images/wordpress/wcden@2x.jpg 2x"
 								width="800"
 								height="448"
 							/>

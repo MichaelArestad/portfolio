@@ -86,7 +86,8 @@ export default function Home() {
 						<FlexItem>
 							<Image
 								caption="This case I built out of rotting plywood from under the shed. It has a folding handle for easy carrying."
-								src="/images/kosmo/top@2x.jpg"
+								src="/images/kosmo/top.jpg"
+								srcset="/images/kosmo/top@2x.jpg 2x"
 								width="800"
 								height="600"
 							/>
@@ -179,7 +180,8 @@ export default function Home() {
 						<FlexItem>
 							<Image
 								caption="A slightly wider case and the blueprint for any future cases."
-								src="/images/kosmo/bottom@2x.jpg"
+								src="/images/kosmo/bottom.jpg"
+								srcset="/images/kosmo/bottom@2x.jpg 2x"
 								width="800"
 								height="600"
 							/>
