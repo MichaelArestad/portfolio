@@ -1,24 +1,28 @@
+@import "../../../styles/functions/rem.scss";
+@import "../../../styles/mixins/break.scss";
+
 .container {
 	background: #000;
 	display: flex;
 	align-items: center;
 	transition: all .15s ease-in-out;
+	width: 100%;
 
 	&:hover {
 		background: #3f5975;
 	}
 
-	@media ( max-width: 480px ) {
-		width: 100%;
+	@include break-xs {
+		width: auto;
 	}
 }
 
 .anvil {
 	margin: 0 auto;
-	max-width: 360px;
-	min-width: 80px;
+	max-width: rem( 360px );
+	min-width: rem( 80px );
 
-	@media ( min-width: 480px ) {
-		width: 360px;
+	@include break-xs {
+		width: rem( 360px );
 	}
 }

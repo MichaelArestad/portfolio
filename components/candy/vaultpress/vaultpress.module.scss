@@ -1,3 +1,6 @@
+@import "../../../styles/functions/rem.scss";
+@import "../../../styles/mixins/break.scss";
+
 @keyframes vaultpress {
 	100% {
 		stroke-dasharray: 475;
@@ -14,12 +17,12 @@
 	display: flex;
 	align-items: center;
 	
-	@media (min-width: 768px) {
-		max-width: 442px;		
+	@include break-m {
+		max-width: rem( 442px );		
 	}
 
 	svg {
-		margin: 48px 0;
+		margin: rem( 48px ) 0;
 		width: 100%;
 	}
 

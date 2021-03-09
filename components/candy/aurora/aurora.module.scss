@@ -1,3 +1,6 @@
+@import "../../../styles/functions/rem.scss";
+@import "../../../styles/mixins/break.scss";
+
 .container {
 	display: flex;
 	align-items: center;
@@ -8,20 +11,20 @@
 		}
 	}
 
-	@media ( max-width: 480px ) {
+	@include break-xs {
 		width: 100%;
 	}
 }
 
 .aurora {
-	max-width: 360px;
+	max-width: rem( 360px );
 	margin: 0 auto;
 
 	path {
 		transition: all .15s ease-in-out;
 	}
 
-	@media ( min-width: 480px ) {
-		width: 360px;
+	@include break-xs {
+		width: rem( 360px );
 	}
 }

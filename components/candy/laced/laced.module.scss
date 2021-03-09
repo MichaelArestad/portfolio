@@ -1,3 +1,6 @@
+@import "../../../styles/functions/rem.scss";
+@import "../../../styles/mixins/break.scss";
+
 @font-face {
 	font-family: 'LacedRegular';
 	src: url('/fonts/laced/laced-regular-webfont.eot');
@@ -10,7 +13,7 @@
 }
 
 .laced {
-	padding: 48px;
+	padding: var( --unit-6 );
 	background: #000;
 	color: #fff;
 	border: none;
@@ -18,23 +21,23 @@
 	transition: all .15s ease-in-out;
 	font-family: 'LacedRegular',"pragmatica-web", sans-serif;
 	text-transform: uppercase;
-	font-size: 40px;
+	font-size: rem( 40px );
 	line-height: 0.7945205479;
 	word-break: break-all;
 	min-height: 5em;
 
-	@media ( min-width: 480px ) {
-		font-size: 56px;
+	@include break-xs {
+		font-size: rem( 56px );
 	}
 
-	@media ( min-width: 800px ) {
-		font-size: 72px;
+	@include break-l {
+		font-size: rem( 72px );
 
 		max-width: 50%;
 	}
 
-	@media ( min-width: 1400px ) {
-		font-size: 80px;
+	@include break-xxxl {
+		font-size: rem( 80px );
 	}
 
 	&:hover,

@@ -1,8 +1,12 @@
+@import "../../../styles/functions/rem.scss";
+@import "../../../styles/mixins/break.scss";
+
 .darknet.darknet {
 	background: #000;
 	flex-grow: 0;
 	display: flex;
 	align-items: center;
+	flex-grow: 1;
 
 	&:hover {
 		background: #121317;
@@ -18,15 +22,17 @@
 		}
 	}
 
-	@media ( max-width: 767px) {
-		flex-grow: 1;
+	@include break-m {
+		flex-grow: 0;
 	}
 }
 
 .darknetBeacon {	
-	@media (max-width: 480px) {
-		width: 16px;
-		height: auto;
+	width: rem( 16px );
+	height: auto;
+
+	@include break-xs {
+		width: auto;
 	}
 
 	.beacon__a,

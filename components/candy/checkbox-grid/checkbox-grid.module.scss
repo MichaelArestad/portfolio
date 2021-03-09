@@ -1,5 +1,8 @@
+@import "../../../styles/functions/rem.scss";
+@import "../../../styles/mixins/break.scss";
+
 $focus-color: #78dcfa;
-$focus-size: 3px;
+$focus-size: rem( 3px );
 
 @mixin heart($start, $end) {
 	@for $i from $start through $end {
@@ -22,29 +25,25 @@ $focus-size: 3px;
 	display: flex;
 	align-items: center;
 	max-width: none;
+	display: none;
 
-	@media ( max-width: 520px ) {
-		display: none;
+	@include break-s {
+		display: block;
 	}
 }
 
 .grid.grid {
 	display: block;
 	font-size: 0;
-	// width: 300px;
 	margin: 0 auto;
-
-	@media ( min-width: 492px ) {
-		width: 300px;
-	}
-
+	width: rem( 300px );
 	
 	input[type=checkbox] {
 		display: inline-block;
-		margin:  2px;
+		margin:  rem( 2px );
 		padding: 0;
-		width: 16px;
-		height: 16px;
+		width: rem( 16px );
+		height: rem( 16px );
 		color: #555;
 		line-height: 0;
 		text-align: center;
@@ -62,9 +61,9 @@ $focus-size: 3px;
 			float: left;
 			display: inline-block;
 			content: '\2022';
-			margin: 3px;
-			width: 8px;
-			height: 8px;
+			margin: rem( 3px );
+			width: rem( 8px );
+			height: rem( 8px );
 			text-indent: -9999px;
 			background: #6f7476;
 			vertical-align: middle;
@@ -113,7 +112,7 @@ $focus-size: 3px;
 
 @keyframes focus {
 	0% {
-		box-shadow: 0 0 0 15px transparentize($focus-color, 1);
+		box-shadow: 0 0 0 rem( 15px ) transparentize($focus-color, 1);
 	}
 	100% {
 		box-shadow: 0 0 0 $focus-size $focus-color;

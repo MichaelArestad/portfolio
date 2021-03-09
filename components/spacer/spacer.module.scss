@@ -1,7 +1,9 @@
+@import "../../styles/mixins/break.scss";
+
 .spacer {
 	display: none;
 
-	@media ( min-width: 1200px ) {
+	@include break-xxl {
 		display: block;
 	}
 }

@@ -1,3 +1,6 @@
+@import "../../../styles/functions/rem.scss";
+@import "../../../styles/mixins/break.scss";
+
 @keyframes bling {
 	20% {
 		transform: scale( 1.5 );
@@ -27,15 +30,15 @@
 
 .wpPixelated {
 	margin: 0 auto;
-	max-width: 155px;
-	min-width: 93px;
+	max-width: rem( 155px );
+	min-width: rem( 93px );
 
 	path {
 		opacity: 0;
 	}
 
-	@media ( min-width: 480px ) {
-		width: 155px;
+	@include break-xs {
+		width: rem( 155px );
 	}
 }
 

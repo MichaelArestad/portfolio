@@ -1,3 +1,6 @@
+@import "../../../styles/functions/rem.scss";
+@import "../../../styles/mixins/break.scss";
+
 @mixin thevoid( $stripe-width: 8px, $stripes: 180, $stripe-color: #fff ) {
 	$gradient: ();
 
@@ -20,24 +23,23 @@
 }
 
 .theVoid {
-	min-height: 360px;
+	min-height: 50vh;
 	width: 100%;
 	background-color: #fff;
 	@include thevoid( $stripe-color: black );
-	background-size: 400px 400px;
+	background-size: rem( 400px ) rem( 400px );
 	transition: background-color .2s ease-in-out, background-size 10s ease-in-out;
 	background-position: center center;
-
+	
 	&:hover {
 		background-color: #FFE600;
 	}
-
-	@media ( max-width: 768px ){
-		min-height: 50vh;
+	
+	@include break-m {
+		min-height: rem( 360px );
 	}
 
 	&:hover {
-		// @include thevoid( 4px, $stripe-color: black );
-		background-size: 50px 50px;
+		background-size: rem( 50px ) rem( 50px );
 	}
 }

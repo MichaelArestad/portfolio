@@ -1,9 +1,10 @@
 @import "../../styles/functions/rem.scss";
+@import "../../styles/mixins/break.scss";
 
 .flex {
 	display: block;
-	
-	@media ( min-width: 1200px ) {
+
+	@include break-xxl {
 		margin: 0 rem( -24px );
 		display: flex;
 		max-width: 1440px;
@@ -14,7 +15,7 @@
 .flexItem {
 	margin: 0 auto var( --unit-6 );
 
-	@media ( min-width: 1200px ) {
+	@include break-xxl {
 		margin: var( --unit-6 );
 	}
 }

@@ -1,3 +1,6 @@
+@import "../../../styles/functions/rem.scss";
+@import "../../../styles/mixins/break.scss";
+
 .container {
 	background: #000;
 	display: flex;
@@ -12,14 +15,14 @@
 .rocketeer {
 	margin: 0 auto;
 	font-family: Menlo, "Courier New", monospace;
-	font-size: 3px;
+	font-size: rem( 3px );
 	line-height: 1.2;
 
-	@media ( min-width: 480px ) {
-		font-size: 4px;;
+	@include break-xs {
+		font-size: rem( 4px );
 	}
 
-	@media ( min-width: 1200px ) {
-		font-size: 7px;;
+	@include break-xxl {
+		font-size: rem( 7px );
 	}
 }

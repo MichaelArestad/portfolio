@@ -1,10 +1,12 @@
+@import "../../styles/mixins/break.scss";
+
 .galleryOverlap {
 	> a,
 	> div {
 		margin-bottom: var( --unit-3 );
 	}
 
-	@media ( min-width: 768px ) {
+	@include break-m {
 		display: grid;
 		grid-template-columns: 40% 20% 40%;
 		max-width: 1344px;

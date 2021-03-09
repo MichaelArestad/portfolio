@@ -1,10 +1,13 @@
+@import "../../../styles/functions/rem.scss";
+@import "../../../styles/mixins/break.scss";
+
 $speed: .15s;
 
 .container.container {
 	background: #000;
 	transition: all $speed ease-in-out;
-	min-width: 100px;
-	max-width: 360px;
+	min-width: rem( 100px );
+	max-width: rem( 360px );
 	filter: grayscale(100%);
 
 	&:hover {
@@ -20,8 +23,8 @@ $speed: .15s;
 		}
 	}
 
-	@media ( min-width: 480px ) {
-		width: 360px;
+	@include break-xs {
+		width: rem( 360px );
 	}
 }
 

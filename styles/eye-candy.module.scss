@@ -1,17 +1,19 @@
+@import "../styles/mixins/break.scss";
+
 .container {
 	background: #000;
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: center;
 
-	@media ( min-width: 768px ) {
+	@include break-m {
 		justify-content: space-between;
 	}
 
 	> div {
 		flex-grow: 1;
 
-		@media ( min-width: 768px ) {
+		@include break-m {
 			max-width: 50%;
 		}
 	}
