@@ -24,7 +24,7 @@ export default function Home() {
 				<Card>
 					<List className={styles.list} minimal mono align="center">
 						<li>
-							<FancyLink link href="/projects/wordpressdotcom">
+							<FancyLink surprise="💙" link href="/projects/wordpressdotcom">
 								wordpress.com
 							</FancyLink>
 						</li>
@@ -34,7 +34,7 @@ export default function Home() {
 							</FancyLink>
 						</li>
 						<li>
-							<FancyLink link href="/projects/wordpress">
+							<FancyLink surprise="🎉" link href="/projects/wordpress">
 								wordpress
 							</FancyLink>
 						</li>
