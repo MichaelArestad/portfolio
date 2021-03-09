@@ -1,6 +1,6 @@
 .container {
 	position: relative;
-	background: #fff;
+	background: var( --color-light);
 	display: flex;
 	flex-direction: column;
 	min-height: 100vh;
@@ -13,7 +13,7 @@
 		content: "";
 		height: 1px;
 		width: 200vw;
-		background: #000;
+		background: var( --color-dark );
 		position: fixed;
 		opacity: .14;
 		top: 70%;

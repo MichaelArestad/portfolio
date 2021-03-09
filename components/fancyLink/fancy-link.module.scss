@@ -35,9 +35,9 @@
 
 	&:hover,
 	&:focus {
-		background: #000;
-		color: #fff;
-		box-shadow: rem( 4px ) 0 0 rem( 4px ) #000, rem( -4px ) 0 0 rem( 4px ) #000;
+		background: var( --color-dark );
+		color: var( --color-light );
+		box-shadow: rem( 4px ) 0 0 rem( 4px ) var( --color-dark ), rem( -4px ) 0 0 rem( 4px ) var( --color-dark );
 	}
 }
 
@@ -53,7 +53,6 @@
 		content: var( --surprise-content );
 		display: inline-block;
 		transform: rotateZ(90deg) scale(0);
-		// transform: rotateZ(-90deg) rotateX( 180deg ) scale(1);
 		transition: all .15s ease-in-out;
 		transform-origin: center center;
 	}

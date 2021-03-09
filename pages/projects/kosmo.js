@@ -53,7 +53,7 @@ export default function Home() {
 				<Card circles backgroundColor="#242424">
 					<Card
 						width="l"
-						backgroundColor="#ffffff"
+						backgroundColor="var( --color-light)"
 						style={{ margin: "var( --unit-5 ) auto" }}
 					>
 						<Item width="m" style={{ margin: "var( --unit-5 ) auto" }}>

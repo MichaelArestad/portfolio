@@ -16,7 +16,7 @@ import GalleryOverlap from "../../components/gallery-overlap/gallery-overlap";
 
 export default function Home() {
 	return (
-		<Layout backgroundColor="#e9eff3">
+		<Layout backgroundColor="#e9eff3" textColor="#000">
 			<SEO title="Jetpack" />
 
 			<main>

@@ -16,8 +16,8 @@ export default function Home() {
 				<Hero
 					title="Michael Arestad"
 					description="product designer, front-end developer, open source software fanatic, type nerd, graphic artist, and mediocre (at best) musician"
-					backgroundColor="#000"
-					textColor="#fff"
+					backgroundColor="var( --color-dark )"
+					textColor="var( --color-light )"
 				>
 					<Back href="/">Home</Back>
 					<HeroContent>

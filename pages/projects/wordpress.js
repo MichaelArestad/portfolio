@@ -14,7 +14,7 @@ import SEO from "../../components/seo";
 
 export default function Home() {
 	return (
-		<Layout backgroundColor="#fff">
+		<Layout backgroundColor="#fff" textColor="#000">
 			<SEO title="WordPress" />
 
 			<main>

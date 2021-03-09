@@ -19,13 +19,13 @@ export default function Home() {
 				<Hero
 					title="Gutenberg"
 					description="A WordPress editing experience rebuilt from the ground up"
-					backgroundColor="#000000"
-					textColor="#fff"
+					backgroundColor="var( --color-dark )"
+					textColor="var( --color-light )"
 				>
 					<Back href="/projects/">Projects</Back>
 				</Hero>
 
-				<Card circles backgroundColor="#000">
+				<Card circles backgroundColor="var( --color-dark )">
 					<Item width="l" style={{ margin: "var( --unit-5 ) auto" }}>
 						<img
 							src="/images/gutenberg/gberg-demo@2x.jpg"
@@ -44,7 +44,10 @@ export default function Home() {
 						</Card>
 					</Item>
 				</Card>
-				<Card backgroundColor="#000" textColor="#fff">
+				<Card
+					backgroundColor="var( --color-dark )"
+					textColor="var( --color-light )"
+				>
 					<Item centered width="s">
 						<Text size="l">TBD</Text>
 					</Item>

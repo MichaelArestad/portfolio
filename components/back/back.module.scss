@@ -18,9 +18,9 @@
 		&:hover,
 		&:focus {
 			text-decoration: none;
-			background: #000;
-			box-shadow: rem( 4px ) 0 0 rem( 4px ) #000, rem( -4px ) 0 0 rem( 4px ) #000;
-			color: #fff;
+			background: var( --color-dark );
+			box-shadow: rem( 4px ) 0 0 rem( 4px ) var( --color-dark ), rem( -4px ) 0 0 rem( 4px ) var( --color-dark );
+			color: var( --color-light );
 		}
 	}
 }

@@ -9,7 +9,7 @@ import Text from "../components/text/text";
 
 export default function Home() {
 	return (
-		<Layout backgroundColor="#000000" textColor="#ffffff">
+		<Layout backgroundColor="#000" textColor="#fff">
 			<SEO title="got any jobby trees where i can find some jobs?" />
 
 			<main>
