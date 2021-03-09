@@ -366,7 +366,7 @@ export default function Home() {
 					>
 						<FlexItem>
 							<Image
-								caption="A Frankenstein's ampsterp for sure"
+								caption="A Frankenstein's amp for sure"
 								src="/images/kosmo/speakers.jpg"
 								srcset="/images/kosmo/speakers@2x.jpg 2x"
 								width="800"
