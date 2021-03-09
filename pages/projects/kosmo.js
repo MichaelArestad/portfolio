@@ -90,8 +90,6 @@ export default function Home() {
 						</FlexItem>
 						<FlexItem width="s">
 							<Heading>Top case</Heading>
-
-							<Heading level="4">ROW 1</Heading>
 							<List minimal condensed>
 								<li>
 									1 x{" "}
