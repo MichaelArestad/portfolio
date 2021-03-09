@@ -52,6 +52,8 @@
 		margin: 0 rem( 12px );
 		content: var( --surprise-content );
 		display: inline-block;
+		font-size: 1em;
+    line-height: 1em;
 		transform: rotateZ(90deg) scale(0);
 		transition: all .15s ease-in-out;
 		transform-origin: center center;
