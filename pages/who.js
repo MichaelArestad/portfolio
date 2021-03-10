@@ -38,11 +38,12 @@ export default function Home() {
 
 					<List title="Speaking" minimal condensed mono>
 						<li>Develop Denver</li>
-						<li>WordCamp St. Louis</li>
-						<li>WordCamp Denver</li>
-						<li>WordCamp San Francisco</li>
-						<li>WordCamp US</li>
 						<li>WordCamp Europe</li>
+						<li>WordCamp US</li>
+						<li>WordCamp NYC</li>
+						<li>WordCamp San Francisco</li>
+						<li>WordCamp Denver</li>
+						<li>WordCamp St. Louis</li>
 					</List>
 
 					<List title="Skill" minimal condensed mono>

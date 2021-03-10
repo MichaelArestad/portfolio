@@ -240,8 +240,6 @@ export default function Home() {
 					</Flex>
 				</Card>
 
-				<Spacer />
-
 				<Card>
 					<Flex alignItems="center" justifyContent="space-between">
 						<FlexItem width="s">
