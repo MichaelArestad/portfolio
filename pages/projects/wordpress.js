@@ -55,7 +55,10 @@ export default function Home() {
 						<Card
 							compact
 							backgroundColor="#ffffff"
-							style={{ marginTop: "var( --unit-3 )" }}
+							style={{
+								marginTop: "var( --unit-3 )",
+								boxShadow: "0 var(--unit-2) var(--unit-4) rgba(0,0,0,.1)",
+							}}
 						>
 							<Text caption>
 								<a href="https://wordpress.org/">WordPress</a> now powers 40% of

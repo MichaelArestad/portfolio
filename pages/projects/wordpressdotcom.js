@@ -42,7 +42,7 @@ export default function Home() {
 
 				<Card circles backgroundColor="#e3f3ff">
 					<Item width="l" style={{ margin: "var( --unit-5 ) auto" }}>
-						<img
+						<Image
 							alt="The WordPress.com dashboard"
 							src="/images/wordpressdotcom/dotcom-dashboard.jpg"
 							width={800}
@@ -51,7 +51,10 @@ export default function Home() {
 						<Card
 							compact
 							backgroundColor="#ffffff"
-							style={{ marginTop: "var( --unit-3 )" }}
+							style={{
+								marginTop: "var( --unit-3 )",
+								boxShadow: "0 var(--unit-2) var(--unit-4) rgba(0,0,0,.1)",
+							}}
 						>
 							<Text caption>
 								WordPress.com hosts millions of websites and is powered by, you
