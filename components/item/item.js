@@ -2,14 +2,14 @@ import cn from "classnames";
 import styles from "./item.module.scss";
 
 export default function Item({
+	addedClass,
 	backgroundColor,
 	centered,
-	width,
-	textColor,
-	className,
-	addedClass,
 	children,
+	className,
 	style,
+	textColor,
+	width,
 	...props
 }) {
 	const howWide = () => {
