@@ -27,7 +27,12 @@ export default class Card extends React.Component {
 	renderCard() {
 		if (this.props.href) {
 			return (
-				<a href={this.props.href} className={this.classes} style={this.styles}>
+				<a
+					href={this.props.href}
+					className={this.classes}
+					style={this.styles}
+					{...props}
+				>
 					{this.props.children}
 				</a>
 			);

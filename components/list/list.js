@@ -9,6 +9,7 @@ export default function List({
 	condensed,
 	align,
 	children,
+	...props
 }) {
 	const isMinimal = () => {
 		if (minimal) {
@@ -59,6 +60,7 @@ export default function List({
 	} else {
 		return (
 			<ul
+				{...props}
 				className={cn(
 					styles.list,
 					isMinimal(),

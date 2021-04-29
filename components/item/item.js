@@ -10,6 +10,7 @@ export default function Item({
 	addedClass,
 	children,
 	style,
+	...props
 }) {
 	const howWide = () => {
 		if (width) {
@@ -45,6 +46,7 @@ export default function Item({
 		<div
 			style={{ ...style, ...styling }}
 			className={cn(className, addedClass, howWide(), isCentered())}
+			{...props}
 		>
 			{children}
 		</div>

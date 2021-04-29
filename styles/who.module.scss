@@ -1,0 +1,139 @@
+@import '../styles/functions/rem.scss';
+@import '../styles/mixins/break.scss';
+
+
+.who {
+	ul {
+		font-size: var( --font-size-m );
+		padding-left: var( --unit-2 );
+		list-style-type: circle;
+		list-style: none;
+		margin: 0 0 var(--unit-6);
+		padding: 0;
+	}
+}
+
+.flexContainer {
+	width: 100%;
+	max-width: 1120px;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	
+	@include break-l {
+		margin: var(--unit-8) auto;
+		display: flex;
+	}
+}
+
+// .flexItem {
+// }
+
+.flexA {
+	@include break-l {
+		max-width: 400px;
+		margin-right: auto;
+	} 
+}
+
+.flexB {
+	@include break-l {
+		max-width: 632px;
+	}
+}
+
+
+// SKILLS
+.skills {
+	font-family: var(--font-family_mono);
+	
+	li {
+		font-size: var(--font-size-s);
+		&:not(:first-child) {
+			margin-top: var(--unit-3);
+		}
+	}
+}
+
+.percent {
+	font-size: var(--font-size-m);
+	margin-top: rem(4px);
+}
+
+.percentValue {
+	position: relative;
+	top: rem(1px);
+	font-size: var(--font-size-s);
+}
+
+// EDUCATION
+.college:not(:first-child) {
+	margin-top: var(--unit-2);
+}
+
+.collegeName {
+	font-family: var(--font-family_sans);
+	font-weight: 500;
+	font-size: var(--font-size-m);
+}
+
+.degree {
+	font-size: var(--font-size-s);
+	font-family: var(--font-family_mono);
+	margin-top: rem(2px);
+}
+
+// SPEAKING
+.speaking {
+	li:not(:first-child) {
+		margin-top: var(--unit-2);
+	}
+}
+
+// CONTACT
+.contact li {
+	font-family: var(--font-family_mono);
+	font-size: var(--font-size-s);
+
+	&:not(:first-child) {
+		margin-top: var(--unit-1);
+	}
+}
+
+// EXPERIENCE
+.experience {
+	h4 {
+		font-family: var(--font-family_sans);
+	}
+
+	p {
+		font-size: var(--font-size-m);
+		line-height: 1.5;
+	}
+	
+	ul {
+		padding-left: var(--unit-4);
+		
+		li {
+			position: relative;
+			font-size: var(--font-siz-m);
+			line-height: 1.5;
+
+			&:before {
+				position: absolute;
+				right: 100%;
+				content: '•';
+				margin-right: var(--unit-2);
+			}
+
+			&:not(:first-child) {
+				margin-top: var(--unit-1);
+			}
+		}
+	}
+}
+
+.dateRange {
+	font-family: var(--font-family_mono);
+	font-size: var(--font-size-s);
+	font-weight: 400;
+}

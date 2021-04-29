@@ -63,6 +63,7 @@ export default class Image extends React.PureComponent {
 					width={this.props.width}
 					height={this.props.height}
 					alt={this.props.alt}
+					// {...props}
 				/>
 				{this.hasCaption()}
 			</TagName>
