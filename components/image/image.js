@@ -2,6 +2,7 @@ import React from "react";
 import cn from "classnames";
 
 import Card from "../card/card";
+import ImageNext from "next/image";
 import Text from "../text/text";
 
 import styles from "./image.module.scss";
@@ -54,11 +55,11 @@ export default class Image extends React.PureComponent {
 
 		return (
 			<TagName href={this.props.href} className={styles.image}>
-				<img
+				<ImageNext
 					className={this.hasBorder()}
 					style={styling}
 					src={this.props.src}
-					srcset={this.props.srcset}
+					srcSet={this.props.srcSet}
 					width={this.props.width}
 					height={this.props.height}
 					alt={this.props.alt}

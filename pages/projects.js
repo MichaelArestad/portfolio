@@ -48,11 +48,11 @@ export default function Home() {
 								eye candy
 							</FancyLink>
 						</li>
-						<li>
+						{/* <li>
 							<FancyLink inverted surprise="⚡️" link href="/projects/kosmo">
 								kosmo
 							</FancyLink>
-						</li>
+						</li> */}
 					</List>
 				</Card>
 			</main>

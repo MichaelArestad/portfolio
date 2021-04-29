@@ -52,9 +52,8 @@ export default function Home() {
 						<Image
 							alt="The Jetpack plugin dashboard"
 							src="/images/jetpack/jetpack-dashboard.jpg"
-							srcset="/images/jetpack/jetpack-dashboard@2x.jpg 2x"
-							width="800"
-							height="448"
+							width={800}
+							height={448}
 						/>
 						<Card
 							compact
@@ -125,9 +124,8 @@ export default function Home() {
 							<Image
 								alt="The Jetpack plugin settings"
 								src="/images/jetpack/jetpack-settings.jpg"
-								srcset="/images/jetpack/jetpack-settings@2x.jpg"
-								width="800"
-								height="448"
+								width={800}
+								height={448}
 							/>
 						</FlexItem>
 					</Flex>
@@ -148,35 +146,31 @@ export default function Home() {
 						<Image
 							caption="jetpack.me 2012"
 							src="/images/jetpack/web2012.jpg"
-							srcset="/images/jetpack/web2012@2x.jpg 2x"
-							width="800"
-							height="448"
+							width={800}
+							height={448}
 						/>
 
 						<Image
 							align="right"
 							caption="jetpack.me 2013"
 							src="/images/jetpack/web2013.jpg"
-							srcset="/images/jetpack/web2013@2x.jpg 2x"
-							width="800"
-							height="448"
+							width={800}
+							height={448}
 						/>
 
 						<Image
 							caption="jetpack.me 2014"
 							src="/images/jetpack/web2014.jpg"
-							srcset="/images/jetpack/web2014@2x.jpg 2x"
-							width="800"
-							height="448"
+							width={800}
+							height={448}
 						/>
 
 						<Image
 							align="right"
 							caption="jetpack.com 2016"
 							src="/images/jetpack/web2016.jpg"
-							srcset="/images/jetpack/web2016@2x.jpg 2x"
-							width="800"
-							height="448"
+							width={800}
+							height={448}
 						/>
 					</GalleryOverlap>
 
@@ -188,9 +182,8 @@ export default function Home() {
 								href="https://jetpack.com/"
 								caption="jetpack.com 2018"
 								src="/images/jetpack/web2018.jpg"
-								srcset="/images/jetpack/web2018@2x.jpg 2x"
-								width="1344"
-								height="448"
+								width={1344}
+								height={766}
 							/>
 						</FlexItem>
 					</Flex>
@@ -216,9 +209,8 @@ export default function Home() {
 							<Image
 								alt="WordPress.com's dashboard showing stats and insights"
 								src="/images/jetpack/dotcom-integration.jpg"
-								srcset="/images/jetpack/dotcom-integration@2x.jpg 2x"
-								width="800"
-								height="448"
+								width={800}
+								height={448}
 							/>
 						</FlexItem>
 					</Flex>

@@ -45,9 +45,8 @@ export default function Home() {
 						<img
 							alt="The WordPress.com dashboard"
 							src="/images/wordpressdotcom/dotcom-dashboard.jpg"
-							srcset="/images/wordpressdotcom/dotcom-dashboard@2x.jpg 2x"
-							width="800"
-							height="448"
+							width={800}
+							height={448}
 						/>
 						<Card
 							compact
@@ -121,9 +120,8 @@ export default function Home() {
 								border
 								alt="The Activity Logo showing a few event types"
 								src="/images/wordpressdotcom/dotcom-activity-log.jpg"
-								srcset="/images/wordpressdotcom/dotcom-activity-log@2x.jpg 2x"
-								width="800"
-								height="448"
+								width={800}
+								height={448}
 								margin="0 auto"
 							/>
 						</FlexItem>
@@ -156,9 +154,8 @@ export default function Home() {
 								border
 								alt="The Plugins browser"
 								src="/images/wordpressdotcom/dotcom-plugins.jpg"
-								srcset="/images/wordpressdotcom/dotcom-plugins@2x.jpg 2x"
-								width="800"
-								height="448"
+								width={800}
+								height={448}
 								margin="0 auto"
 							/>
 						</FlexItem>
@@ -194,9 +191,8 @@ export default function Home() {
 								border
 								alt="The People view"
 								src="/images/wordpressdotcom/dotcom-people.jpg"
-								srcset="/images/wordpressdotcom/dotcom-people@2x.jpg 2x"
-								width="800"
-								height="448"
+								width={800}
+								height={448}
 								margin="0 auto"
 							/>
 						</FlexItem>
@@ -231,9 +227,8 @@ export default function Home() {
 								border
 								alt="WordPress.com settings"
 								src="/images/wordpressdotcom/dotcom-settings.jpg"
-								srcset="/images/wordpressdotcom/dotcom-settings@2x.jpg 2x"
-								width="800"
-								height="448"
+								width={800}
+								height={448}
 								margin="0 auto"
 							/>
 						</FlexItem>
@@ -251,7 +246,7 @@ export default function Home() {
 								</strong>{" "}
 								Over time, our devs improving on my crude React components, but
 								the core styling is still there. Building these components
-								awakened my deep interest in systematic design.
+								awakened my interest in creatingdesign systems.
 							</Text>
 						</FlexItem>
 					</Flex>
