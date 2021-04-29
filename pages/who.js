@@ -15,7 +15,7 @@ export default function Home() {
 			<main>
 				<Hero
 					title="Michael Arestad"
-					description="product designer, front-end developer, open source software fanatic, type nerd, graphic artist, and mediocre (at best) musician"
+					description="I'm a product designer and front-end engineer with proven ability to design and develop products used by millions globally."
 					backgroundColor="var( --color-dark )"
 					textColor="var( --color-light )"
 				>
