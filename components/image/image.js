@@ -54,9 +54,11 @@ export default class Image extends React.PureComponent {
 		}
 
 		return (
-			<TagName href={this.props.href} className={styles.image}>
+			<TagName
+				href={this.props.href}
+				className={cn(styles.image, this.hasBorder())}
+			>
 				<ImageNext
-					className={this.hasBorder()}
 					style={styling}
 					src={this.props.src}
 					srcSet={this.props.srcSet}
