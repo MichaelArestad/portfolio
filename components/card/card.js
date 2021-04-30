@@ -23,7 +23,13 @@ export default function Card({
 		}
 	};
 
-	const classes = cn(styles.card, hasCircles(), isCompact());
+	const classes = cn(
+		styles.card,
+		hasCircles(),
+		isCompact(),
+		className,
+		addedClass,
+	);
 
 	const renderCard = () => {
 		if (href) {
