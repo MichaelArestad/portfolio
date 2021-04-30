@@ -74,7 +74,7 @@ export default function Home() {
 							<Text>(updating this soon with details on the process)</Text>
 						</FlexItem>
 						<FlexItem>
-							<img
+							<Image
 								width={800}
 								height={427}
 								src="/images/pipe-wrench/colors.jpg"
