@@ -36,42 +36,42 @@ export default function Home() {
 								<li>
 									UI &amp; UX design
 									<div className={styles.percent}>
-										████████████████████{" "}
+										<span aria-hidden="true">████████████████████</span>{" "}
 										<span className={styles.percentValue}>[100%]</span>
 									</div>
 								</li>
 								<li>
 									Systems Design
 									<div className={styles.percent}>
-										██████████████████░░{" "}
+										<span aria-hidden="true">██████████████████░░</span>{" "}
 										<span className={styles.percentValue}>[90%]</span>
 									</div>
 								</li>
 								<li>
 									User research
 									<div className={styles.percent}>
-										████████████████░░░░{" "}
+										<span aria-hidden="true">████████████████░░░░</span>{" "}
 										<span className={styles.percentValue}>[80%]</span>
 									</div>
 								</li>
 								<li>
 									t Y p O g R a P h Y
 									<div className={styles.percent}>
-										████████████████████{" "}
+										<span aria-hidden="true">████████████████████</span>{" "}
 										<span className={styles.percentValue}>[100%]</span>
 									</div>
 								</li>
 								<li>
 									HTML/CSS
 									<div className={styles.percent}>
-										████████████████████{" "}
+										<span aria-hidden="true">████████████████████</span>{" "}
 										<span className={styles.percentValue}>[100%]</span>
 									</div>
 								</li>
 								<li>
 									Javascript
 									<div className={styles.percent}>
-										█████████████████░░░{" "}
+										<span aria-hidden="true">█████████████████░░░</span>{" "}
 										<span className={styles.percentValue}>[85%]</span>
 									</div>
 								</li>
