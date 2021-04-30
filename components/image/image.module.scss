@@ -3,6 +3,8 @@
 	line-height: 0;
 	--image-border-color: var( --color-light );
 	box-shadow: 0 var(--unit-2) var(--unit-4) rgba(0,0,0,.1);
+	max-width: 1440px;
+	margin: 0 auto;
 }
 
 .hasBorder {
