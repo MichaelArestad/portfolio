@@ -43,11 +43,11 @@ export default function Home() {
 								gutenberg
 							</FancyLink>
 						</li> */}
-						<li>
+						{/* <li>
 							<FancyLink link href="/projects/pipe-wrench">
 								pipe wrench
 							</FancyLink>
-						</li>
+						</li> */}
 						<li>
 							<FancyLink surprise="🍭" link href="/projects/eye-candy">
 								eye candy
