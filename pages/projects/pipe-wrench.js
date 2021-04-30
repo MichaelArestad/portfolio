@@ -77,7 +77,7 @@ export default function Home() {
 							<Image
 								width={800}
 								height={427}
-								src="/images/pipe-wrench/colors.jpg"
+								src="/images/pipe-wrench/brand-colors.jpg"
 							/>
 						</FlexItem>
 					</Flex>
