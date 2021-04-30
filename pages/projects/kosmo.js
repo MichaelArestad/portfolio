@@ -29,7 +29,7 @@ export default function Home() {
 				</Hero>
 
 				<Card backgroundColor="#242424">
-					<YouTube src="https://www.youtube.com/embed/JLYqVV-UbW8" />
+					<YouTube src="JLYqVV-UbW8" />
 				</Card>
 
 				<Card backgroundColor="#000">
