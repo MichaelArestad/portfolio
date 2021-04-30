@@ -1,7 +1,7 @@
 import styles from "./text.module.scss";
 import cn from "classnames";
 
-export default function Text({ caption, size, className, children }) {
+export default function Text({ caption, size, className, children, ...props }) {
 	const getSize = () => {
 		switch (size) {
 			case "s":
@@ -26,7 +26,10 @@ export default function Text({ caption, size, className, children }) {
 	};
 
 	return (
-		<p className={cn(styles.text, className, getSize(), isCaption())}>
+		<p
+			className={cn(styles.text, className, getSize(), isCaption())}
+			{...props}
+		>
 			{children}
 		</p>
 	);

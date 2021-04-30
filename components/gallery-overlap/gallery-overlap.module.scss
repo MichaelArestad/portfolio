@@ -21,6 +21,7 @@
 			&:nth-child(2n) {
 				margin-top: -34%;
 				grid-column: 2 / 4;
+				position: relative;
 			}
 		}
 	}

@@ -28,7 +28,7 @@ export default function Home() {
 				<Card circles backgroundColor="var( --color-dark )">
 					<Item width="l" style={{ margin: "var( --unit-5 ) auto" }}>
 						<img
-							src="/images/gutenberg/gberg-demo@2x.jpg"
+							src="/images/gutenberg/gberg-demo.jpg"
 							width="800"
 							height="448"
 						/>

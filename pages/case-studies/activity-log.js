@@ -1,7 +1,5 @@
 import Back from "../../components/back/back";
 import Card from "../../components/card/card";
-import Flex from "../../components/flex/flex";
-import FlexItem from "../../components/flex/flex-item";
 import Heading from "../../components/heading/heading";
 import Hero from "../../components/hero/hero";
 import HeroContent from "../../components/hero/hero-content";
@@ -10,9 +8,7 @@ import Item from "../../components/item/item";
 import Layout from "../../components/layout/layout";
 import List from "../../components/list/list";
 import SEO from "../../components/seo";
-import Spacer from "../../components/spacer/spacer";
 import Text from "../../components/text/text";
-import GalleryOverlap from "../../components/gallery-overlap/gallery-overlap";
 
 export default function Home() {
 	return (
@@ -50,9 +46,9 @@ export default function Home() {
 				<Card circles backgroundColor="#e9eff3">
 					<Item width="l" style={{ margin: "var( --unit-5 ) auto" }}>
 						<Image
-							src="/images/jetpack/jetpack-dashboard@2x.jpg"
-							width="800"
-							height="448"
+							src="/images/activity-log/jetpack-activity-log.png"
+							width={800}
+							height={440}
 						/>
 						<Card
 							compact
@@ -163,7 +159,6 @@ export default function Home() {
 						</List>
 					</Item>
 				</Card>
-				<Image src="/images/activity-log/jetpack-activity-log.png" />
 				<Card>
 					<Item centered width="m">
 						<Heading>My involvement</Heading>

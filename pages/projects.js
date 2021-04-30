@@ -44,15 +44,20 @@ export default function Home() {
 							</FancyLink>
 						</li> */}
 						<li>
+							<FancyLink link href="/projects/pipe-wrench">
+								pipe wrench
+							</FancyLink>
+						</li>
+						<li>
 							<FancyLink surprise="🍭" link href="/projects/eye-candy">
 								eye candy
 							</FancyLink>
 						</li>
-						{/* <li>
+						<li>
 							<FancyLink inverted surprise="⚡️" link href="/projects/kosmo">
 								kosmo
 							</FancyLink>
-						</li> */}
+						</li>
 					</List>
 				</Card>
 			</main>
