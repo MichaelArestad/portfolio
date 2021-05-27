@@ -16,10 +16,10 @@ export default function Home() {
 				<Back href="/">Home</Back>
 				<Card width="s" style={{ margin: "var( --unit-5 ) auto" }}>
 					<Spacer height="15vh" />
-					<Heading>Hire me</Heading>
+					<Heading>Contact me</Heading>
 					<Text>
-						I'm currently accepting new clients. If you are interested in
-						working together, please reach out.
+						I'm no longer accepting new clients. If you are interested in
+						chatting or have a question, please reach out.
 					</Text>
 					<Spacer />
 					<List minimal mono condensed>
