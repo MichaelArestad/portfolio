@@ -125,6 +125,14 @@ export default function Home() {
 								<Heading>Experience</Heading>
 
 								<Heading level={4}>
+									<a href="https://chromatic.com/">Chromatic</a>: Senior Product
+									Designer<span className={styles.dateRange}> – 2021-NOW</span>
+								</Heading>
+								<p>Improve the UX of the web.</p>
+
+								<br />
+
+								<Heading level={4}>
 									<a href="https://automattic.com/">Automattic</a>: Product
 									Designer<span className={styles.dateRange}> – 2013-2020</span>
 								</Heading>
