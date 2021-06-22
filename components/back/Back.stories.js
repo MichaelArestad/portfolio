@@ -5,9 +5,10 @@ export default {
 	component: Back,
 };
 
-const Template = (args) => <Back {...args}>Edit on GitHub</Back>;
+const Template = (args) => <Back {...args}>{args.children}</Back>;
 
 export const Default = Template.bind({});
 Default.args = {
 	href: "https://github.com/MichaelArestad/portfolio",
+	children: "Edit on GitHub",
 };
