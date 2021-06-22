@@ -1,4 +1,4 @@
-import Avatar from "../components/avatar/avatar";
+import Avatar from "./avatar";
 
 export default {
 	title: "Portfolio/Avatar",
