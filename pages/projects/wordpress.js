@@ -1,3 +1,4 @@
+import Script from "next/script";
 import Back from "../../components/back/back";
 import Card from "../../components/card/card";
 import Text from "../../components/text/text";
@@ -47,10 +48,11 @@ export default function Home() {
 
 				<Card backgroundColor="#0073aa">
 					<Item width="l" style={{ margin: "var( --unit-5 ) auto" }}>
-						<img
+						<Image
 							src="/images/wordpress/dashboard.jpg"
 							width={800}
 							height={448}
+							alt="WordPress dashboard"
 						/>
 						<Card
 							compact
@@ -73,12 +75,12 @@ export default function Home() {
 					<Item style={{ margin: "var( --unit-5 ) auto" }} width="m">
 						<Text size="l">
 							I have been using WordPress for so long I am not even sure when I
-							first started. It's been well over a decade. Before I started
+							first started. It&apos;s been well over a decade. Before I started
 							working at Automattic, I had been contributing here and there to
-							the forums and the occasional project, but it wasn't until around
-							2013 that I was encouraged to apply for Automattic. That was the
-							beginning of a head-first dive into the realm of WordPress. What
-							follows are some highlights.
+							the forums and the occasional project, but it wasn&apos;t until
+							around 2013 that I was encouraged to apply for Automattic. That
+							was the beginning of a head-first dive into the realm of
+							WordPress. What follows are some highlights.
 						</Text>
 					</Item>
 				</Card>
@@ -111,7 +113,7 @@ export default function Home() {
 							<Heading>Press This</Heading>
 							<Text>
 								One of my first major projects on WordPress was a redesign of a
-								bookmarklet tool called Press This. It's effectively a tiny
+								bookmarklet tool called Press This. It&apos;s effectively a tiny
 								version of the WordPress editor that allows users to quote or
 								repost content from other sites. It was the main feature in
 								WordPress 4.2 Powell. I designed it and Stephane Daury built it
@@ -134,10 +136,9 @@ export default function Home() {
 									width="632"
 									height="354"
 									src="https://videopress.com/embed/e9kH4FzP"
-									frameBorder="0"
 									allowFullScreen
 								></iframe>
-								<script src="https://videopress.com/videopress-iframe.js"></script>
+								<Script src="https://videopress.com/videopress-iframe.js"></Script>
 							</div>
 						</FlexItem>
 					</Flex>
@@ -155,8 +156,8 @@ export default function Home() {
 								. I contributed countless hours to the design and code of it. I
 								also led the transition of it from being a post and page editor
 								to a tool that can be used to edit any content on a site.
-								Because of the depth of this work, I'm taking some time to write
-								this up as a project of it's own. In the meantime,{" "}
+								Because of the depth of this work, I&apos;m taking some time to
+								write this up as a project of it&apos;s own. In the meantime,{" "}
 								<a href="https://wordpress.org/gutenberg/">
 									take Gutenberg for a spin
 								</a>
@@ -174,6 +175,7 @@ export default function Home() {
 								src="/images/gutenberg/gberg-demo.jpg"
 								width={800}
 								height={448}
+								alt="Gutenberg demo"
 							/>
 						</FlexItem>
 					</Flex>
@@ -224,6 +226,7 @@ export default function Home() {
 								src="/images/wordpress/wcden.jpg"
 								width={800}
 								height={448}
+								alt="WordCamp Denver home page"
 							/>
 						</FlexItem>
 					</Flex>

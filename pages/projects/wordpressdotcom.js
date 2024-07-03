@@ -102,11 +102,11 @@ export default function Home() {
 								</strong>{" "}
 								When we shifted Jetpack to be more security-focused, we made a
 								gargantuan effort to build a rock-solid and intuitive backup
-								interface. The interface was built into WordPress.com's
+								interface. The interface was built into WordPress.com&apos;s
 								dashboard so a user could restore their Jetpack site even if the
-								site was down. It isn't unusual for a site to break because of a
-								plugin or theme update and this interface gave the user an undo
-								button for their entire site.
+								site was down. It isn&apos;t unusual for a site to break because
+								of a plugin or theme update and this interface gave the user an
+								undo button for their entire site.
 							</Text>
 
 							<Text>
@@ -184,8 +184,8 @@ export default function Home() {
 							</Text>
 
 							<Text>
-								Note: We decided to call it "People" as it felt a little less
-								dehumanizing than "Users."
+								Note: We decided to call it &apos;People&apos; as it felt a
+								little less dehumanizing than &aposUsers.&apos
 							</Text>
 						</FlexItem>
 

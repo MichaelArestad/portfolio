@@ -1,7 +1,6 @@
 import SEO from "../../components/seo";
 import Layout from "../../components/layout/layout";
 import Hero from "../../components/hero/hero";
-import HeroContent from "../../components/hero/hero-content";
 import Back from "../../components/back/back";
 import Card from "../../components/card/card";
 import Text from "../../components/text/text";
@@ -9,6 +8,7 @@ import Heading from "../../components/heading/heading";
 import Flex from "../../components/flex/flex";
 import FlexItem from "../../components/flex/flex-item";
 import Item from "../../components/item/item";
+import Image from "../../components/image/image";
 
 export default function Home() {
 	return (
@@ -27,10 +27,11 @@ export default function Home() {
 
 				<Card circles backgroundColor="var( --color-dark )">
 					<Item width="l" style={{ margin: "var( --unit-5 ) auto" }}>
-						<img
+						<Image
 							src="/images/gutenberg/gberg-demo.jpg"
 							width="800"
 							height="448"
+							alt="Gutenberg demo"
 						/>
 						<Card
 							compact

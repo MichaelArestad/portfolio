@@ -18,7 +18,7 @@ export default function Home() {
 					<Spacer height="15vh" />
 					<Heading>Contact me</Heading>
 					<Text>
-						I'm no longer accepting new clients. If you are interested in
+						I am no longer accepting new clients. If you are interested in
 						chatting or have a question, please reach out.
 					</Text>
 					<Spacer />

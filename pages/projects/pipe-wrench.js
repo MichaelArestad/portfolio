@@ -30,6 +30,7 @@ export default function Home() {
 							width={320}
 							height={181}
 							src="/images/pipe-wrench/logo-light_m.png"
+							alt="Pipe Wrench logo"
 						/>
 					</HeroContent>
 				</Hero>
@@ -40,6 +41,7 @@ export default function Home() {
 							src="/images/pipe-wrench/home.jpg"
 							width={800}
 							height={456}
+							alt="Pipe Wrench home page"
 						/>
 						<Card
 							compact
@@ -48,9 +50,9 @@ export default function Home() {
 							style={{ marginTop: "var( --unit-3 )" }}
 						>
 							<Text caption>
-								"A release every other month, featuring one core longform story
-								and a constellation of other pieces interpreting or reacting or
-								springboarding off it."
+								&quot;A release every other month, featuring one core longform
+								story and a constellation of other pieces interpreting or
+								reacting or springboarding off it.&quot;
 							</Text>
 						</Card>
 					</Item>
@@ -58,9 +60,9 @@ export default function Home() {
 				<Card backgroundColor="#150619" textColor="#FFFEFA">
 					<Item centered width="s">
 						<Text size="l">
-							I designed the Pipe Wrench website. It's an in-your-face and also
-							elegant WordPress theme designed to give design super powers to
-							the editors. I gave them the freedom to play with the content
+							I designed the Pipe Wrench website. It&apos;s an in-your-face and
+							also elegant WordPress theme designed to give design super powers
+							to the editors. I gave them the freedom to play with the content
 							without needing me. I know. Design anarchy. \m/
 						</Text>
 					</Item>
@@ -78,6 +80,7 @@ export default function Home() {
 								width={800}
 								height={427}
 								src="/images/pipe-wrench/brand-colors.jpg"
+								alt="Pipe Wrench brand colors"
 							/>
 						</FlexItem>
 					</Flex>
@@ -116,6 +119,7 @@ export default function Home() {
 							width={1600}
 							height={854}
 							src="/images/pipe-wrench/typography.jpg"
+							alt="Pipe Wrench typography"
 						/>
 					</FlexItem>
 				</Card>
@@ -134,10 +138,10 @@ export default function Home() {
 						<FlexItem width="s">
 							<Heading>WYSIWYG Editing (for real)</Heading>
 							<Text>
-								I took advantage of the editor's super powers and took extra
-								care to ensure that when folks are editing content, it looks as
-								close to possible as what is rendered on the front end. This
-								makes it so much faster to compose interesting layouts and
+								I took advantage of the editor&apos;s super powers and took
+								extra care to ensure that when folks are editing content, it
+								looks as close to possible as what is rendered on the front end.
+								This makes it so much faster to compose interesting layouts and
 								designs without having to preview every change. Below, you can
 								see an image of a post in the editor and a second image of the
 								post once published.
@@ -154,6 +158,7 @@ export default function Home() {
 							src="/images/pipe-wrench/editor.jpg"
 							width={800}
 							height={456}
+							alt="Pipe Wrench editor"
 						/>
 
 						<Image
@@ -163,6 +168,7 @@ export default function Home() {
 							src="/images/pipe-wrench/front-end.jpg"
 							width={800}
 							height={456}
+							alt="Pipe Wrench front end"
 						/>
 					</GalleryOverlap>
 				</Card>

@@ -34,7 +34,12 @@ export default function Home() {
 
 				<Card backgroundColor="#000">
 					<Item width="l" style={{ margin: "var( --unit-5 ) auto" }}>
-						<Image src="/images/kosmo/full@2x.jpg" width="800" height="600" />
+						<Image
+							src="/images/kosmo/full@2x.jpg"
+							alt="The full majesty of a DIY KOSMO synthesizer"
+							width="800"
+							height="600"
+						/>
 						<Card
 							compact
 							backgroundColor="#242424"
@@ -86,6 +91,7 @@ export default function Home() {
 								srcset="/images/kosmo/top@2x.jpg 2x"
 								width="800"
 								height="600"
+								alt="The latest case for housing utilitarian gems"
 							/>
 						</FlexItem>
 						<FlexItem width="s">
@@ -168,6 +174,7 @@ export default function Home() {
 								srcset="/images/kosmo/middle@2x.jpg 2x"
 								width="800"
 								height="600"
+								alt="This case I built out of rotting plywood from under the shed. It has a folding handle for easy carrying."
 							/>
 						</FlexItem>
 						<FlexItem width="s">
@@ -259,6 +266,7 @@ export default function Home() {
 								srcset="/images/kosmo/bottom@2x.jpg 2x"
 								width="800"
 								height="600"
+								alt="A slightly wider case and the blueprint for any future cases."
 							/>
 						</FlexItem>
 						<FlexItem width="s">
@@ -369,6 +377,7 @@ export default function Home() {
 								srcset="/images/kosmo/speakers@2x.jpg 2x"
 								width="800"
 								height="600"
+								alt="A Frankenstein's amp for sure"
 							/>
 						</FlexItem>
 						<FlexItem width="s">
@@ -477,9 +486,9 @@ export default function Home() {
 						<FlexItem width="s">
 							<Heading>Why is this here?</Heading>
 							<Text>
-								Because it's a project I'm continually iterating on stretching
-								the limits of my design, electrical, and coding skills. Also, I
-								think it's pretty rad.
+								Because it&apos;s a project I&apos;m continually iterating on
+								stretching the limits of my design, electrical, and coding
+								skills. Also, I think it&apos;s pretty rad.
 							</Text>
 						</FlexItem>
 					</Flex>

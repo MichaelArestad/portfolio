@@ -151,6 +151,7 @@ export default function Home() {
 							src="/images/jetpack/web2012.jpg"
 							width={800}
 							height={448}
+							alt="The Jetpack website in 2012"
 						/>
 
 						<Image
@@ -159,6 +160,7 @@ export default function Home() {
 							src="/images/jetpack/web2013.jpg"
 							width={800}
 							height={448}
+							alt="The Jetpack website in 2013"
 						/>
 
 						<Image
@@ -166,6 +168,7 @@ export default function Home() {
 							src="/images/jetpack/web2014.jpg"
 							width={800}
 							height={448}
+							alt="The Jetpack website in 2014"
 						/>
 
 						<Image
@@ -174,6 +177,7 @@ export default function Home() {
 							src="/images/jetpack/web2016.jpg"
 							width={800}
 							height={448}
+							alt="The Jetpack website in 2016"
 						/>
 					</GalleryOverlap>
 

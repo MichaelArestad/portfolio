@@ -49,6 +49,7 @@ export default function Home() {
 							src="/images/activity-log/jetpack-activity-log.png"
 							width={800}
 							height={440}
+							alt="Jetpack Activity Log"
 						/>
 						<Card
 							compact
@@ -68,7 +69,8 @@ export default function Home() {
 							The Activity Log is a list of every event on a WordPress site that
 							comes with the ability to rewind the site to any specific event. I
 							helped design and build the Activity Log over the course of year
-							helping solidify the feature offering of Jetpack's paid plans.
+							helping solidify the feature offering of Jetpack&apos;s paid
+							plans.
 						</Text>
 					</Item>
 				</Card>
@@ -84,7 +86,7 @@ export default function Home() {
 							troubleshooting why the site is down or why a popular post is
 							missing. Extracting the information of who made a change and when
 							requires a deep technical knowledge. Beyond that, even if you know
-							why the site went down, it's not always easy to recover.
+							why the site went down, it&apos;s not always easy to recover.
 						</Text>
 
 						<Heading>Vision</Heading>
@@ -167,8 +169,8 @@ export default function Home() {
 							implementation of the Activity Log project. When we shifted
 							Jetpack to be more security-focused, we made a gargantuan effort
 							to build a rock-solid and intuitive backup interface. The
-							interface was built into WordPress.com's dashboard so a user could
-							restore their Jetpack site even if the site was down.
+							interface was built into WordPress.com&apos;s dashboard so a user
+							could restore their Jetpack site even if the site was down.
 						</Text>
 
 						<Text>
